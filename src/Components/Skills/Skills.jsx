@@ -1,6 +1,9 @@
 import React from "react";
 import SkillCard from "./SkillCard";
 import { TbBrandJavascript } from "react-icons/tb";
+import jsIcon from "../../assets/svg/icons8-javascript-logo.svg";
+import djangoIcon from "../../assets/svg/icons8-django.svg";
+
 const Skills = () => {
 	const frontendTitle = "Frontend";
 	const backendTitle = "Backend";
@@ -28,17 +31,17 @@ const Skills = () => {
 			<SkillCard
 				title={frontendTitle}
 				content={frontendContent}
-				icon={TbBrandJavascript}
+				icon={jsIcon}
 			/>
 			<SkillCard
 				title={backendTitle}
 				content={backendContent}
-				icon={TbBrandJavascript}
+				icon={djangoIcon}
 			/>
 			<SkillCard
 				title={fullstackTitle}
 				content={fullstackContent}
-				icon={TbBrandJavascript}
+				icon={djangoIcon}
 			/>
 		</div>
 	);
