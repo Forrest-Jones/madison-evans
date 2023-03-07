@@ -3,7 +3,6 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import useMeasure from "react-use-measure";
 import React from "react";
-
 const Carousel = () => {
 	let [count, setCount] = useState(1);
 	let [ref, { width }] = useMeasure();
@@ -18,22 +17,12 @@ const Carousel = () => {
 
 	return (
 		<div className="text-white">
-			{/* button group  */}
-			<div className="flex justify-between absolute z-10 w-full mt-1/2 md:w-4/5">
-				<button onClick={() => setCount(count - 1)}>
-					<FaAngleLeft className="h-10 w-10" />
-				</button>
-				<button onClick={() => setCount(count + 1)}>
-					<FaAngleRight className="h-10 w-10" />
-				</button>
-			</div>
-
 			{/* sliders */}
-			<div className="flex justify-center h-full">
+			<div className="flex justify-center items-center h-full">
 				<div
 					ref={ref}
 					style={{ height: "20em" }}
-					className="relative overflow-hidden flex w-full  bg-gray-700 items-center justify-center">
+					className="relative overflow-hidden flex w-full bg-gray-700 items-center justify-center">
 					<AnimatePresence custom={{ direction, width }}>
 						<motion.div
 							key={count}
@@ -49,6 +38,22 @@ const Carousel = () => {
 							{count}
 						</motion.div>
 					</AnimatePresence>
+
+					{/* button group */}
+					<div className="absolute z-10 flex justify-between items-center w-full h-full md:w-4/5">
+						<button
+							onClick={() => setCount(count - 1)}
+							className="flex items-center justify-center text-white  "
+							style={{ transform: "translateX(-50%)" }}>
+							<FaAngleLeft className="w-20 h-20" />
+						</button>
+						<button
+							onClick={() => setCount(count + 1)}
+							className="flex items-center justify-center text-white "
+							style={{ transform: "translateX(50%)" }}>
+							<FaAngleRight className="w-20 h-20" />
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -65,4 +70,5 @@ let variants = {
 	}),
 };
 let colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"];
+
 export default Carousel;
