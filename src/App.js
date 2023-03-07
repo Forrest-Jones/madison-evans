@@ -2,6 +2,7 @@ import "./App.css";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Navbar from "./Components/Navbar/Navbar";
 import Carousel from "./Components/Carousel/Carousel";
+import Experience from "./Components/Experience/Experience";
 import LayoutGrid from "./Components/LayoutGrid/LayoutGrid";
 import image1 from "./assets/images/w1.jpeg";
 import image2 from "./assets/images/w2.jpeg";
@@ -16,6 +17,7 @@ function App() {
 				content={
 					<div className="flex-col">
 						<AboutMe />
+						<Experience />
 						<Carousel imageArray={imageArray} />
 					</div>
 				}

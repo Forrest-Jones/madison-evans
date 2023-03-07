@@ -3,9 +3,9 @@ import profilePic from "../../assets/images/sample-image.jpeg";
 function AboutMe() {
 	return (
 		<div
-			style={{ height: "100vh" }}
+			style={{ height: "75vh" }}
 			id="about-me"
-			className="flex flex-col items-center justify-center bg-gray-100 md:flex-row md:py-24 md:px-4">
+			className="bg-gray-200 flex flex-col items-center justify-start md:flex-row md:py-24 md:px-4">
 			{ProfilePic()}
 			{Introduction()}
 		</div>
@@ -14,9 +14,9 @@ function AboutMe() {
 	// introduction
 	function Introduction() {
 		return (
-			<div className="h-full md:mt-1/2 md:w-1/2 md:pl-10 px-6 flex justify-center flex-col">
-				<h1 className="text-3xl font-bold mb-2">Hi, I'm Madison</h1>
-				<p className="text-lg text-gray-700 mb-6">
+			<div className="pt-10 md:mt-1/2 md:w-1/2 md:pl-10 px-6 flex justify-center flex-col">
+				<h1 className="text-2xl md:text-3xl font-bold mb-2">Hi, I'm Madison</h1>
+				<p className="text-sm md:text-lg text-gray-700">
 					I'm a passionate designer with a love for creating beautiful and
 					functional digital experiences. I have experience in user interface
 					design, user experience design, and graphic design.
@@ -28,8 +28,12 @@ function AboutMe() {
 	// Profile Pic
 	function ProfilePic() {
 		return (
-			<div className="md:w-1/2 w-full">
-				<img src={profilePic} alt="Madison Profile" className="w-full h-full" />
+			<div className="md:w-1/2 w-full ">
+				<img
+					src={profilePic}
+					alt="Madison Profile"
+					style={{ objectFit: "cover", maxHeight: "34em", width: "100%" }}
+				/>
 			</div>
 		);
 	}

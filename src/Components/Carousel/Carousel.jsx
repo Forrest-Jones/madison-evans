@@ -35,7 +35,7 @@ const Carousel = ({ imageArray }) => {
 			<div className="flex justify-center items-center h-full">
 				<div
 					ref={ref}
-					style={{ height: "100vh" }}
+					style={{ height: "75vh" }}
 					className="relative overflow-hidden flex w-full bg-gray-700 items-center justify-center">
 					<AnimatePresence custom={{ direction, width }}>
 						<motion.div
