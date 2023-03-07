@@ -2,7 +2,7 @@ import React from "react";
 
 const Experience = () => {
 	return (
-		<div style={{ height: "75vh" }}>
+		<div style={{ height: "100vh" }}>
 			<div>Experience</div>
 		</div>
 	);
