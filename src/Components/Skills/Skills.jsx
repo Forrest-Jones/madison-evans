@@ -1,6 +1,5 @@
 import React from "react";
 import SkillCard from "./SkillCard";
-import { TbBrandJavascript } from "react-icons/tb";
 import jsIcon from "../../assets/svg/icons8-javascript-logo.svg";
 import djangoIcon from "../../assets/svg/icons8-django.svg";
 
@@ -8,19 +7,15 @@ const Skills = () => {
 	const frontendTitle = "Frontend";
 	const backendTitle = "Backend";
 	const fullstackTitle = "Fullstack";
-	const frontendContent = [
-		"Proficiency in HTML, CSS, and JavaScript.",
-		"Knowledge of front-end frameworks like React, Angular, or Vue.",
-		"Understanding of UX and design principles.",
-	];
+	const frontendContent = ["HTML, CSS, JavaScript", "React", "UX/UI"];
 	const backendContent = [
-		"Expertise in at least one backend programming language like Java, Python, or Node.js.",
-		"Knowledge of server-side frameworks like Spring, Django, or Express.js.",
-		"Understanding of database management and optimization.",
+		"Java, Node, Python",
+		"Django",
+		"database management and optimization.",
 	];
 	const fullstackContent = [
-		"Proficiency in both front-end and back-end development.",
-		"Ability to integrate and work with different APIs and third-party services.",
+		"front-end and back-end development.",
+		"Ability to integrate and work with differentAPIs and third-party services.",
 		"Strong problem-solving and communication skills.",
 	];
 	return (
