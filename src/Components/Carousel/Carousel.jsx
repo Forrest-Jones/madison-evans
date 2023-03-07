@@ -3,7 +3,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import useMeasure from "react-use-measure";
 import React from "react";
-const Carousel = () => {
+const Carousel = ({ itemArray }) => {
 	let [count, setCount] = useState(1);
 	let [ref, { width }] = useMeasure();
 	let [tuple, setTuple] = useState([null, count]); // [prev, current]
