@@ -2,7 +2,9 @@ import profilePic from "../../assets/images/sample-image.jpeg";
 
 function AboutMe() {
 	return (
-		<div className="flex flex-col items-center justify-center bg-gray-100 md:flex-row md:py-24 md:px-4">
+		<div
+			id="about-me"
+			className="flex flex-col items-center justify-center bg-gray-100 md:flex-row md:py-24 md:px-4">
 			{ProfilePic()}
 			{Introduction()}
 		</div>

@@ -8,22 +8,35 @@ const Navbar = () => {
 	function NavLinkContainer() {
 		return (
 			<div className="flex-grow md:flex md:flex-col md:overflow-y-auto">
-				{" "}
-				{/* Menu links */}
 				<a
-					href="/"
+					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					href="#about-me"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-					Link 1
+					About Me
 				</a>
 				<a
-					href="/"
+					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					href="#skills"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-					Link 2
+					Skills
 				</a>
 				<a
-					href="/"
+					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					href="#experience"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-					Link 3
+					Experience
+				</a>
+				<a
+					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					href="#projects"
+					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					Projects
+				</a>
+				<a
+					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					href="#contact"
+					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					Contact
 				</a>
 			</div>
 		);
