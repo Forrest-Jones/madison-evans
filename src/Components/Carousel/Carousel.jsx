@@ -30,7 +30,7 @@ const Carousel = ({ imageArray }) => {
 	let direction = count > prev ? -1 : 1;
 
 	return (
-		<div className="text-white">
+		<div className="text-white" id="projects">
 			{/* sliders */}
 			<div className="flex justify-center items-center h-full">
 				<div

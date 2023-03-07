@@ -3,6 +3,7 @@ import profilePic from "../../assets/images/sample-image.jpeg";
 function AboutMe() {
 	return (
 		<div
+			style={{ height: "100vh" }}
 			id="about-me"
 			className="bg-gray-200 flex flex-col items-center justify-start md:flex-row md:py-24 md:px-4">
 			{ProfilePic()}
