@@ -13,15 +13,11 @@ const Skills = () => {
 		"Django",
 		"database management and optimization.",
 	];
-	const fullstackContent = [
-		"front-end and back-end development.",
-		"Ability to integrate and work with differentAPIs and third-party services.",
-		"Strong problem-solving and communication skills.",
-	];
+	const fullstackContent = ["front-end", "APIs", "Problem Solving"];
 	return (
 		<div
 			id="skills"
-			style={{ height: "100vh" }}
+			style={{ minHeight: "100vh" }}
 			className="flex pb-10 bg-gray-800 md:flex-row flex-col items-center w-full h-full justify-around md:justify-center">
 			<SkillCard
 				title={frontendTitle}
