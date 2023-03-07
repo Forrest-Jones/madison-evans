@@ -1,6 +1,6 @@
 function AboutMe() {
 	return (
-		<div className="flex flex-col items-center justify-center py-12 bg-gray-100 md:flex-row md:py-24">
+		<div className="flex flex-col items-center justify-center py-12 px-12 bg-gray-100 md:flex-row md:py-24 md:px-4">
 			{ProfilePic()}
 			{Introduction()}
 		</div>
