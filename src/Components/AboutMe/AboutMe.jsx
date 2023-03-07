@@ -1,13 +1,14 @@
 function AboutMe() {
 	return (
 		<div className="flex flex-col items-center justify-center py-12 bg-gray-100 md:flex-row md:py-24">
-			<div className="md:w-1/2">
-				<img
-					src="https://via.placeholder.com/300"
-					alt="Madison Profile"
-					className="rounded-full shadow-md"
-				/>
-			</div>
+			{ProfilePic()}
+			{Introduction()}
+		</div>
+	);
+
+	// introduction
+	function Introduction() {
+		return (
 			<div className="mt-6 md:mt-0 md:w-1/2 md:pl-10">
 				<h1 className="text-3xl font-bold mb-2">Hi, I'm Madison</h1>
 				<p className="text-lg text-gray-700 mb-6">
@@ -21,8 +22,21 @@ function AboutMe() {
 					View My Portfolio
 				</a>
 			</div>
-		</div>
-	);
+		);
+	}
+
+	// Profile Pic
+	function ProfilePic() {
+		return (
+			<div className="md:w-1/2">
+				<img
+					src="https://via.placeholder.com/300"
+					alt="Madison Profile"
+					className="rounded-full shadow-md"
+				/>
+			</div>
+		);
+	}
 }
 
 export default AboutMe;
