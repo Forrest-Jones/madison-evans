@@ -3,6 +3,7 @@ import profilePic from "../../assets/images/sample-image.jpeg";
 function AboutMe() {
 	return (
 		<div
+			style={{ height: "100vh" }}
 			id="about-me"
 			className="flex flex-col items-center justify-center bg-gray-100 md:flex-row md:py-24 md:px-4">
 			{ProfilePic()}
@@ -13,7 +14,7 @@ function AboutMe() {
 	// introduction
 	function Introduction() {
 		return (
-			<div className="h-full mt-6 md:mt-0 md:w-1/2 md:pl-10 px-6">
+			<div className="h-full md:mt-1/2 md:w-1/2 md:pl-10 px-6 flex justify-center flex-col">
 				<h1 className="text-3xl font-bold mb-2">Hi, I'm Madison</h1>
 				<p className="text-lg text-gray-700 mb-6">
 					I'm a passionate designer with a love for creating beautiful and

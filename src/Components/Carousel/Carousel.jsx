@@ -35,7 +35,7 @@ const Carousel = ({ imageArray }) => {
 			<div className="flex justify-center items-center h-full">
 				<div
 					ref={ref}
-					style={{ height: "40em" }}
+					style={{ height: "100vh" }}
 					className="relative overflow-hidden flex w-full bg-gray-700 items-center justify-center">
 					<AnimatePresence custom={{ direction, width }}>
 						<motion.div
@@ -47,7 +47,11 @@ const Carousel = ({ imageArray }) => {
 							custom={{ direction, width }}
 							className={`absolute flex w-full h-full items-center justify-center`}
 							transition={{ type: "spring", damping: 30, mass: 3 }}>
-							<img src={imageArray[count - 1]} alt={`${count}`} />
+							<img
+								src={imageArray[count - 1]}
+								alt={`${count}`}
+								style={{ objectFit: "cover", height: "100%", width: "100%" }}
+							/>
 						</motion.div>
 					</AnimatePresence>
 

@@ -14,7 +14,7 @@ function App() {
 			<LayoutGrid
 				nav={<Navbar />}
 				content={
-					<div>
+					<div className="flex-col">
 						<AboutMe />
 						<Carousel imageArray={imageArray} />
 					</div>
