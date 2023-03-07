@@ -35,7 +35,7 @@ const Carousel = ({ imageArray }) => {
 			<div className="flex justify-center items-center h-full">
 				<div
 					ref={ref}
-					style={{ height: "20em" }}
+					style={{ height: "40em" }}
 					className="relative overflow-hidden flex w-full bg-gray-700 items-center justify-center">
 					<AnimatePresence custom={{ direction, width }}>
 						<motion.div
@@ -81,6 +81,5 @@ let variants = {
 		x: direction * width,
 	}),
 };
-let colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"];
 
 export default Carousel;
