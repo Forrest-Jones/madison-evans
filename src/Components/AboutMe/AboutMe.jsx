@@ -1,3 +1,5 @@
+import profilePic from "../../assets/images/sample-image.jpeg";
+
 function AboutMe() {
 	return (
 		<div className="flex flex-col items-center justify-center py-12 px-12 bg-gray-100 md:flex-row md:py-24 md:px-4">
@@ -16,11 +18,6 @@ function AboutMe() {
 					functional digital experiences. I have experience in user interface
 					design, user experience design, and graphic design.
 				</p>
-				<a
-					href="/"
-					className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-					View My Portfolio
-				</a>
 			</div>
 		);
 	}
@@ -30,7 +27,7 @@ function AboutMe() {
 		return (
 			<div className="md:w-1/2">
 				<img
-					src="https://via.placeholder.com/300"
+					src={profilePic}
 					alt="Madison Profile"
 					className="rounded-full shadow-md"
 				/>
