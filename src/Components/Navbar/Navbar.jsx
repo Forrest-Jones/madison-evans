@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 const Navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // state to track if mobile menu is open
 
@@ -8,36 +8,46 @@ const Navbar = () => {
 	function NavLinkContainer() {
 		return (
 			<div className="flex-grow md:flex md:flex-col md:overflow-y-auto">
-				<a
+				<motion.a
+					initial={{ scale: 1 }}
+					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#about-me"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					About Me
-				</a>
-				<a
+				</motion.a>
+				<motion.a
+					initial={{ scale: 1 }}
+					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#skills"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Skills
-				</a>
-				<a
+				</motion.a>
+				<motion.a
+					initial={{ scale: 1 }}
+					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#experience"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Experience
-				</a>
-				<a
+				</motion.a>
+				<motion.a
+					initial={{ scale: 1 }}
+					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#projects"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Projects
-				</a>
-				<a
+				</motion.a>
+				<motion.a
+					initial={{ scale: 1 }}
+					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#contact"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Contact
-				</a>
+				</motion.a>
 			</div>
 		);
 	}
