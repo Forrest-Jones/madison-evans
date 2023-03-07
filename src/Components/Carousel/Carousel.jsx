@@ -19,7 +19,7 @@ const Carousel = () => {
 	return (
 		<div className="text-white">
 			{/* button group  */}
-			<div className="flex justify-between">
+			<div className="flex justify-between absolute z-10 w-full mt-1/2 md:w-4/5">
 				<button onClick={() => setCount(count - 1)}>
 					<FaAngleLeft className="h-10 w-10" />
 				</button>
@@ -29,10 +29,11 @@ const Carousel = () => {
 			</div>
 
 			{/* sliders */}
-			<div className="flex justify-center">
+			<div className="flex justify-center h-full">
 				<div
 					ref={ref}
-					className="relative overflow-hidden flex w-full h-16 bg-gray-700 items-center justify-center">
+					style={{ height: "20em" }}
+					className="relative overflow-hidden flex w-full  bg-gray-700 items-center justify-center">
 					<AnimatePresence custom={{ direction, width }}>
 						<motion.div
 							key={count}
@@ -41,9 +42,10 @@ const Carousel = () => {
 							animate="center"
 							exit="exit"
 							custom={{ direction, width }}
-							className={`absolute flex w-20 h-20 items-center justify-center ${
+							className={`absolute flex w-full h-full items-center justify-center ${
 								colors[Math.abs(count % 4)]
-							}`}>
+							}`}
+							transition={{ type: "spring", damping: 30, mass: 3 }}>
 							{count}
 						</motion.div>
 					</AnimatePresence>
