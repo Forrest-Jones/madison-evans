@@ -13,9 +13,9 @@ function App() {
 					<div>
 						<AboutMe />
 						<Carousel>
-							<div>asdf</div>
-							<div>aaaaaaa</div>
-							<div>asggg ggggggdf</div>
+							<div>Project 1</div>
+							<div>Project 2</div>
+							<div>Project 3</div>
 						</Carousel>
 					</div>
 				}
