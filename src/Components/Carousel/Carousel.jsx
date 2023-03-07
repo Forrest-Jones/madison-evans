@@ -14,7 +14,7 @@ function Carousel(props) {
 
 	return (
 		<div className="relative w-full h-screen">
-			{children[current]}
+			<div className="w-full h-full">{children[current]}</div>
 			{RightButton()}
 			{LeftButton()}
 		</div>
