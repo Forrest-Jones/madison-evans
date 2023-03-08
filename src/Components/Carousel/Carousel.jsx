@@ -3,7 +3,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import useMeasure from "react-use-measure";
 import React from "react";
-const Carousel = ({ imageArray }) => {
+const Carousel = ({ children }) => {
 	let [count, setCount] = useState(1);
 	let [ref, { width }] = useMeasure();
 	let [tuple, setTuple] = useState([null, count]); // [prev, current]
@@ -16,8 +16,8 @@ const Carousel = ({ imageArray }) => {
 		}
 	}
 	function handleRightClick() {
-		if (count === imageArray.length) {
-			setCount(imageArray.length);
+		if (count === children.length) {
+			setCount(children.length);
 		} else {
 			setCount(count + 1);
 		}
@@ -47,11 +47,12 @@ const Carousel = ({ imageArray }) => {
 							custom={{ direction, width }}
 							className={`absolute flex w-full h-full items-center justify-center`}
 							transition={{ type: "spring", damping: 30, mass: 3 }}>
-							<img
-								src={imageArray[count - 1]}
+							{children[count - 1]}
+							{/* <img
+								src={children[count - 1]}
 								alt={`${count}`}
 								style={{ objectFit: "cover", height: "100%", width: "100%" }}
-							/>
+							/> */}
 						</motion.div>
 					</AnimatePresence>
 

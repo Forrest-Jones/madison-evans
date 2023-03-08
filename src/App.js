@@ -5,6 +5,7 @@ import Carousel from "./Components/Carousel/Carousel";
 import Experience from "./Components/Experience/Experience";
 import LayoutGrid from "./Components/LayoutGrid/LayoutGrid";
 import Contact from "./Components/Contact/Contact";
+import Project from "./Components/Project/Project";
 import Skills from "./Components/Skills/Skills";
 import image1 from "./assets/images/w1.jpeg";
 import image2 from "./assets/images/w2.jpeg";
@@ -25,7 +26,11 @@ function App() {
 						{/* experience section */}
 						<Experience />
 						{/* Projects section */}
-						<Carousel imageArray={imageArray} />
+						<Carousel imageArray={imageArray}>
+							<Project />
+							<Project />
+							<Project />
+						</Carousel>
 						{/* Contact Section */}
 						<Contact />
 					</div>
