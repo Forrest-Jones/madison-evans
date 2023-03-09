@@ -36,7 +36,6 @@
 		transform: rotate(360deg);
 	}
 }
-
 .parent {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -49,11 +48,11 @@
 	grid-area: 1 / 1 / 2 / 7;
 }
 .div2 {
-	grid-area: 2 / 1 / 7 / 4;
+	grid-area: 2 / 1 / 5 / 5;
 }
 .div3 {
-	grid-area: 2 / 4 / 5 / 7;
+	grid-area: 5 / 1 / 7 / 7;
 }
 .div4 {
-	grid-area: 5 / 4 / 7 / 7;
+	grid-area: 2 / 5 / 5 / 7;
 }
