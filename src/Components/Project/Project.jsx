@@ -1,20 +1,17 @@
-import React, { useState } from "react";
-import Modal from "../Modal/Modal";
-
-function Project(props) {
-	const [displayModal, setDisplayModal] = useState(false);
-
+import { motion } from "framer-motion";
+function Project({ setShowModal, image, showModal }) {
 	const toggleModal = () => {
-		setDisplayModal(!displayModal);
+		setShowModal(!showModal);
 	};
 
 	return (
-		<div
-			className="h-64 w-64 mx-4 bg-center bg-cover cusor-pointer"
-			style={{ backgroundImage: `url(${props.image})` }}
-			onClick={toggleModal}>
-			{displayModal && <Modal toggleModal={toggleModal} />}
-		</div>
+		<motion.div
+			initial={{ scale: 1 }}
+			whileHover={{ scale: 1.1 }}
+			transition={{ type: "spring", duration: 1 }}
+			className="h-64 w-64 mx-4 bg-center bg-cover cursor-pointer"
+			style={{ backgroundImage: `url(${image})` }}
+			onClick={toggleModal}></motion.div>
 	);
 }
 

@@ -10,12 +10,15 @@ import Skills from "./Components/Skills/Skills";
 import image1 from "./assets/images/w1.jpeg";
 import image2 from "./assets/images/w2.jpeg";
 import image3 from "./assets/images/w3.jpeg";
-
+import Modal from "./Components/Modal/Modal";
+import { useState } from "react";
 import ProjectGroupContainer from "./ProjectGroupContainer/ProjectGroupContainer";
 
 function App() {
+	const [showModal, setShowModal] = useState(false);
 	return (
 		<div className="h-full">
+			<Modal showModal={showModal} setShowModal={setShowModal} />
 			<LayoutGrid
 				nav={<Navbar />}
 				content={
@@ -28,9 +31,21 @@ function App() {
 						<Experience />
 						{/* Projects section */}
 						<ProjectGroupContainer>
-							<Project image={image1} />
-							<Project image={image2} />
-							<Project image={image3} />
+							<Project
+								image={image1}
+								setShowModal={setShowModal}
+								showModal={showModal}
+							/>
+							<Project
+								image={image2}
+								setShowModal={setShowModal}
+								showModal={showModal}
+							/>
+							<Project
+								image={image3}
+								setShowModal={setShowModal}
+								showModal={showModal}
+							/>
 						</ProjectGroupContainer>
 						{/* Contact Section */}
 						<Contact />
