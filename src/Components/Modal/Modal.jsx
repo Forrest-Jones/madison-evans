@@ -15,14 +15,16 @@ const Modal = ({ showModal, setShowModal }) => {
 					<CgClose size="4em" />
 				</button>
 				<div className="text-white border w-4/5 mx-auto mt-1/2 h-3/5 parent">
-					<h1 className="div1">Title</h1>
-					<p className="div2">
+					<h1 className="div1 bg-pink-400 text-6xl text-center flex justify-center items-center">
+						Palette Pal
+					</h1>
+					<p className="div2 bg-purple-900">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
 						perferendis consequuntur incidunt vero voluptates vel, aut labore
 						odio maiores. Voluptas.
 					</p>
-					<div className="div3">video goes here</div>
-					<div className="div4">links go here</div>
+					<div className="div3 bg-yellow-200">video goes here</div>
+					<div className="div4 bg-orange-600">links go here</div>
 				</div>
 			</div>
 		);
