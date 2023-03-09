@@ -56,3 +56,23 @@
 .div4 {
 	grid-area: 2 / 5 / 5 / 7;
 }
+
+@media (max-width: 767px) {
+	/* Styles to apply at or below the md breakpoint */
+	.parent {
+		display: flex;
+		flex-direction: column;
+	}
+	.div1 {
+		grid-area: unset;
+	}
+	.div2 {
+		grid-area: unset;
+	}
+	.div3 {
+		grid-area: unset;
+	}
+	.div4 {
+		grid-area: unset;
+	}
+}

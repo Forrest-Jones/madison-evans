@@ -1,7 +1,7 @@
 import "./App.css";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Navbar from "./Components/Navbar/Navbar";
-
+import sampleVid from "./assets/palette.mp4";
 import Experience from "./Components/Experience/Experience";
 import LayoutGrid from "./Components/LayoutGrid/LayoutGrid";
 import Contact from "./Components/Contact/Contact";
@@ -16,7 +16,7 @@ import ProjectGroupContainer from "./ProjectGroupContainer/ProjectGroupContainer
 const testModalData = {
 	description:
 		"Palette pal is a really cool app. I'm pretty proud of it, therefore, I'm taking this time to make a dummy description for a modal I'm making. In the real thing, this text will actually be meaningful, but rn, I'm just using it to fill out some space and allow me to see how things will eventually be layed out... so... yeah... Here I am. just filling out space. you know me. the usual. lol. asdf. asdf asdf asdf  fjasld;gk; asd;gjkas llaskjdhg laskdh lkajshdglakjshd lgjkashd lgkjhasldkgjhalsdk ga  alskjdgh laksjdgh lkajshdg jkashd glkajsh dglkjahsd lgjkl  s",
-	video: "video url",
+	video: sampleVid,
 	githubLink: "https://github.com/MadisonEvans94/",
 	siteLink: "https://palettepal.herokuapp.com/",
 };

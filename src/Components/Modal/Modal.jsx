@@ -1,5 +1,6 @@
 import React from "react";
 import { CgClose } from "react-icons/cg";
+import VideoPlayer from "../VideoPlayer/VideoPlayer";
 
 const Modal = ({ showModal, setShowModal, modalContent }) => {
 	console.log(showModal);
@@ -20,12 +21,12 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 					<h1 className="div1 text-6xl text-center flex justify-center items-center">
 						Palette Pal
 					</h1>
+					<div className="div2 py-2">
+						<VideoPlayer videoSource={modalContent.video} />
+					</div>
 					<p className="div3 overflow-y-auto px-4 my-3">
 						{modalContent.description}
 					</p>
-					<div className="div2 ">
-						<div className="border rounded w-auto ml-4 mr-4 h-full"></div>
-					</div>
 
 					<ul className="div4 flex flex-col h-full w-full justify-center px-4">
 						<li>Explore the github repo</li>
