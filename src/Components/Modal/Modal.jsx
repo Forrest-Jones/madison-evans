@@ -15,7 +15,7 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 					<CgClose size="4em" />
 				</button>
 				<div
-					style={{ backgroundColor: "#111111" }}
+					style={{ backgroundColor: "#111111", maxWidth: "50em" }}
 					className="text-white border rounded w-4/5 mx-auto mt-1/2 h-3/5 parent">
 					<h1 className="div1 text-6xl text-center flex justify-center items-center">
 						Palette Pal
