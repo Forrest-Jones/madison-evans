@@ -13,12 +13,22 @@ import image3 from "./assets/images/w3.jpeg";
 import Modal from "./Components/Modal/Modal";
 import { useState } from "react";
 import ProjectGroupContainer from "./ProjectGroupContainer/ProjectGroupContainer";
-
+const testModalData = {
+	description:
+		"Palette pal is a really cool app. I'm pretty proud of it, therefore, I'm taking this time to make a dummy description for a modal I'm making. In the real thing, this text will actually be meaningful, but rn, I'm just using it to fill out some space and allow me to see how things will eventually be layed out... so... yeah... Here I am. just filling out space. you know me. the usual. lol. asdf. asdf asdf asdf  fjasld;gk; asd;gjkas llaskjdhg laskdh lkajshdglakjshd lgjkashd lgkjhasldkgjhalsdk ga  alskjdgh laksjdgh lkajshdg jkashd glkajsh dglkjahsd lgjkl  s",
+	video: "video url",
+	githubLink: "https://github.com/MadisonEvans94/",
+	siteLink: "https://palettepal.herokuapp.com/",
+};
 function App() {
 	const [showModal, setShowModal] = useState(false);
 	return (
 		<div className="h-full">
-			<Modal showModal={showModal} setShowModal={setShowModal} />
+			<Modal
+				showModal={showModal}
+				setShowModal={setShowModal}
+				modalContent={testModalData}
+			/>
 			<LayoutGrid
 				nav={<Navbar />}
 				content={
