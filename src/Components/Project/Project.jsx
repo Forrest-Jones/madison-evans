@@ -10,11 +10,10 @@ function Project(props) {
 
 	return (
 		<div
-			className="h-full w-full bg-center bg-cover border border-white"
+			className="h-64 w-64 mx-4 bg-center bg-cover cusor-pointer"
 			style={{ backgroundImage: `url(${props.image})` }}
 			onClick={toggleModal}>
 			{displayModal && <Modal toggleModal={toggleModal} />}
-			test
 		</div>
 	);
 }
