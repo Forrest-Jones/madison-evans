@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
-function Project({ setShowModal, image, showModal }) {
+function Project({ setShowModal, image, showModal, setModalData, modalData }) {
 	const toggleModal = () => {
 		setShowModal(!showModal);
+		console.log(showModal);
 	};
 
 	return (
 		<motion.div
 			initial={{ scale: 1 }}
-			whileHover={{ scale: 1.1 }}
-			transition={{ type: "spring", duration: 1 }}
-			className="md:h-64 md:w-64 md:my-0 my-4 w-40 h-40 mx-4 bg-center bg-cover cursor-pointer"
+			whileHover={{ scale: 1.05, y: -10 }}
+			transition={{ type: "spring", duration: 0.5 }}
+			className="md:h-64 md:w-64 md:my-0 my-4 w-40 h-40 mx-4 bg-center bg-cover cursor-pointer rounded-lg"
 			style={{ backgroundImage: `url(${image})` }}
-			onClick={toggleModal}></motion.div>
+			onClick={toggleModal}
+		/>
 	);
 }
 
