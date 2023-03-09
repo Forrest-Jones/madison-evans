@@ -10,14 +10,14 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 	if (showModal) {
 		return (
 			<div className="fixed w-screen h-screen bg-opacity-80 flex bg-black z-10 items-center">
-				<button
-					onClick={toggleModal}
-					className="absolute text-white top-0 right-0 mr-10 mt-10">
-					<CgClose size="4em" />
-				</button>
 				<div
 					style={{ backgroundColor: "#111111", maxWidth: "50em" }}
-					className="text-white border rounded w-4/5 mx-auto mt-1/2 h-3/5 parent">
+					className="text-white relative border rounded w-4/5 mx-auto mt-1/2 h-3/5 parent">
+					<button
+						onClick={toggleModal}
+						className="absolute text-white top-0 right-0 mr-4 mt-4">
+						<CgClose size="4em" />
+					</button>
 					<h1 className="div1 text-6xl text-center flex justify-center items-center">
 						Palette Pal
 					</h1>
