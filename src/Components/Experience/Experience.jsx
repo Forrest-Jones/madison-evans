@@ -15,91 +15,127 @@ const Experience = () => {
 			<VerticalTimeline>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
-					contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-					contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+					contentStyle={{ background: "#fff", color: "#fff" }}
+					contentArrowStyle={{ borderRight: "7px solid  #fff" }}
 					date="2011 - present"
-					iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
-					<h3 className="vertical-timeline-element-title">Creative Director</h3>
-					<h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-					<p>
-						Creative Direction, User Experience, Visual Design, Project
-						Management, Team Leading
+					<h2>Georgia Institute of Technology</h2>
+					<h3 className="vertical-timeline-element-title text-gray-700">
+						Undergraduate Student
+					</h3>
+					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+						Atlanta, GA
+					</h4>
+					<p className="text-gray-700">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+						perferendis?
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
 					date="2010 - 2011"
-					iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
-					<h3 className="vertical-timeline-element-title">Art Director</h3>
-					<h4 className="vertical-timeline-element-subtitle">
-						San Francisco, CA
+					<h2>Porex</h2>
+					<h3 className="vertical-timeline-element-title text-gray-700">
+						Product Sustaining Intern
+					</h3>
+					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+						Atlanta, GA
 					</h4>
-					<p>
-						Creative Direction, User Experience, Visual Design, SEO, Online
-						Marketing
+					<p className="text-gray-700">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+						perferendis?
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
 					date="2008 - 2010"
-					iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
-					<h3 className="vertical-timeline-element-title">Web Designer</h3>
-					<h4 className="vertical-timeline-element-subtitle">
-						Los Angeles, CA
+					<h2>Eaton</h2>
+					<h3 className="vertical-timeline-element-title text-gray-700">
+						Engineering Intern
+					</h3>
+					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+						Atlanta, GA
 					</h4>
-					<p>User Experience, Visual Design</p>
+					<p className="text-gray-700">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+						perferendis?
+					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
 					date="2006 - 2008"
-					iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
-					<h3 className="vertical-timeline-element-title">Web Designer</h3>
-					<h4 className="vertical-timeline-element-subtitle">
-						San Francisco, CA
+					<h2>Modif Media Inc.</h2>
+					<h3 className="vertical-timeline-element-title text-gray-700">
+						Co-Founder
+					</h3>
+					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+						Atlanta, GA
 					</h4>
-					<p>User Experience, Visual Design</p>
+					<p className="text-gray-700">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+						perferendis?
+					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
 					date="April 2013"
-					iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
-					<h3 className="vertical-timeline-element-title">
-						Content Marketing for Web, Mobile and Social Media
+					<h2>Intel</h2>
+					<h3 className="vertical-timeline-element-title text-gray-700">
+						Mechanical Engineer
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-					<p>Strategy, Social Media</p>
+					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+						Phoenix, AZ
+					</h4>
+					<p className="text-gray-700">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+						perferendis?
+					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
 					date="November 2012"
-					iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
-					<h3 className="vertical-timeline-element-title">
-						Agile Development Scrum Master
+					<h2>Georgia Institute of Technology</h2>
+					<h3 className="vertical-timeline-element-title text-gray-700">
+						Master of Science in Computer Science
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle">Certification</h4>
-					<p>Creative Direction, User Experience, Visual Design</p>
+					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+						Atlanta, GA
+					</h4>
+					<p className="text-gray-700">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+						perferendis?
+					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
 					date="2002 - 2006"
-					iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
-					<h3 className="vertical-timeline-element-title">
-						Bachelor of Science in Interactive Digital Media Visual Imaging
+					<h2>Flatiron</h2>
+					<h3 className="vertical-timeline-element-title text-gray-700">
+						Full-stack software engineering student
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle">
-						Bachelor Degree
+					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+						Phoenix, AZ
 					</h4>
-					<p>Creative Direction, Visual Design</p>
+					<p className="text-gray-700">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+						perferendis?
+					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
-					iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}
 				/>
 			</VerticalTimeline>

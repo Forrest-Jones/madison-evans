@@ -9,40 +9,40 @@ const Navbar = () => {
 		return (
 			<div className="flex-grow md:flex md:flex-col md:overflow-y-auto">
 				<motion.a
-					initial={{ scale: 1 }}
-					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
+					initial={{ x: 0 }}
+					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#about-me"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					About Me
 				</motion.a>
 				<motion.a
-					initial={{ scale: 1 }}
-					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
+					initial={{ x: 0 }}
+					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#skills"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Skills
 				</motion.a>
 				<motion.a
-					initial={{ scale: 1 }}
-					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
+					initial={{ x: 0 }}
+					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#experience"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Experience
 				</motion.a>
 				<motion.a
-					initial={{ scale: 1 }}
-					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
+					initial={{ x: 0 }}
+					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#projects"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Projects
 				</motion.a>
 				<motion.a
-					initial={{ scale: 1 }}
-					whileHover={{ scale: 1.1, transformOrigin: "center center" }}
+					initial={{ x: 0 }}
+					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#contact"
 					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
