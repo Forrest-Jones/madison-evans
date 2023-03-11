@@ -32,7 +32,7 @@ function App() {
 			<LayoutGrid
 				nav={<Navbar />}
 				content={
-					<div className="flex-col">
+					<div className="flex-col w-full">
 						{/* about me section */}
 						<AboutMe />
 						{/* Skills */}
@@ -57,7 +57,7 @@ function App() {
 								showModal={showModal}
 							/>
 						</ProjectGroupContainer>
-
+						{/* contact */}
 						<Contact />
 					</div>
 				}
