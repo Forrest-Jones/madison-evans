@@ -17,7 +17,7 @@ const Experience = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					contentArrowStyle={{ borderRight: "7px solid  #fff" }}
-					date="2011 - present"
+					date="Sep 2013 - May 2018"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
 					<h2>Georgia Institute of Technology</h2>
@@ -34,7 +34,8 @@ const Experience = () => {
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
-					date="2010 - 2011"
+					contentStyle={{ background: "#fff", color: "#fff" }}
+					date="May 2015 - Aug 2015"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
 					<h2>Porex</h2>
@@ -51,7 +52,8 @@ const Experience = () => {
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
-					date="2008 - 2010"
+					contentStyle={{ background: "#fff", color: "#fff" }}
+					date="May 2016 - May 2017"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
 					<h2>Eaton</h2>
@@ -68,7 +70,8 @@ const Experience = () => {
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--work"
-					date="2006 - 2008"
+					contentStyle={{ background: "#fff", color: "#fff" }}
+					date="May 2016 - Aug 2017"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
 					<h2>Modif Media Inc.</h2>
@@ -85,7 +88,8 @@ const Experience = () => {
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
-					date="April 2013"
+					contentStyle={{ background: "#fff", color: "#fff" }}
+					date="Jun 2018 - Feb 2023"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
 					<h2>Intel</h2>
@@ -102,7 +106,8 @@ const Experience = () => {
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
-					date="November 2012"
+					contentStyle={{ background: "#fff", color: "#fff" }}
+					date="Sep 2022 - Present (Expected Graduation: 2024)"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
 					<h2>Georgia Institute of Technology</h2>
@@ -118,8 +123,8 @@ const Experience = () => {
 					</p>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
-					className="vertical-timeline-element--education"
-					date="2002 - 2006"
+					contentStyle={{ background: "#fff", color: "#fff" }}
+					date="Jan 2023 - Apr 2023"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
 					icon={<TiMortarBoard />}>
 					<h2>Flatiron</h2>
