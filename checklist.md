@@ -15,8 +15,9 @@ TODO: Timeline
 TODO: Projects
 [ ] add title of each project on hover
 [ ] new videos for each project
+[ ] make the project tiles square and make them flex col on md screens
 TODO: Contact
 [ ] make the contact page
 TODO: Modal
-[ ] update the close icon position
+[x] update the close icon position
 [ ] fix the spacing of the modal on mobile so that it isn't covered by the bars

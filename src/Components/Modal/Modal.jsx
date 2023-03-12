@@ -9,18 +9,23 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 	};
 	if (showModal) {
 		return (
-			<div className="fixed w-screen h-screen bg-opacity-80 flex bg-black z-10 items-center">
+			<div
+				className="
+				fixed w-screen h-screen bg-opacity-80 flex bg-black z-10 items-center
+				">
 				<div
 					style={{ backgroundColor: "#111111", maxWidth: "50em" }}
-					className="text-white relative border rounded-xl w-4/5 mx-auto mt-1/2 h-4/5 parent">
+					className="
+					text-white relative border rounded-xl w-4/5 mx-auto h-3/5 parent
+					md:h-4/5">
 					<button
 						onClick={toggleModal}
 						className="
-						absolute text-white -right-10 -top-12
+						absolute text-white -right-10 -top-10
 						">
-						<CloseButton size="4em" />
+						<CloseButton size="3em" />
 					</button>
-					<h1 className="div1 text-6xl text-center flex justify-center items-center my-6">
+					<h1 className="div1 text-4xl text-center flex justify-center items-center my-6">
 						{modalContent.title}
 					</h1>
 					<div className="div2 py-2 h-full">
@@ -30,8 +35,11 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 						{modalContent.description}
 					</p>
 
-					<ul className="div4 flex flex-col h-full w-full px-10 justify-center ">
-						<li>
+					<ul
+						className="
+						div4 flex flex-col h-full w-full justify-center px-10
+						md:px-0">
+						<li className="w-full">
 							Explore the{" "}
 							<strong>
 								<a
