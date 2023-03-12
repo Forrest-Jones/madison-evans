@@ -17,7 +17,8 @@ TODO: Projects
 [ ] new videos for each project
 [ ] make the project tiles square and make them flex col on md screens
 TODO: Contact
-[ ] make the contact page
+[x] make the contact page
+[ ] update the contact page so that it has real info instead of just dummy information
 TODO: Modal
 [x] update the close icon position
-[ ] fix the spacing of the modal on mobile so that it isn't covered by the bars
+[x] fix the spacing of the modal on mobile so that it isn't covered by the bars
