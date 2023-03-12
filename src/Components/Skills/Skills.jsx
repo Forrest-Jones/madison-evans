@@ -8,11 +8,7 @@ const Skills = () => {
 	const backendTitle = "Backend";
 	const fullstackTitle = "Fullstack";
 	const frontendContent = ["HTML, CSS, JavaScript", "React", "UX/UI"];
-	const backendContent = [
-		"Java, Node, Python",
-		"Django",
-		"database management and optimization.",
-	];
+	const backendContent = ["Java, Node, Python", "Django", "database"];
 	const fullstackContent = ["front-end", "APIs", "Problem Solving"];
 	return (
 		<div

@@ -4,6 +4,6 @@
 [ ] add a section that pertains to engineering as a whole
 [ ] add actual details to the timeline
 [x] fix the project props
-[ ] add pics that are representative of the projects
+[x] add pics that are representative of the projects
 [ ] make the contact page
 [x] fix the mobile layout of the modal
