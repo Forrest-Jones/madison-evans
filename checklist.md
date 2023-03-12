@@ -6,4 +6,4 @@
 [ ] fix the project props
 [ ] add pics that are representative of the projects
 [ ] make the contact page
-[ ] fix the mobile layout of the modal
+[x] fix the mobile layout of the modal
