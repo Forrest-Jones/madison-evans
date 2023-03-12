@@ -15,8 +15,27 @@ import { useState } from "react";
 import ModalContext from "./helpers/ModalContext";
 import ProjectGroupContainer from "./Components/ProjectGroupContainer/ProjectGroupContainer";
 
+// Palette Pal
 const project1Content = {
 	title: "Palette Pal",
+	description:
+		"Palette pal is a really cool app. I'm pretty proud of it, therefore, I'm taking this time to make a dummy description for a modal I'm making. In the real thing, this text will actually be meaningful, but rn, I'm just using it to fill out some space and allow me to see how things will eventually be layed out... so... yeah... Here I am. just filling out space. you know me. the usual. lol. asdf. asdf asdf asdf  fjasld;gk; asd;gjkas llaskjdhg laskdh lkajshdglakjshd lgjkashd lgkjhasldkgjhalsdk ga  alskjdgh laksjdgh lkajshdg jkashd glkajsh dglkjahsd lgjkl  s",
+	video: sampleVid,
+	githubLink: "https://github.com/MadisonEvans94/",
+	siteLink: "https://palettepal.herokuapp.com/",
+};
+// BlueCloud
+const project2Content = {
+	title: "Blue Cloud Music",
+	description:
+		"Palette pal is a really cool app. I'm pretty proud of it, therefore, I'm taking this time to make a dummy description for a modal I'm making. In the real thing, this text will actually be meaningful, but rn, I'm just using it to fill out some space and allow me to see how things will eventually be layed out... so... yeah... Here I am. just filling out space. you know me. the usual. lol. asdf. asdf asdf asdf  fjasld;gk; asd;gjkas llaskjdhg laskdh lkajshdglakjshd lgjkashd lgkjhasldkgjhalsdk ga  alskjdgh laksjdgh lkajshdg jkashd glkajsh dglkjahsd lgjkl  s",
+	video: sampleVid,
+	githubLink: "https://github.com/MadisonEvans94/",
+	siteLink: "https://palettepal.herokuapp.com/",
+};
+// DropTheBall
+const project3Content = {
+	title: "Drop the Ball",
 	description:
 		"Palette pal is a really cool app. I'm pretty proud of it, therefore, I'm taking this time to make a dummy description for a modal I'm making. In the real thing, this text will actually be meaningful, but rn, I'm just using it to fill out some space and allow me to see how things will eventually be layed out... so... yeah... Here I am. just filling out space. you know me. the usual. lol. asdf. asdf asdf asdf  fjasld;gk; asd;gjkas llaskjdhg laskdh lkajshdglakjshd lgjkashd lgkjhasldkgjhalsdk ga  alskjdgh laksjdgh lkajshdg jkashd glkajsh dglkjahsd lgjkl  s",
 	video: sampleVid,
@@ -56,13 +75,13 @@ function App() {
 									image={image2}
 									setShowModal={setShowModal}
 									showModal={showModal}
-									projectContent={project1Content}
+									projectContent={project2Content}
 								/>
 								<Project
 									image={image3}
 									setShowModal={setShowModal}
 									showModal={showModal}
-									projectContent={project1Content}
+									projectContent={project3Content}
 								/>
 							</ProjectGroupContainer>
 						</ModalContext.Provider>
