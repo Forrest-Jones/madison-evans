@@ -21,7 +21,7 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 						<CloseButton size="4em" />
 					</button>
 					<h1 className="div1 text-6xl text-center flex justify-center items-center my-6">
-						Palette Pal
+						{modalContent.title}
 					</h1>
 					<div className="div2 py-2 h-full">
 						<VideoPlayer videoSource={modalContent.video} />

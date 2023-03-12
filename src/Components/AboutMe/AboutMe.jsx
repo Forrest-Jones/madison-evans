@@ -1,4 +1,4 @@
-import profilePic from "../../assets/images/sample-image.jpeg";
+// import profilePic from "../../assets/images/sample-image.jpeg";
 
 function AboutMe() {
 	return (
@@ -29,19 +29,19 @@ function AboutMe() {
 		);
 	}
 
-	// Profile Pic
-	function ProfilePic() {
-		return (
-			<div className="md:w-1/2 w-full ">
-				<img
-					src={profilePic}
-					alt="Madison Profile"
-					style={{ objectFit: "cover", maxHeight: "34em", width: "100%" }}
-					className="md:h-3/6"
-				/>
-			</div>
-		);
-	}
+	// // Profile Pic
+	// function ProfilePic() {
+	// 	return (
+	// 		<div className="md:w-1/2 w-full ">
+	// 			<img
+	// 				src={profilePic}
+	// 				alt="Madison Profile"
+	// 				style={{ objectFit: "cover", maxHeight: "34em", width: "100%" }}
+	// 				className="md:h-3/6"
+	// 			/>
+	// 		</div>
+	// 	);
+	// }
 }
 
 export default AboutMe;
