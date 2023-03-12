@@ -30,7 +30,7 @@ const project2Content = {
 	video: sampleVid,
 	// [ ] update this github link
 	githubLink: "https://github.com/MadisonEvans94/",
-	siteLink: "https://palettepal.herokuapp.com/",
+	siteLink: "https://bluecloudmusic.herokuapp.com",
 };
 // DropTheBall
 const project3Content = {
