@@ -4,7 +4,9 @@ import {
 	VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { TiMortarBoard } from "react-icons/ti";
+import { TiMortarBoard as School } from "react-icons/ti";
+import { MdWorkOutline as Job } from "react-icons/md";
+import { AiFillCheckCircle as Current } from "react-icons/ai";
 
 const Experience = () => {
 	return (
@@ -19,7 +21,7 @@ const Experience = () => {
 					contentArrowStyle={{ borderRight: "7px solid  #fff" }}
 					date="Sep 2013 - May 2018"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
-					icon={<TiMortarBoard />}>
+					icon={<School />}>
 					<h2>Georgia Institute of Technology</h2>
 					<h3 className="vertical-timeline-element-title text-gray-700">
 						Undergraduate Student
@@ -37,7 +39,7 @@ const Experience = () => {
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="May 2015 - Aug 2015"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
-					icon={<TiMortarBoard />}>
+					icon={<Job />}>
 					<h2>Porex</h2>
 					<h3 className="vertical-timeline-element-title text-gray-700">
 						Product Sustaining Intern
@@ -55,7 +57,7 @@ const Experience = () => {
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="May 2016 - May 2017"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
-					icon={<TiMortarBoard />}>
+					icon={<Job />}>
 					<h2>Eaton</h2>
 					<h3 className="vertical-timeline-element-title text-gray-700">
 						Engineering Intern
@@ -73,7 +75,7 @@ const Experience = () => {
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="May 2016 - Aug 2017"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
-					icon={<TiMortarBoard />}>
+					icon={<Job />}>
 					<h2>Modif Media Inc.</h2>
 					<h3 className="vertical-timeline-element-title text-gray-700">
 						Co-Founder
@@ -91,7 +93,7 @@ const Experience = () => {
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="Jun 2018 - Feb 2023"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
-					icon={<TiMortarBoard />}>
+					icon={<Job />}>
 					<h2>Intel</h2>
 					<h3 className="vertical-timeline-element-title text-gray-700">
 						Mechanical Engineer
@@ -109,7 +111,7 @@ const Experience = () => {
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="Sep 2022 - Present (Expected Graduation: 2024)"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
-					icon={<TiMortarBoard />}>
+					icon={<School />}>
 					<h2>Georgia Institute of Technology</h2>
 					<h3 className="vertical-timeline-element-title text-gray-700">
 						Master of Science in Computer Science
@@ -126,7 +128,7 @@ const Experience = () => {
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="Jan 2023 - Apr 2023"
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
-					icon={<TiMortarBoard />}>
+					icon={<School />}>
 					<h2>Flatiron</h2>
 					<h3 className="vertical-timeline-element-title text-gray-700">
 						Full-stack software engineering student
@@ -141,7 +143,7 @@ const Experience = () => {
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					iconStyle={{ background: "#4B5563", color: "#fff" }}
-					icon={<TiMortarBoard />}
+					icon={<Current />}
 				/>
 			</VerticalTimeline>
 		</div>

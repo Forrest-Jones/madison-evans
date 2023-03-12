@@ -10,7 +10,7 @@ TODO: Skills
 [ ] fix the animation and spacing of the skills cards for both mobile and desktop
 [ ] add a section that pertains to engineering as a whole
 TODO: Timeline
-[ ] make the icons representative
+[x] make the icons representative
 [ ] add real descriptions
 TODO: Projects
 [ ] add title of each project on hover
