@@ -31,7 +31,9 @@ const SkillCard = (props) => {
 				<h2 className="text-center text-lg font-semibold">{title}</h2>
 			</div>
 			<div>
-				<ul style={{ display: isExtended ? "flex" : "none" }}>
+				<ul
+					style={{ display: isExtended ? "flex" : "none" }}
+					className="w-full px-6 flex flex-col">
 					{content.map((content, id) => {
 						return (
 							<li key={id} className="text-xs text-center">
