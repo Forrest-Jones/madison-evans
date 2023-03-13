@@ -14,12 +14,20 @@ const SkillCard = (props) => {
 			}}
 			style={{ cursor: "pointer" }}
 			className="
-			border border-solid border-white text-white border-1 mx-2 mt-8 py-8 rounded-md flex flex-row w-60 justify-center
+			border border-solid border-white text-white border-1 mx-2 mt-8 py-8 rounded-md flex flex-col w-60 justify-center
 			md:mx-6 md:my-0 md:h-80 md:w-1/3 
 			required:h-1/3 
 			">
-			<div>
-				<img src={icon} alt="icon" className="mx-auto w-1/3 md:w-auto" />
+			<div
+				className="
+				flex flex-col">
+				<img
+					src={icon}
+					alt="icon"
+					className="
+					mx-auto h-1/2
+					md:w-auto"
+				/>
 				<h2 className="text-center text-lg font-semibold">{title}</h2>
 			</div>
 			<div>

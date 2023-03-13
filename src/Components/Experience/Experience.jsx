@@ -63,10 +63,7 @@ const Experience = () => {
 							- Performed a Design of Experiments that resulted in improved
 							production capability of filtration parts
 						</li>
-						<li>
-							- Programmed measurement routines for SmartScope, an automated
-							multi-sensor measurement device
-						</li>
+
 						<li>
 							- Remodeled product molds in order to make maintenance processes
 							safer and more efficient
