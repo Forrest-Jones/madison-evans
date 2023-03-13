@@ -17,7 +17,7 @@ const Experience = () => {
 			<VerticalTimeline>
 				{/* GT Undergrad */}
 				<VerticalTimelineElement
-					className="vertical-timeline-element--work"
+					className="vertical-timeline-element--work overscroll-x-none"
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					contentArrowStyle={{ borderRight: "7px solid  #fff" }}
 					date="Sep 2013 - May 2018"
@@ -142,6 +142,7 @@ const Experience = () => {
 						</li>
 					</ul>
 				</VerticalTimelineElement>
+				{/* Intel */}
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
 					contentStyle={{ background: "#fff", color: "#fff" }}
@@ -164,6 +165,7 @@ const Experience = () => {
 						<li>- Intel Item </li>
 					</ul>
 				</VerticalTimelineElement>
+				{/* OMSCS */}
 				<VerticalTimelineElement
 					className="vertical-timeline-element--education"
 					contentStyle={{ background: "#fff", color: "#fff" }}
@@ -186,6 +188,7 @@ const Experience = () => {
 						<li>- OMSCS item</li>
 					</ul>
 				</VerticalTimelineElement>
+				{/* Flatiron */}
 				<VerticalTimelineElement
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="Jan 2023 - Apr 2023"
@@ -202,17 +205,9 @@ const Experience = () => {
 						Phoenix, AZ
 					</h4>
 					<ul className="text-gray-700 mt-4">
-						<li>
-							- Contributed design modifications to a collaborative cost saving
-							project that saved nearly $1M in annual costs during internship
-						</li>
-						<li>
-							- Implemented engineering design changes to sustain product
-							manufacturability and quality
-						</li>
-						<li>
-							- Managed vendor relationships by facilitating product orders
-						</li>
+						<li>- Flatiron item</li>
+						<li>- Flatiron item</li>
+						<li>- Flatiron item</li>
 					</ul>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement

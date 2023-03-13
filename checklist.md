@@ -11,7 +11,7 @@ TODO: Timeline
 [ ] fix the width issues on mobile
 TODO: Projects
 [ ] add title of each project on hover
-[ ] new videos for each project
+[x] new videos for each project
 TODO: Contact
 [ ] update the contact page so that it has real info instead of just dummy information
 TODO: Modal
