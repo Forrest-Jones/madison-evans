@@ -39,7 +39,7 @@ const ContactPage = () => {
 			<form
 				onSubmit={handleSubmit}
 				className="
-				flex flex-col w-full">
+				flex flex-col w-full  max-w-xl">
 				{/* name */}
 				<input
 					type="text"
@@ -62,7 +62,7 @@ const ContactPage = () => {
 					onChange={(e) => setMessage(e.target.value)}
 					placeholder="Message"
 					className="my-2 p-2 rounded"
-					rows="6"
+					rows="8"
 				/>
 				{/* send button */}
 				<button
@@ -73,7 +73,7 @@ const ContactPage = () => {
 				</button>
 			</form>
 			{sent && <p>Thank you for contacting me!</p>}
-			<div className="text-white w-full ">
+			<div className="text-white w-full  max-w-xl">
 				<p>
 					Email me: <strong>M.Corbinevans@gmail.com</strong>{" "}
 				</p>
