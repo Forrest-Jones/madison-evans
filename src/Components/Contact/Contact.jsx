@@ -13,8 +13,8 @@ const ContactPage = () => {
 	};
 
 	return (
-		<div>
-			<h1>Contact Me</h1>
+		<div style={{ minHeight: "100vh" }}>
+			{/* <h1>Contact Me</h1>
 			<form onSubmit={handleSubmit}>
 				<label>
 					Name:
@@ -67,7 +67,7 @@ const ContactPage = () => {
 				frameborder="0"
 				allowfullscreen=""
 				aria-hidden="false"
-				tabindex="0"></iframe>
+				tabindex="0"></iframe> */}
 		</div>
 	);
 };
