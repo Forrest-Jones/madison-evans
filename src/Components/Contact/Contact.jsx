@@ -8,18 +8,12 @@ const ContactPage = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		const data = {
-			name: name,
-			email: email,
-			message: message,
-		};
-		fetch("/send-email", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify(data),
-		})
+		// const data = {
+		// 	name: name,
+		// 	email: email,
+		// 	message: message,
+		// };
+		fetch("http://127.0.0.1:5000/send_email")
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error("Network response was not ok");
