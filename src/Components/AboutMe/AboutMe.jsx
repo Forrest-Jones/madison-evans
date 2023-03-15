@@ -1,5 +1,7 @@
 // import profilePic from "../../assets/images/sample-image.jpeg";
-
+import { AiFillLinkedin as Linkedin } from "react-icons/ai";
+import { AiFillGithub as Github } from "react-icons/ai";
+import { motion } from "framer-motion";
 function AboutMe() {
 	return (
 		<div
@@ -25,11 +27,33 @@ function AboutMe() {
 					text-7xl md:text-8xl font-bold mb-2 text-left ">
 					Madison
 				</h1>
+
 				<p className="text-sm md:text-lg text-gray-700 mt-12">
 					I'm a passionate designer with a love for creating beautiful and
 					functional digital experiences. I have experience in user interface
 					design, user experience design, and graphic design.
 				</p>
+				<div className="flex flex-row w-full mt-10">
+					<motion.a
+						initial={{ scale: 1, y: 0 }}
+						whileHover={{ scale: 1.1, y: -2 }}
+						transition={{ type: "spring" }}
+						target="_blank"
+						href="https://Linkedin.com"
+						rel="noreferrer">
+						<Linkedin size="1.5em" />
+					</motion.a>
+
+					<motion.a
+						initial={{ scale: 1, y: 0 }}
+						whileHover={{ scale: 1.1, y: -2 }}
+						transition={{ type: "spring" }}
+						target="_blank"
+						href="https://github.com"
+						rel="noreferrer">
+						<Github size="1.5em" className="mx-3" />
+					</motion.a>
+				</div>
 			</div>
 		);
 	}
