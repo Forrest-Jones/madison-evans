@@ -12,7 +12,7 @@ const Experience = () => {
 	return (
 		<div
 			id="experience"
-			className="bg-transparent overscroll-x-none h-fit w-full">
+			className="bg-transparent overscroll-x-none h-fit w-full overscroll-none">
 			<VerticalTimeline>
 				{/* GT Undergrad */}
 				<VerticalTimelineElement

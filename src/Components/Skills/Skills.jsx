@@ -2,7 +2,7 @@ import React from "react";
 import SkillCard from "./SkillCard";
 import jsIcon from "../../assets/svg/icons8-javascript-logo.svg";
 import djangoIcon from "../../assets/svg/icons8-django.svg";
-
+import other from "../../assets/svg/design.svg";
 const Skills = () => {
 	const frontendTitle = "Frontend";
 	const backendTitle = "Backend";
@@ -28,7 +28,7 @@ const Skills = () => {
 			<SkillCard
 				title={fullstackTitle}
 				content={fullstackContent}
-				icon={djangoIcon}
+				icon={other}
 			/>
 		</div>
 	);
