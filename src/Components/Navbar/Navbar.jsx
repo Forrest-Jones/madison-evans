@@ -14,7 +14,7 @@ const Navbar = () => {
 					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#about-me"
-					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					About Me
 				</motion.a>
 				<motion.a
@@ -22,7 +22,7 @@ const Navbar = () => {
 					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#skills"
-					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Skills
 				</motion.a>
 				<motion.a
@@ -30,7 +30,7 @@ const Navbar = () => {
 					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#experience"
-					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Experience
 				</motion.a>
 				<motion.a
@@ -38,7 +38,7 @@ const Navbar = () => {
 					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#projects"
-					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Projects
 				</motion.a>
 				<motion.a
@@ -46,7 +46,7 @@ const Navbar = () => {
 					whileHover={{ x: 10 }}
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					href="#contact"
-					className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
 					Contact
 				</motion.a>
 			</div>
@@ -59,7 +59,7 @@ const Navbar = () => {
 			<button
 				onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 				type="button"
-				className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+				className="inline-flex items-center justify-center p-2 rounded-md text-secondary hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary focus:ring-white">
 				{/* Hamburger icon */}
 				<svg
 					className={`${isMobileMenuOpen ? "hidden" : "block"} h-6 w-6`}
@@ -95,7 +95,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav className="bg-gray-800 md:w-full md:flex-shrink-0 p-4">
+		<nav className="bg-primary md:w-full md:flex-shrink-0 p-4">
 			<div className="md:hidden">{HamburgerButton()}</div>
 
 			<div

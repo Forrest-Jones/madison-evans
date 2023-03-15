@@ -11,28 +11,32 @@ const SkillCard = (props) => {
 			whileHover={{ scale: 1.04 }}
 			onClick={() => setIsExtended(!isExtended)}
 			className="
-			text-secondary cursor-pointer mx-2 mt-8 py-8 rounded-xl flex flex-col w-60 justify-center
+			text-secondary cursor-pointer mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items center justify-center
 			md:mx-6 md:my-0 md:h-fit md:w-1/3 
 			required:h-1/3 
 			">
 			<motion.div
 				layout
 				className="
-				flex flex-col items-center justify-center">
-				<motion.img
-					layout
-					src={icon}
-					alt="icon"
-					className="
+				flex flex-row items-center justify-center w-full
+				md:flex-col">
+				<motion.div layout>
+					<motion.img
+						layout
+						src={icon}
+						alt="icon"
+						className="
 					text-secondary
-					mx-auto h-32
+					mx-auto h-32 w-32 
 					md:w-full"
-				/>
-				<motion.h2 layout className="text-center text-lg font-semibold">
-					{title}
-				</motion.h2>
+					/>
+					<motion.h2 layout className="text-center text-lg font-semibold">
+						{title}
+					</motion.h2>
+				</motion.div>
+
 				{isExtended && (
-					<motion.ul className="w-full px-6 flex flex-col">
+					<motion.ul className="w-fit px-6 flex flex-col">
 						{content.map((content, id) => {
 							return (
 								<motion.li
