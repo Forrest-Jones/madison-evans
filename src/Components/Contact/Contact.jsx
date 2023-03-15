@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-// TODO: DONT DELETE => import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 const Contact = () => {
 	const form = useRef();
 	const nameInput = useRef();
@@ -12,21 +12,21 @@ const Contact = () => {
 		e.preventDefault();
 
 		// TODO: Don't Delete
-		// emailjs
-		//  .sendForm(
-		//      "service_ptv88yz",
-		//      "template_tkul86p",
-		//      form.current,
-		//      "QXbk0V9wjQFcqNmT5"
-		//  )
-		//  .then(
-		//      (result) => {
-		//          console.log(result.text);
-		//      },
-		//      (error) => {
-		//          console.log(error.text);
-		//      }
-		//  );
+		emailjs
+			.sendForm(
+				"service_ptv88yz",
+				"template_tkul86p",
+				form.current,
+				"QXbk0V9wjQFcqNmT5"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
 
 		console.log("test mode");
 
@@ -42,7 +42,10 @@ const Contact = () => {
 		<div
 			style={{ minHeight: "100vh" }}
 			className="p-6 flex flex-col justify-center items-center">
-			<div className="bg-primary border p-12 h-fit rounded-xl">
+			<div
+				className="
+				bg-primary border p-12 h-fit rounded-xl
+				lg:w-1/2">
 				<form
 					ref={form}
 					onSubmit={sendEmail}
@@ -51,7 +54,7 @@ const Contact = () => {
 					<input
 						type="text"
 						name="user_name"
-						className="rounded p-1"
+						className="rounded p-1 w-full max-w-screen-lg"
 						required
 						ref={nameInput}
 					/>
@@ -59,7 +62,7 @@ const Contact = () => {
 					<input
 						type="email"
 						name="user_email"
-						className="rounded p-1"
+						className="rounded p-1 w-full"
 						required
 						ref={emailInput}
 					/>
@@ -67,7 +70,7 @@ const Contact = () => {
 					<textarea
 						name="message"
 						rows="6"
-						className="rounded p-1"
+						className="rounded p-1 w-full"
 						required
 						ref={messageInput}
 					/>
