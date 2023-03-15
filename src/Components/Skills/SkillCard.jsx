@@ -7,10 +7,11 @@ const SkillCard = (props) => {
 	return (
 		<motion.div
 			layout
+			initial={{ scale: 1, border: "none" }}
+			whileHover={{ scale: 1.04 }}
 			onClick={() => setIsExtended(!isExtended)}
-			style={{ cursor: "pointer" }}
 			className="
-			text-secondary border-1 mx-2 mt-8 py-8 rounded-xl flex flex-col w-60 justify-center
+			text-secondary cursor-pointer mx-2 mt-8 py-8 rounded-xl flex flex-col w-60 justify-center
 			md:mx-6 md:my-0 md:h-fit md:w-1/3 
 			required:h-1/3 
 			">
