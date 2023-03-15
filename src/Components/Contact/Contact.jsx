@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
-
+import { AiFillLinkedin as Linkedin } from "react-icons/ai";
+import { AiFillGithub as Github } from "react-icons/ai";
+import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 const Contact = () => {
 	const form = useRef();
@@ -45,17 +47,23 @@ const Contact = () => {
 			className="p-6 flex flex-col justify-center items-center">
 			For business inquiries, please contact me at{" "}
 			<strong>
-				<a href="mailto:m.corbinevans@gmail.com" className="block">
+				<motion.a
+					initial={{ scale: 1 }}
+					whileHover={{ scale: 1.02, transition: { type: "spring" } }}
+					href="mailto:m.corbinevans@gmail.com"
+					className="block">
 					m.corbinevans@gmail.com
-				</a>
+				</motion.a>
 			</strong>
 			Or fill out the form below:
 			<br />
 			<br />
 			<div
 				className="
-				bg-primary border p-12 h-fit rounded-xl
-				lg:w-1/2">
+				bg-primary p-12 h-fit rounded-xl
+				md:w-[400px]
+				lg:w-[600px]
+				xl:w-[800px]">
 				<form
 					ref={form}
 					onSubmit={sendEmail}
@@ -96,6 +104,31 @@ const Contact = () => {
 						/>
 					)}
 				</form>
+			</div>
+			<br />
+			<p className="px-6 text-center">
+				Connect with me on Linkedin or follow my current and future projects on
+				Github:
+			</p>
+			<div className="flex flex-row my-4">
+				<motion.a
+					initial={{ scale: 1, y: 0 }}
+					whileHover={{ scale: 1.1, y: -2 }}
+					transition={{ type: "spring" }}
+					target="_blank"
+					href="https://Linkedin.com"
+					rel="noreferrer">
+					<Linkedin size="1.5em" />
+				</motion.a>
+				<motion.a
+					initial={{ scale: 1, y: 0 }}
+					whileHover={{ scale: 1.1, y: -2 }}
+					transition={{ type: "spring" }}
+					target="_blank"
+					href="https://github.com"
+					rel="noreferrer">
+					<Github size="1.5em" className="mx-3" />
+				</motion.a>
 			</div>
 		</div>
 	);

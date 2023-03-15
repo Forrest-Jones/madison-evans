@@ -160,9 +160,28 @@ const Experience = () => {
 						Phoenix, AZ
 					</h4>
 					<ul className="text-primary mt-4">
-						<li>- Intel Item</li>
-						<li>- Intel Item</li>
-						<li>- Intel Item </li>
+						<li>
+							- Worked as a development engineer within Intel Module Repair
+							group, designing manufacturable solutions for improving the
+							quality and ergonomic conditions of technicians and the accuracy
+							of tools.
+							<li>
+								- Moved on to a mechanical design engineer role, designing,
+								prototyping, and launching products for other engineers on the
+								manufacturing side of things, using Solidworks and occasionally
+								python and data analysis tools.
+							</li>
+							<li>
+								- Functioned as an onsite engineering consultant, managing
+								vendor relations and making cost decisions while taking on
+								projects from conception to production.
+							</li>
+							<li>
+								Contributed to the goal of saving Intel money by providing
+								cheaper and more impactful solutions for other internal
+								engineering groups.
+							</li>
+						</li>
 					</ul>
 				</VerticalTimelineElement>
 				{/* OMSCS */}
@@ -183,9 +202,30 @@ const Experience = () => {
 						Atlanta, GA
 					</h4>
 					<ul className="text-primary mt-4">
-						<li>- OMSCS item</li>
-						<li>- OMSCS item</li>
-						<li>- OMSCS item</li>
+						<li>
+							- Completed a Human Computer Interaction course, learning about
+							UX/UI, designing products for human interaction, and core
+							principles of interface design.
+						</li>
+						<li>
+							- Took a challenging Machine Learning course, covering supervised
+							learning, deep learning, reinforcement learning, unsupervised
+							learning, and utilizing libraries such as scikit learn, numpy,
+							matplotlib, and tensorflow through research papers and labs
+							executed in Python.
+						</li>
+						<li>
+							- Learned core fundamental software engineering concepts such as
+							SOLID principles, creating UML class diagrams, clean code,
+							collaboration via Github, and design patterns for cleaner and more
+							scalable architecture in a Software Design course.
+						</li>
+						<li>
+							- Contributed front-end functionality in a group project using
+							Android Studio in a Java course. Created a job comparison app that
+							allows users to compare job offers in terms of salary, location,
+							and experience level.
+						</li>
 					</ul>
 				</VerticalTimelineElement>
 				{/* Flatiron */}
@@ -205,9 +245,22 @@ const Experience = () => {
 						Phoenix, AZ
 					</h4>
 					<ul className="text-primary mt-4">
-						<li>- Flatiron item</li>
-						<li>- Flatiron item</li>
-						<li>- Flatiron item</li>
+						<li>
+							- Completed a full-stack web development program that covered a
+							range of programming languages and frameworks, including
+							Javascript, HTML, CSS, React JS, Python, SQLAlchemy, and Flask.
+							<li>
+								- Gained experience working on several group projects, which
+								helped to build skills in collaboration, communication, and
+								project management.
+							</li>
+							<li>
+								- Benefited from the support and resources provided by Flatiron
+								School, including career coaching, networking opportunities, and
+								job placement assistance, which will be valuable as you prepare
+								to transition to a career in software engineering.
+							</li>
+						</li>
 					</ul>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement

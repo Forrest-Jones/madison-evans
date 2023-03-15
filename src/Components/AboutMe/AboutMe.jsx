@@ -1,4 +1,3 @@
-// import profilePic from "../../assets/images/sample-image.jpeg";
 import { AiFillLinkedin as Linkedin } from "react-icons/ai";
 import { AiFillGithub as Github } from "react-icons/ai";
 import { motion } from "framer-motion";

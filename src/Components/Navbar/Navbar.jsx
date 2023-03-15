@@ -102,10 +102,6 @@ const Navbar = () => {
 				className={`${
 					isMobileMenuOpen ? "block" : "hidden"
 				} md:flex-grow md:flex md:flex-col md:justify-start md:items-stretch md:min-h-screen`}>
-				{/* Logo container */}
-				<div className="flex-shrink-0 p-2">
-					<h1 className="text-lg font-medium text-white">Logo</h1>
-				</div>
 				{NavLinkContainer()}
 			</div>
 		</nav>
