@@ -40,6 +40,7 @@ const Contact = () => {
 
 	return (
 		<div
+			id="contact"
 			style={{ minHeight: "100vh" }}
 			className="p-6 flex flex-col justify-center items-center">
 			<div
