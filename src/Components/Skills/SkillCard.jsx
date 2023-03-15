@@ -16,6 +16,7 @@ const SkillCard = (props) => {
 			required:h-1/3 
 			">
 			<motion.div
+				transition={{ type: "spring", damping: 20, stiffness: 80 }}
 				layout
 				className="
 				flex flex-row items-center justify-center w-full
@@ -30,13 +31,18 @@ const SkillCard = (props) => {
 					mx-auto h-32 w-32 
 					md:w-full"
 					/>
-					<motion.h2 layout className="text-center text-lg font-semibold">
+					<motion.h2
+						transition={{ type: "spring" }}
+						layout
+						className="text-center text-lg font-semibold">
 						{title}
 					</motion.h2>
 				</motion.div>
 
 				{isExtended && (
-					<motion.ul className="w-fit px-6 flex flex-col">
+					<motion.ul
+						transition={{ type: "spring" }}
+						className="w-fit px-6 flex flex-col">
 						{content.map((content, id) => {
 							return (
 								<motion.li

@@ -13,7 +13,7 @@ const Experience = () => {
 		<div
 			id="experience"
 			style={{ height: "fit-content" }}
-			className="bg-transparent">
+			className="bg-transparent w-screen">
 			<VerticalTimeline>
 				{/* GT Undergrad */}
 				<VerticalTimelineElement
