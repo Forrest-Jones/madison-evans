@@ -13,11 +13,11 @@ const Experience = () => {
 		<div
 			id="experience"
 			style={{ height: "fit-content" }}
-			className="bg-transparent w-screen">
+			className="bg-transparent w-screen overscroll-x-none">
 			<VerticalTimeline>
 				{/* GT Undergrad */}
 				<VerticalTimelineElement
-					className="vertical-timeline-element--work overscroll-x-none"
+					className="vertical-timeline-element--work "
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					contentArrowStyle={{ borderRight: "7px solid  #fff" }}
 					date="Sep 2013 - May 2018"
