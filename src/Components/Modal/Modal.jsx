@@ -16,7 +16,7 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 				<div
 					style={{ backgroundColor: "#111111", maxWidth: "50em" }}
 					className="
-					text-white relative border rounded-xl w-4/5 mx-auto h-3/5 parent
+					text-white relative border rounded-xl w-4/5 mx-auto h-3/5 parent py-12
 					md:h-4/5">
 					<button
 						onClick={toggleModal}
