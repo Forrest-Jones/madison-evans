@@ -12,8 +12,7 @@ const Experience = () => {
 	return (
 		<div
 			id="experience"
-			style={{ height: "fit-content" }}
-			className="bg-transparent w-screen overscroll-x-none">
+			className="bg-transparent overscroll-x-none h-fit w-full">
 			<VerticalTimeline>
 				{/* GT Undergrad */}
 				<VerticalTimelineElement
