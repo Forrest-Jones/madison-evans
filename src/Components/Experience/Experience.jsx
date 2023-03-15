@@ -27,13 +27,13 @@ const Experience = () => {
 						<h2>Georgia Institute of Technology</h2>
 					</strong>
 
-					<h3 className="vertical-timeline-element-title text-gray-700">
+					<h3 className="vertical-timeline-element-title text-primary">
 						Undergraduate Student
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+					<h4 className="vertical-timeline-element-subtitle text-primary">
 						Atlanta, GA
 					</h4>
-					<ul className="text-gray-700 mt-4">
+					<ul className="text-primary mt-4">
 						<li>
 							- Graduated from George W. Woodruff School of Mechanical
 							Engineering
@@ -52,13 +52,13 @@ const Experience = () => {
 						<h2>Porex</h2>
 					</strong>
 
-					<h3 className="vertical-timeline-element-title text-gray-700">
+					<h3 className="vertical-timeline-element-title text-primary">
 						Product Sustaining Intern
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+					<h4 className="vertical-timeline-element-subtitle text-primary">
 						Atlanta, GA
 					</h4>
-					<ul className="text-gray-700 mt-4">
+					<ul className="text-primary mt-4">
 						<li>
 							- Performed a Design of Experiments that resulted in improved
 							production capability of filtration parts
@@ -85,13 +85,13 @@ const Experience = () => {
 						<h2>Eaton Corporation</h2>
 					</strong>
 
-					<h3 className="vertical-timeline-element-title text-gray-700">
+					<h3 className="vertical-timeline-element-title text-primary">
 						Engineering Intern
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+					<h4 className="vertical-timeline-element-subtitle text-primary">
 						Atlanta, GA
 					</h4>
-					<ul className="text-gray-700 mt-4">
+					<ul className="text-primary mt-4">
 						<li>
 							- Contributed design modifications to a collaborative cost saving
 							project that saved nearly $1M in annual costs during internship
@@ -116,13 +116,13 @@ const Experience = () => {
 						<h2>Modif Media Inc.</h2>
 					</strong>
 
-					<h3 className="vertical-timeline-element-title text-gray-700">
+					<h3 className="vertical-timeline-element-title text-primary">
 						Co-Founder
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+					<h4 className="vertical-timeline-element-subtitle text-primary">
 						Atlanta, GA
 					</h4>
-					<ul className="text-gray-700 mt-4">
+					<ul className="text-primary mt-4">
 						<li>
 							- Co-Founded Modif Media, a video editing company, which was
 							accepted into Georgia Tech's highly competitive Create X Startup
@@ -153,13 +153,13 @@ const Experience = () => {
 						<h2>Intel</h2>
 					</strong>
 
-					<h3 className="vertical-timeline-element-title text-gray-700">
+					<h3 className="vertical-timeline-element-title text-primary">
 						Mechanical Engineer
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+					<h4 className="vertical-timeline-element-subtitle text-primary">
 						Phoenix, AZ
 					</h4>
-					<ul className="text-gray-700 mt-4">
+					<ul className="text-primary mt-4">
 						<li>- Intel Item</li>
 						<li>- Intel Item</li>
 						<li>- Intel Item </li>
@@ -176,13 +176,13 @@ const Experience = () => {
 						<h2>Georgia Institute of Technology</h2>
 					</strong>
 
-					<h3 className="vertical-timeline-element-title text-gray-700">
+					<h3 className="vertical-timeline-element-title text-primary">
 						Master of Science in Computer Science
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+					<h4 className="vertical-timeline-element-subtitle text-primary">
 						Atlanta, GA
 					</h4>
-					<ul className="text-gray-700 mt-4">
+					<ul className="text-primary mt-4">
 						<li>- OMSCS item</li>
 						<li>- OMSCS item</li>
 						<li>- OMSCS item</li>
@@ -198,13 +198,13 @@ const Experience = () => {
 						<h2>Flatiron</h2>
 					</strong>
 
-					<h3 className="vertical-timeline-element-title text-gray-700">
+					<h3 className="vertical-timeline-element-title text-primary">
 						Full-stack software engineering student
 					</h3>
-					<h4 className="vertical-timeline-element-subtitle text-gray-700">
+					<h4 className="vertical-timeline-element-subtitle text-primary">
 						Phoenix, AZ
 					</h4>
-					<ul className="text-gray-700 mt-4">
+					<ul className="text-primary mt-4">
 						<li>- Flatiron item</li>
 						<li>- Flatiron item</li>
 						<li>- Flatiron item</li>

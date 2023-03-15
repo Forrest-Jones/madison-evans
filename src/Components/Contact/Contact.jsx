@@ -1,32 +1,32 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 // TODO: DONT DELETE => import emailjs from "emailjs-com";
-
 const Contact = () => {
 	const form = useRef();
 	const nameInput = useRef();
 	const emailInput = useRef();
 	const messageInput = useRef();
+	const [sent, setSent] = useState(false);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
 
 		// TODO: Don't Delete
 		// emailjs
-		// 	.sendForm(
-		// 		"service_ptv88yz",
-		// 		"template_tkul86p",
-		// 		form.current,
-		// 		"QXbk0V9wjQFcqNmT5"
-		// 	)
-		// 	.then(
-		// 		(result) => {
-		// 			console.log(result.text);
-		// 		},
-		// 		(error) => {
-		// 			console.log(error.text);
-		// 		}
-		// 	);
+		//  .sendForm(
+		//      "service_ptv88yz",
+		//      "template_tkul86p",
+		//      form.current,
+		//      "QXbk0V9wjQFcqNmT5"
+		//  )
+		//  .then(
+		//      (result) => {
+		//          console.log(result.text);
+		//      },
+		//      (error) => {
+		//          console.log(error.text);
+		//      }
+		//  );
 
 		console.log("test mode");
 
@@ -34,13 +34,15 @@ const Contact = () => {
 		nameInput.current.value = "";
 		emailInput.current.value = "";
 		messageInput.current.value = "";
+		setSent(true);
+		setTimeout(() => setSent(false), 2000);
 	};
 
 	return (
 		<div
 			style={{ minHeight: "100vh" }}
 			className="p-6 flex flex-col justify-center items-center">
-			<div className="border p-12 h-fit rounded">
+			<div className="bg-primary border p-12 h-fit rounded-xl">
 				<form
 					ref={form}
 					onSubmit={sendEmail}
@@ -69,11 +71,17 @@ const Contact = () => {
 						required
 						ref={messageInput}
 					/>
-					<input
-						type="submit"
-						value="Send"
-						className="text-white border rounded p-1 w-full my-3 cursor-pointer hover:bg-white hover:text-black transition"
-					/>
+					{sent ? (
+						<p className="text-white my-3 p-1 border border-primary rounded">
+							Message sent
+						</p>
+					) : (
+						<input
+							type="submit"
+							value="Send"
+							className="text-white border rounded p-1 w-full my-3 cursor-pointer hover:bg-white hover:text-black transition"
+						/>
+					)}
 				</form>
 			</div>
 		</div>
