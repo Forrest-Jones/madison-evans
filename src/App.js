@@ -3,7 +3,7 @@ import AboutMe from "./Components/AboutMe/AboutMe";
 import Navbar from "./Components/Navbar/Navbar";
 import Experience from "./Components/Experience/Experience";
 import LayoutGrid from "./Components/LayoutGrid/LayoutGrid";
-import Socials from "./Components/Contact/Socials";
+import Contact from "./Components/Contact/Contact";
 import Project from "./Components/Project/Project";
 import Skills from "./Components/Skills/Skills";
 import image1 from "./assets/images/palette-pal-img.png";
@@ -86,7 +86,7 @@ function App() {
 							</ProjectGroupContainer>
 						</ModalContext.Provider>
 						{/* contact */}
-						<Socials />
+						<Contact />
 					</div>
 				}
 			/>
