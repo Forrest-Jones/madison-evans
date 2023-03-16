@@ -61,17 +61,13 @@ const Experience = () => {
 					</h4>
 					<ul className="text-primary mt-4">
 						<li>
-							- Performed a Design of Experiments that resulted in improved
-							production capability of filtration parts
+							- Conducted design-of-experiements that led to improved production
+							capabilities
 						</li>
 
 						<li>
-							- Remodeled product molds in order to make maintenance processes
-							safer and more efficient
-						</li>
-						<li>
-							- Created process flow charts and conducted time studies for
-							various tooling processes
+							- Created process flow charts and time studies for various tooling
+							processes
 						</li>
 					</ul>
 				</VerticalTimelineElement>
@@ -94,16 +90,11 @@ const Experience = () => {
 					</h4>
 					<ul className="text-primary mt-4">
 						<li>
-							- Contributed design modifications to a collaborative cost saving
-							project that saved nearly $1M in annual costs during internship
+							- Performed mechanical design modifications and collaborated in
+							cost saving projects
 						</li>
-						<li>
-							- Implemented engineering design changes to sustain product
-							manufacturability and quality
-						</li>
-						<li>
-							- Managed vendor relationships by facilitating product orders
-						</li>
+
+						<li>- Vendor/stakeholder management</li>
 					</ul>
 				</VerticalTimelineElement>
 				{/* Modif Media */}
@@ -124,19 +115,8 @@ const Experience = () => {
 						Atlanta, GA
 					</h4>
 					<ul className="text-primary mt-4">
-						<li>
-							- Co-Founded Modif Media, a video editing company, which was
-							accepted into Georgia Tech's highly competitive Create X Startup
-							Program
-						</li>
-						<li>
-							- Consulted on video editing, providing promotional video content
-							for multiple Atlanta Startups
-						</li>
-						<li>
-							- Implemented Final Cut editing software to develop several
-							promotional videos for initial phase of startup
-						</li>
+						<li>- Co-Founded Modif Media, a video editing company</li>
+
 						<li>
 							- Received investment of $20,000 from Georgia Tech’s Create X
 							program, valuing the company at $400,000
@@ -162,26 +142,12 @@ const Experience = () => {
 					</h4>
 					<ul className="text-primary mt-4">
 						<li>
-							- Worked as a development engineer within Intel Module Repair
-							group, designing manufacturable solutions for improving the
-							quality and ergonomic conditions of technicians and the accuracy
-							of tools.
-							<li>
-								- Moved on to a mechanical design engineer role, designing,
-								prototyping, and launching products for other engineers on the
-								manufacturing side of things, using Solidworks and occasionally
-								python and data analysis tools.
-							</li>
-							<li>
-								- Functioned as an onsite engineering consultant, managing
-								vendor relations and making cost decisions while taking on
-								projects from conception to production.
-							</li>
-							<li>
-								Contributed to the goal of saving Intel money by providing
-								cheaper and more impactful solutions for other internal
-								engineering groups.
-							</li>
+							- Took mechanical design projects from conception to production
+							with an emphasis on cost savings and efficiency
+						</li>
+						<li>
+							- Worked with machine shops daily, prototyping and testing the
+							production of my design projects
 						</li>
 					</ul>
 				</VerticalTimelineElement>
@@ -204,28 +170,18 @@ const Experience = () => {
 					</h4>
 					<ul className="text-primary mt-4">
 						<li>
-							- Completed a Human Computer Interaction course, learning about
-							UX/UI, designing products for human interaction, and core
-							principles of interface design.
+							- Advanced my proficiency in UX/UI, designied products for human
+							interaction, and reinforced core principles of interface design
 						</li>
 						<li>
-							- Took a challenging Machine Learning course, covering supervised
-							learning, deep learning, reinforcement learning, unsupervised
-							learning, and utilizing libraries such as scikit learn, numpy,
-							matplotlib, and tensorflow through research papers and labs
-							executed in Python.
+							- Gained hands on experience using Python to tackle problems
+							within different machine learning domains such as unsupervised,
+							supervised, reinforcement, and deep learning
 						</li>
 						<li>
-							- Learned core fundamental software engineering concepts such as
-							SOLID principles, creating UML class diagrams, clean code,
-							collaboration via Github, and design patterns for cleaner and more
-							scalable architecture in a Software Design course.
-						</li>
-						<li>
-							- Contributed front-end functionality in a group project using
-							Android Studio in a Java course. Created a job comparison app that
-							allows users to compare job offers in terms of salary, location,
-							and experience level.
+							- Reinforced my core fundamental software engineering concepts:
+							SOLID principles, UML diagrams, object oriented design patterns,
+							scalability and architecture
 						</li>
 					</ul>
 				</VerticalTimelineElement>
@@ -247,20 +203,13 @@ const Experience = () => {
 					</h4>
 					<ul className="text-primary mt-4">
 						<li>
-							- Completed a full-stack web development program that covered a
-							range of programming languages and frameworks, including
-							Javascript, HTML, CSS, React JS, Python, SQLAlchemy, and Flask.
-							<li>
-								- Gained experience working on several group projects, which
-								helped to build skills in collaboration, communication, and
-								project management.
-							</li>
-							<li>
-								- Benefited from the support and resources provided by Flatiron
-								School, including career coaching, networking opportunities, and
-								job placement assistance, which will be valuable as you prepare
-								to transition to a career in software engineering.
-							</li>
+							- Flatiron Software Engineering 2023 Cohort: Javascript, HTML,
+							CSS, React JS, Python, SQLAlchemy, and Flask
+						</li>
+						<li>
+							- Solidified industry best practices and gained extensive
+							collaboration experience on numerous group projects, each focused
+							on various parts of the stack
 						</li>
 					</ul>
 				</VerticalTimelineElement>
