@@ -8,7 +8,7 @@ const SkillCard = (props) => {
 	return (
 		<motion.div
 			layout
-			initial={{ scale: 1, border: "none" }}
+			initial={{ scale: 1 }}
 			whileHover={{ scale: 1.04 }}
 			onClick={() => setIsExtended(!isExtended)}
 			className="
@@ -23,7 +23,7 @@ const SkillCard = (props) => {
 				flex flex-row items-center justify-center w-full
 				md:flex-col">
 				<motion.div layout>
-					<motion.img
+					<img
 						layout
 						src={icon}
 						alt="icon"
@@ -33,6 +33,9 @@ const SkillCard = (props) => {
 					md:w-full"
 					/>
 					<motion.h2
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						viewport={{ once: true, amount: 1 }}
 						transition={{ type: "spring" }}
 						layout
 						className="text-center text-lg font-semibold">
@@ -43,7 +46,7 @@ const SkillCard = (props) => {
 				{isExtended && (
 					<motion.ul
 						transition={{ type: "spring" }}
-						className="w-fit px-6 flex flex-col">
+						className="w-fit px-6 flex flex-col overflow-hidden">
 						{content.map((content, id) => {
 							return (
 								<motion.li

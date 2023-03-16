@@ -7,6 +7,8 @@ import "react-vertical-timeline-component/style.min.css";
 import { TiMortarBoard as School } from "react-icons/ti";
 import { MdWorkOutline as Job } from "react-icons/md";
 import { AiFillCheckCircle as Current } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { RiFileDownloadFill as Dl } from "react-icons/ri";
 
 const Experience = () => {
 	return (
@@ -263,9 +265,21 @@ const Experience = () => {
 					</ul>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
-					iconStyle={{ background: "#4B5563", color: "#fff" }}
-					icon={<Current />}
-				/>
+					iconStyle={{ background: "#111", color: "#fff" }}
+					icon={<Current />}>
+					<h2 className="mb-6">
+						<strong>Download Resume</strong>{" "}
+					</h2>
+					<motion.div
+						className="w-fit"
+						whileHover={{
+							rotate: [10, -10, 0],
+							scale: [1, 1.1, 1],
+							transition: { duration: 0.5, type: "spring" },
+						}}>
+						<Dl size="2em" className="cursor-pointer" />
+					</motion.div>
+				</VerticalTimelineElement>
 			</VerticalTimeline>
 		</div>
 	);
