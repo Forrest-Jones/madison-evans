@@ -60,7 +60,7 @@ const Contact = () => {
 			<br />
 			<div
 				className="
-				bg-primary p-12 h-fit rounded-xl
+				bg-primary p-6 h-fit rounded-xl
 				md:w-[400px]
 				lg:w-[600px]
 				xl:w-[800px]">
@@ -93,14 +93,14 @@ const Contact = () => {
 						ref={messageInput}
 					/>
 					{sent ? (
-						<p className="text-white my-3 p-1 border border-primary rounded">
+						<p className="text-white mt-3 p-1 border border-primary rounded">
 							Message sent
 						</p>
 					) : (
 						<input
 							type="submit"
 							value="Send"
-							className="text-white border rounded p-1 w-full my-3 cursor-pointer hover:bg-white hover:text-black transition"
+							className="text-white border rounded p-1 w-full mt-3 cursor-pointer hover:bg-white hover:text-black transition "
 						/>
 					)}
 				</form>
