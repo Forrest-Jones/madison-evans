@@ -15,35 +15,19 @@ const Experience = () => {
 		<div
 			id="experience"
 			className="bg-primary overscroll-x-none h-fit w-full overscroll-none ">
-			<div className="h-screen flex items-center justify-center bg-primary">
-				<div className="h-1/2 flex flex-col justify-around px-6">
-					<motion.p
+			{/* <div className="h-60 flex items-center justify-center bg-primary">
+				<div className="h-full flex flex-col items-center justify-around px-24 ">
+					<motion.h1
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						viewport={{ once: false, amount: 1 }}
-						transition={{ type: "spring", damping: 10, stiffness: 50 }}
+						transition={{ type: "spring", duration: 1 }}
 						className="
-						text-secondary text-md py-12">
-						my story starts with mechanical engineering
-					</motion.p>
-					<motion.p
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: false, amount: 1 }}
-						transition={{ type: "spring", damping: 10, stiffness: 50 }}
-						className="text-secondary text-md py-12">
-						but then I switched to software engineering
-					</motion.p>
-					<motion.p
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1 }}
-						viewport={{ once: false, amount: 1 }}
-						transition={{ type: "spring", damping: 10, stiffness: 50 }}
-						className="text-secondary text-md py-12">
-						here's my background, or something like that idk..
-					</motion.p>
+						text-secondary text-md py-12 text-4xl">
+						Experience
+					</motion.h1>
 				</div>
-			</div>
+			</div> */}
 			<VerticalTimeline>
 				{/* GT Undergrad */}
 				<VerticalTimelineElement

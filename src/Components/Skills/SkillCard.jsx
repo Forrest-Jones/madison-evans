@@ -32,8 +32,6 @@ const SkillCard = (props) => {
 					md:w-full"
 					/>
 					<motion.h2
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1 }}
 						viewport={{ once: true, amount: 1 }}
 						transition={{ type: "spring" }}
 						layout
