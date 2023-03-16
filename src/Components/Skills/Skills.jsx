@@ -18,22 +18,29 @@ const Skills = () => {
 		<div
 			id="skills"
 			style={{ minHeight: "100vh" }}
-			className="flex pb-10 bg-terciary md:flex-row flex-col items-center w-full h-full justify-around md:justify-center">
-			<SkillCard
-				title={frontendTitle}
-				content={frontendContent}
-				icon={jsIcon}
-			/>
-			<SkillCard
-				title={backendTitle}
-				content={backendContent}
-				icon={djangoIcon}
-			/>
-			<SkillCard
-				title={fullstackTitle}
-				content={fullstackContent}
-				icon={other}
-			/>
+			className="
+			flex bg-terciary flex-col w-full justify-around items-center h-fit
+			">
+			<div
+				className="w-full flex flex-col h-fit 
+				md:flex-row
+				">
+				<SkillCard
+					title={frontendTitle}
+					content={frontendContent}
+					icon={jsIcon}
+				/>
+				<SkillCard
+					title={backendTitle}
+					content={backendContent}
+					icon={djangoIcon}
+				/>
+				<SkillCard
+					title={fullstackTitle}
+					content={fullstackContent}
+					icon={other}
+				/>
+			</div>
 		</div>
 	);
 };
