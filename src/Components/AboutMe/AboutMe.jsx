@@ -30,7 +30,7 @@ function AboutMe() {
 				</h1> */}
 
 				<p
-					className="text-sm md:text-lg text-gray-700 mt-12
+					className="text-sm md:text-lg text-gray-700 
 					lg:w-[800px]">
 					I'm a full-stack software enginer with a passion for creating
 					beautiful and functional digital experiences. I strive to create web
