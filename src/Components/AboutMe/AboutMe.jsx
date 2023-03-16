@@ -29,9 +29,9 @@ function AboutMe() {
 				</h1>
 
 				<p className="text-sm md:text-lg text-gray-700 mt-12">
-					I'm a passionate designer with a love for creating beautiful and
-					functional digital experiences. I have experience in user interface
-					design, user experience design, and graphic design.
+					I'm a full-stack software enginer with a passion for creating
+					beautiful and functional digital experiences. I strive to create web
+					applications that not only look great but also perform flawlessly
 				</p>
 				<div className="flex flex-row w-full mt-10">
 					<motion.a
