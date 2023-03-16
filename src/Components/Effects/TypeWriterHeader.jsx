@@ -7,7 +7,7 @@ const TypeWriterHeader = ({ text }) => {
 				textStyle={{
 					color: "#101923",
 					fontWeight: 700,
-					fontSize: "6em",
+					fontSize: "4.5em",
 				}}
 				startDelay={10}
 				cursorColor="#101923"
