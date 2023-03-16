@@ -19,6 +19,7 @@
 		"react-player": "^2.12.0",
 		"react-scripts": "5.0.1",
 		"react-scroll": "^1.8.9",
+		"react-typewriter-effect": "^1.1.0",
 		"react-use-measure": "^2.1.1",
 		"react-vertical-timeline-component": "^3.6.0",
 		"serve": "^14.2.0",

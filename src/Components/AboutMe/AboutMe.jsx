@@ -1,6 +1,6 @@
 import { AiFillLinkedin as Linkedin } from "react-icons/ai";
 import { AiFillGithub as Github } from "react-icons/ai";
-
+import TypeWriterHeader from "../Effects/TypeWriterHeader";
 import { motion } from "framer-motion";
 function AboutMe() {
 	return (
@@ -22,11 +22,12 @@ function AboutMe() {
 				<h1 className="text-2xl md:text-3xl font-bold mb-2 text-left ">
 					Hi, I'm
 				</h1>
-				<h1
+				<TypeWriterHeader text={"Madison"} />
+				{/* <h1
 					className="display-title
 					text-7xl md:text-8xl font-bold mb-2 text-left ">
 					Madison
-				</h1>
+				</h1> */}
 
 				<p
 					className="text-sm md:text-lg text-gray-700 mt-12

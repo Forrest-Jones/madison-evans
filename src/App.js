@@ -30,7 +30,6 @@ const project2Content = {
 	title: "Blue Cloud Music",
 	description: `"Blue Cloud Music" is a personal music website that I created using React and Django. As an artist, producer, and audio engineer with over a decade of experience, I am incredibly proud of this project, which showcases my music and creative abilities. The site features captivating animations, UI, and other design principles that I poured my heart into during the development process. Through this site, I am able to connect with my fans and share my music with the world. In addition, I plan to sell sample packs and plugins that I'm currently working on. "Blue Cloud Music" is a creative venture that allows me to express myself musically and share my passion with others.`,
 	video: blueCloudVid,
-	// [ ] update this github link
 	githubLink: "https://github.com/MadisonEvans94/",
 	siteLink: "https://bluecloudmusic.herokuapp.com",
 };
