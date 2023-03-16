@@ -14,12 +14,34 @@ const Experience = () => {
 	return (
 		<div
 			id="experience"
-			className="bg-transparent overscroll-x-none h-fit w-full overscroll-none">
-			<div className="h-screen flex">
-				<div className="mx-auto my-auto">
-					<p>My story starts with mechanical engineering</p>
-					<p>but then I switched to software engineering</p>
-					<p>Here's my background, or something like that idk..</p>
+			className="bg-primary overscroll-x-none h-fit w-full overscroll-none ">
+			<div className="h-screen flex items-center justify-center bg-primary">
+				<div className="h-1/2 flex flex-col justify-around px-6">
+					<motion.p
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						viewport={{ once: false, amount: 1 }}
+						transition={{ type: "spring", damping: 10, stiffness: 50 }}
+						className="
+						text-secondary text-md py-12">
+						my story starts with mechanical engineering
+					</motion.p>
+					<motion.p
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						viewport={{ once: false, amount: 1 }}
+						transition={{ type: "spring", damping: 10, stiffness: 50 }}
+						className="text-secondary text-md py-12">
+						but then I switched to software engineering
+					</motion.p>
+					<motion.p
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						viewport={{ once: false, amount: 1 }}
+						transition={{ type: "spring", damping: 10, stiffness: 50 }}
+						className="text-secondary text-md py-12">
+						here's my background, or something like that idk..
+					</motion.p>
 				</div>
 			</div>
 			<VerticalTimeline>
@@ -230,9 +252,9 @@ const Experience = () => {
 						className="w-fit"
 						initial={{ rotate: 0 }}
 						whileHover={{
-							rotate: [5, -5, 0],
+							rotate: [5, -5, 5, -5, 5, 0],
 							scale: [1, 1.05, 1],
-							transition: { duration: 0.5, type: "spring" },
+							transition: { duration: 1, type: "spring" },
 						}}>
 						<Dl size="2em" className="cursor-pointer" />
 					</motion.div>
