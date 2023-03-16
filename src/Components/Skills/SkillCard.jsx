@@ -9,10 +9,9 @@ const SkillCard = (props) => {
 		<motion.div
 			layout
 			initial={{ scale: 1 }}
-			whileHover={{ scale: 1.04 }}
 			onClick={() => setIsExtended(!isExtended)}
 			className="
-			text-secondary cursor-pointer mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items center justify-center
+			text-primary cursor-pointer mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items center justify-center
 			md:mx-6 md:my-0 md:h-fit md:w-1/3 
 			required:h-1/3 
 			">
@@ -28,7 +27,7 @@ const SkillCard = (props) => {
 						src={icon}
 						alt="icon"
 						className="
-					text-secondary
+					text-primary
 					mx-auto h-32 w-32 
 					md:w-full"
 					/>
@@ -43,25 +42,27 @@ const SkillCard = (props) => {
 					</motion.h2>
 				</motion.div>
 
-				{isExtended && (
-					<motion.ul
-						transition={{ type: "spring" }}
-						className="w-fit px-6 flex flex-col overflow-hidden">
-						{content.map((content, id) => {
-							return (
-								<motion.li
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-									transition={{ delay: 0.1 }}
-									layout
-									key={id}
-									className="text-lg text-center">
-									{content}
-								</motion.li>
-							);
-						})}
-					</motion.ul>
-				)}
+				<motion.ul
+					initial={{ opacity: 0, y: 30 }}
+					whileInView={{
+						opacity: 1,
+						y: 0,
+						transition: { delay: 0.5, duration: 1 },
+					}}
+					viewport={{ amount: 1 }}
+					transition={{ type: "spring" }}
+					className="w-fit px-6 flex flex-col overflow-hidden my-3">
+					{content.map((content, id) => {
+						return (
+							<motion.li
+								layout
+								key={id}
+								className="text-center text-sm text-primary">
+								{content}
+							</motion.li>
+						);
+					})}
+				</motion.ul>
 			</motion.div>
 		</motion.div>
 	);

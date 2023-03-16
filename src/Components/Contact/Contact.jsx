@@ -46,7 +46,7 @@ const Contact = () => {
 			style={{ minHeight: "100vh" }}
 			className="
 			p-6 flex flex-col items-center
-			md:justify-center">
+			md:justify-center bg-terciary">
 			For business inquiries, please contact me at{" "}
 			<strong>
 				<a href="mailto:m.corbinevans@gmail.com" className="block">

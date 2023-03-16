@@ -14,7 +14,7 @@ const Skills = () => {
 		<div
 			id="skills"
 			style={{ minHeight: "100vh" }}
-			className="flex pb-10 bg-primary md:flex-row flex-col items-center w-full h-full justify-around md:justify-center">
+			className="flex pb-10 bg-terciary md:flex-row flex-col items-center w-full h-full justify-around md:justify-center">
 			<SkillCard
 				title={frontendTitle}
 				content={frontendContent}
