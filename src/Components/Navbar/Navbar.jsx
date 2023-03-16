@@ -7,49 +7,59 @@ const Navbar = () => {
 
 	// Container that holds the links in the navbar
 	function NavLinkContainer() {
+		const handleClickScroll = (event) => {
+			event.preventDefault();
+			const id = event.target.getAttribute("href").substring(1);
+			const element = document.getElementById(id);
+			if (element) {
+				element.scrollIntoView({ behavior: "smooth" });
+			}
+			setIsMobileMenuOpen(false);
+		};
+
 		return (
-			<div className="flex-grow md:flex md:flex-col md:overflow-y-auto">
+			<motion.div className="flex-grow md:flex md:flex-col md:overflow-y-auto">
 				<motion.a
 					initial={{ x: 0 }}
-					whileHover={{ x: 10 }}
-					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					whileHover={{ x: 5, transition: { type: "spring" } }}
 					href="#about-me"
-					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+					onClick={handleClickScroll}>
 					About Me
 				</motion.a>
 				<motion.a
 					initial={{ x: 0 }}
-					whileHover={{ x: 10 }}
-					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					whileHover={{ x: 5, transition: { type: "spring" } }}
 					href="#skills"
-					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+					onClick={handleClickScroll}>
 					Skills
 				</motion.a>
 				<motion.a
 					initial={{ x: 0 }}
-					whileHover={{ x: 10 }}
-					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					whileHover={{ x: 5, transition: { type: "spring" } }}
 					href="#experience"
-					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+					onClick={handleClickScroll}>
 					Experience
 				</motion.a>
 				<motion.a
 					initial={{ x: 0 }}
-					whileHover={{ x: 10 }}
-					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					whileHover={{ x: 5, transition: { type: "spring" } }}
 					href="#projects"
-					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+					onClick={handleClickScroll}>
 					Projects
 				</motion.a>
 				<motion.a
 					initial={{ x: 0 }}
-					whileHover={{ x: 10 }}
-					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+					whileHover={{ x: 5, transition: { type: "spring" } }}
 					href="#contact"
-					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+					className="text-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+					onClick={handleClickScroll}>
 					Contact
 				</motion.a>
-			</div>
+			</motion.div>
 		);
 	}
 
