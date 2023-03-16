@@ -118,7 +118,7 @@ const Contact = () => {
 					whileHover={{ scale: 1.1, y: -2 }}
 					transition={{ type: "spring" }}
 					target="_blank"
-					href="https://Linkedin.com"
+					href="https://www.linkedin.com/in/madison-evans-98a350a3/"
 					rel="noreferrer">
 					<Linkedin size="1.5em" />
 				</motion.a>
@@ -127,7 +127,7 @@ const Contact = () => {
 					whileHover={{ scale: 1.1, y: -2 }}
 					transition={{ type: "spring" }}
 					target="_blank"
-					href="https://github.com"
+					href="https://github.com/MadisonEvans94"
 					rel="noreferrer">
 					<Github size="1.5em" className="mx-3" />
 				</motion.a>
