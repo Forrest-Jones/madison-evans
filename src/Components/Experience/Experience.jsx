@@ -51,7 +51,7 @@ const Experience = () => {
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					contentArrowStyle={{ borderRight: "7px solid  #fff" }}
 					date="Sep 2013 - May 2018"
-					iconStyle={{ background: "#4B5563", color: "#fff" }}
+					iconStyle={{ background: "#101923", color: "#fff" }}
 					icon={<School />}>
 					<strong>
 						<h2>Georgia Institute of Technology</h2>
@@ -76,7 +76,7 @@ const Experience = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="May 2015 - Aug 2015"
-					iconStyle={{ background: "#4B5563", color: "#fff" }}
+					iconStyle={{ background: "#101923", color: "#fff" }}
 					icon={<Job />}>
 					<strong>
 						<h2>Porex</h2>
@@ -105,7 +105,7 @@ const Experience = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="May 2016 - May 2017"
-					iconStyle={{ background: "#4B5563", color: "#fff" }}
+					iconStyle={{ background: "#101923", color: "#fff" }}
 					icon={<Job />}>
 					<strong>
 						<h2>Eaton Corporation</h2>
@@ -131,7 +131,7 @@ const Experience = () => {
 					className="vertical-timeline-element--work"
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="May 2016 - Aug 2017"
-					iconStyle={{ background: "#4B5563", color: "#fff" }}
+					iconStyle={{ background: "#101923", color: "#fff" }}
 					icon={<Job />}>
 					<strong>
 						<h2>Modif Media Inc.</h2>
@@ -157,7 +157,7 @@ const Experience = () => {
 					className="vertical-timeline-element--education"
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="Jun 2018 - Feb 2023"
-					iconStyle={{ background: "#4B5563", color: "#fff" }}
+					iconStyle={{ background: "#101923", color: "#fff" }}
 					icon={<Job />}>
 					<strong>
 						<h2>Intel</h2>
@@ -185,7 +185,7 @@ const Experience = () => {
 					className="vertical-timeline-element--education"
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="Sep 2022 - Present (Expected Graduation: 2024)"
-					iconStyle={{ background: "#4B5563", color: "#fff" }}
+					iconStyle={{ background: "#101923", color: "#fff" }}
 					icon={<School />}>
 					<strong>
 						<h2>Georgia Institute of Technology</h2>
@@ -218,7 +218,7 @@ const Experience = () => {
 				<VerticalTimelineElement
 					contentStyle={{ background: "#fff", color: "#fff" }}
 					date="Jan 2023 - Apr 2023"
-					iconStyle={{ background: "#4B5563", color: "#fff" }}
+					iconStyle={{ background: "#101923", color: "#fff" }}
 					icon={<School />}>
 					<strong>
 						<h2>Flatiron</h2>
