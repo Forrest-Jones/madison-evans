@@ -15,6 +15,13 @@ const Experience = () => {
 		<div
 			id="experience"
 			className="bg-transparent overscroll-x-none h-fit w-full overscroll-none">
+			<div className="h-screen flex">
+				<div className="mx-auto my-auto">
+					<p>My story starts with mechanical engineering</p>
+					<p>but then I switched to software engineering</p>
+					<p>Here's my background, or something like that idk..</p>
+				</div>
+			</div>
 			<VerticalTimeline>
 				{/* GT Undergrad */}
 				<VerticalTimelineElement
