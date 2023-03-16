@@ -14,10 +14,10 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 				fixed w-screen h-screen bg-opacity-80 flex bg-black z-10 items-center
 				">
 				<div
-					style={{ backgroundColor: "#111111", maxWidth: "50em" }}
+					style={{ backgroundColor: "#111111", maxWidth: "70em" }}
 					className="
-					text-white relative border rounded-xl w-4/5 mx-auto h-3/5 parent py-12
-					md:h-4/5">
+					text-white relative border rounded-xl w-4/5 mx-auto h-4/5 parent pt-6 
+					md:h-4/5 md:w-full md:pb-10">
 					<button
 						onClick={toggleModal}
 						className="
@@ -25,19 +25,22 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 						">
 						<CloseButton size="3em" />
 					</button>
-					<h1 className="div1 text-4xl text-center flex justify-center items-center my-6">
+					<h1
+						className="
+						div1 text-4xl text-center flex justify-center items-center 
+						md:text-6xl">
 						{modalContent.title}
 					</h1>
-					<div className="div2 py-2 h-full">
+					<div className="div2 py-2 h-full my-auto">
 						<VideoPlayer videoSource={modalContent.video} />
 					</div>
-					<p className="div3 overflow-y-auto px-10 my-3 h-full text-lg">
+					<p className="div3 overflow-y-auto px-10 my-2 h-full text-lg">
 						{modalContent.description}
 					</p>
 
 					<ul
 						className="
-						div4 flex flex-col h-full w-full justify-center px-10
+						div4 flex flex-col h-60 w-full justify-center px-10 pb-3
 						md:px-0">
 						<li className="w-full">
 							Explore the{" "}
