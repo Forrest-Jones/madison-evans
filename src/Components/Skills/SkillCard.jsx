@@ -11,7 +11,7 @@ const SkillCard = (props) => {
 			initial={{ scale: 1 }}
 			onClick={() => setIsExtended(!isExtended)}
 			className="
-			text-primary cursor-pointer mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items center justify-center
+			text-white cursor-pointer mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items center justify-center
 			md:mx-6 md:my-0 md:h-fit md:w-1/3 
 			required:h-1/3 
 			">
@@ -27,7 +27,7 @@ const SkillCard = (props) => {
 						src={icon}
 						alt="icon"
 						className="
-					text-primary
+					text-white
 					mx-auto h-32 w-32 
 					md:w-full"
 					/>
@@ -57,7 +57,7 @@ const SkillCard = (props) => {
 							<motion.li
 								layout
 								key={id}
-								className="text-center text-sm text-primary">
+								className="text-center text-sm text-white">
 								{content}
 							</motion.li>
 						);
