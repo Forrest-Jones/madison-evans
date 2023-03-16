@@ -4,6 +4,7 @@ import { useState } from "react";
 const SkillCard = (props) => {
 	const { icon, title, content } = props;
 	const [isExtended, setIsExtended] = useState(false);
+
 	return (
 		<motion.div
 			layout

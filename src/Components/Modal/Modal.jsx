@@ -14,16 +14,18 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 				fixed w-screen h-screen bg-opacity-80 flex bg-black z-10 items-center
 				">
 				<div
-					style={{ backgroundColor: "#111111", maxWidth: "70em" }}
+					style={{ backgroundColor: "#111111", maxWidth: "1280px" }}
 					className="
 					text-white relative border rounded-xl w-4/5 mx-auto h-4/5 parent pt-6 
-					md:h-4/5 md:w-full md:pb-10">
+					md:h-4/5 md:w-full md:pb-10 md:m-6 
+					xl:mx-auto">
 					<button
 						onClick={toggleModal}
 						className="
 						absolute text-white -right-10 -top-10
+						md:right-1 md:top-1
 						">
-						<CloseButton size="3em" />
+						<CloseButton size="2.5em" />
 					</button>
 					<h1
 						className="

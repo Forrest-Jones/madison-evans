@@ -44,7 +44,9 @@ const Contact = () => {
 		<div
 			id="contact"
 			style={{ minHeight: "100vh" }}
-			className="p-6 flex flex-col justify-center items-center">
+			className="
+			p-6 flex flex-col items-center
+			md:justify-center">
 			For business inquiries, please contact me at{" "}
 			<strong>
 				<motion.a
@@ -60,7 +62,7 @@ const Contact = () => {
 			<br />
 			<div
 				className="
-				bg-primary p-6 h-fit rounded-xl
+				bg-primary p-6 h-fit rounded-xl w-full
 				md:w-[400px]
 				lg:w-[600px]
 				xl:w-[800px]">
@@ -87,7 +89,7 @@ const Contact = () => {
 					<label className="w-full py-1 text-white">Message</label>
 					<textarea
 						name="message"
-						rows="6"
+						rows="5"
 						className="rounded p-1 w-full"
 						required
 						ref={messageInput}
