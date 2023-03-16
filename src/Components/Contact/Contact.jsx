@@ -49,13 +49,9 @@ const Contact = () => {
 			md:justify-center">
 			For business inquiries, please contact me at{" "}
 			<strong>
-				<motion.a
-					initial={{ scale: 1 }}
-					whileHover={{ scale: 1.02, transition: { type: "spring" } }}
-					href="mailto:m.corbinevans@gmail.com"
-					className="block">
+				<a href="mailto:m.corbinevans@gmail.com" className="block">
 					m.corbinevans@gmail.com
-				</motion.a>
+				</a>
 			</strong>
 			Or fill out the form below:
 			<br />
@@ -115,8 +111,7 @@ const Contact = () => {
 			<div className="flex flex-row my-4">
 				<motion.a
 					initial={{ scale: 1, y: 0 }}
-					whileHover={{ scale: 1.1, y: -2 }}
-					transition={{ type: "spring" }}
+					whileHover={{ scale: 1.05, y: -2 }}
 					target="_blank"
 					href="https://www.linkedin.com/in/madison-evans-98a350a3/"
 					rel="noreferrer">
@@ -124,8 +119,7 @@ const Contact = () => {
 				</motion.a>
 				<motion.a
 					initial={{ scale: 1, y: 0 }}
-					whileHover={{ scale: 1.1, y: -2 }}
-					transition={{ type: "spring" }}
+					whileHover={{ scale: 1.05, y: -2 }}
 					target="_blank"
 					href="https://github.com/MadisonEvans94"
 					rel="noreferrer">

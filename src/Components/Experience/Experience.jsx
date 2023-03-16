@@ -272,9 +272,10 @@ const Experience = () => {
 					</h2>
 					<motion.div
 						className="w-fit"
+						initial={{ rotate: 0 }}
 						whileHover={{
-							rotate: [10, -10, 0],
-							scale: [1, 1.1, 1],
+							rotate: [5, -5, 0],
+							scale: [1, 1.05, 1],
 							transition: { duration: 0.5, type: "spring" },
 						}}>
 						<Dl size="2em" className="cursor-pointer" />

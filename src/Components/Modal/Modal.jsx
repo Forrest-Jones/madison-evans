@@ -11,12 +11,12 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 		return (
 			<div
 				className="
-				fixed w-screen h-screen bg-opacity-80 flex bg-black z-10 items-center
+				fixed w-screen h-screen bg-opacity-90 flex bg-black z-10 items-center
 				">
 				<div
 					style={{ backgroundColor: "#111111", maxWidth: "1280px" }}
 					className="
-					text-white relative border rounded-xl w-4/5 mx-auto h-4/5 parent pt-6 
+					text-white relative rounded-xl w-4/5 mx-auto h-4/5 parent pt-6 
 					md:h-4/5 md:w-full md:pb-10 md:m-6 
 					xl:mx-auto">
 					<button
