@@ -42,7 +42,7 @@ const ProjectPage = ({
 }) => {
 	return (
 		<div id="projects" className="bg-white h-screen">
-			<div className="h-32 text-center py-10">
+			<div className="h-32 text-center py-6">
 				<motion.h1
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{
@@ -54,7 +54,8 @@ const ProjectPage = ({
 					style={{
 						color: "#101923",
 						fontWeight: 700,
-						fontSize: "4.5em",
+						fontSize: "4em",
+						paddingInline: ".25em",
 					}}>
 					My Projects
 				</motion.h1>

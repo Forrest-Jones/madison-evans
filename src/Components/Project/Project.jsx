@@ -19,9 +19,9 @@ function Project({ setShowModal, showModal, projectContent, image }) {
 				whileHover={{ scale: 1.05, y: -10 }}
 				transition={{ type: "spring", duration: 0.5 }}
 				className=" relative
-				my-4 w-40 h-40 mx-4 bg-center bg-cover cursor-pointer rounded-lg
-				md:h-40 md:w-40
-				lg:my-0"
+				my-4 w-32 h-32 mx-4 bg-center bg-cover cursor-pointer rounded-lg
+				md:h-32 md:w-32
+				lg:my-0 lg:h-48 lg:w-48"
 				style={{ backgroundImage: `url(${image})` }}
 				onClick={handleProjectClick}></motion.div>
 		</>
