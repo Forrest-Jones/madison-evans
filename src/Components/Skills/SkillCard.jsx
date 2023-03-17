@@ -35,7 +35,7 @@ const SkillCard = (props) => {
 					</motion.h2>
 				</motion.div>
 
-				<motion.ul
+				<ul
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{
 						opacity: 1,
@@ -55,7 +55,7 @@ const SkillCard = (props) => {
 							</motion.li>
 						);
 					})}
-				</motion.ul>
+				</ul>
 			</motion.div>
 		</motion.div>
 	);

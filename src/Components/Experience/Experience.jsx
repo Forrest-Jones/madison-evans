@@ -11,23 +11,18 @@ import { motion } from "framer-motion";
 import { RiFileDownloadFill as Dl } from "react-icons/ri";
 
 const Experience = () => {
+	function downloadResume() {
+		const link = document.createElement("a");
+		link.href = "/assets/Madison_Evans_Resume_2023.pdf";
+		link.download = "Madison_Evans_Resume_2023.pdf";
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	}
 	return (
 		<div
 			id="experience"
 			className="bg-primary overscroll-x-none h-fit w-full overscroll-none ">
-			{/* <div className="h-60 flex items-center justify-center bg-primary">
-				<div className="h-full flex flex-col items-center justify-around px-24 ">
-					<motion.h1
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: false, amount: 1 }}
-						transition={{ type: "spring", duration: 1 }}
-						className="
-						text-secondary text-md py-12 text-4xl">
-						Experience
-					</motion.h1>
-				</div>
-			</div> */}
 			<VerticalTimeline>
 				{/* GT Undergrad */}
 				<VerticalTimelineElement
@@ -183,8 +178,8 @@ const Experience = () => {
 					</h4>
 					<ul className="text-primary mt-4">
 						<li>
-							- Advanced my proficiency in UX/UI, designied products for human
-							interaction, and reinforced core principles of interface design
+							- Advanced my proficiency in UX/UI and reinforced core principles
+							of interface design
 						</li>
 						<li>
 							- Gained hands on experience using Python to tackle problems
@@ -240,7 +235,11 @@ const Experience = () => {
 							scale: [1, 1.05, 1],
 							transition: { duration: 1, type: "spring" },
 						}}>
-						<Dl size="2em" className="cursor-pointer" />
+						<Dl
+							size="2em"
+							className="cursor-pointer"
+							onClick={downloadResume}
+						/>
 					</motion.div>
 				</VerticalTimelineElement>
 			</VerticalTimeline>
@@ -249,3 +248,17 @@ const Experience = () => {
 };
 
 export default Experience;
+
+/* <div className="h-60 flex items-center justify-center bg-primary">
+				<div className="h-full flex flex-col items-center justify-around px-24 ">
+					<motion.h1
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						viewport={{ once: false, amount: 1 }}
+						transition={{ type: "spring", duration: 1 }}
+						className="
+						text-secondary text-md py-12 text-4xl">
+						Experience
+					</motion.h1>
+				</div>
+			</div> */
