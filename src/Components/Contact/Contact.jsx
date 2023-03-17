@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { AiFillLinkedin as Linkedin } from "react-icons/ai";
 import { AiFillGithub as Github } from "react-icons/ai";
+import { BsMedium as Medium } from "react-icons/bs";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 const Contact = () => {
@@ -105,8 +106,8 @@ const Contact = () => {
 			</div>
 			<br />
 			<p className="px-6 text-center">
-				Connect with me on Linkedin or follow my current and future projects on
-				Github:
+				Connect with me on Linkedin, follow my development projects on Github,
+				and subscribe to my blog:
 			</p>
 			<div className="flex flex-row my-4">
 				<motion.a
@@ -124,6 +125,14 @@ const Contact = () => {
 					href="https://github.com/MadisonEvans94"
 					rel="noreferrer">
 					<Github size="1.5em" className="mx-3" />
+				</motion.a>
+				<motion.a
+					initial={{ scale: 1, y: 0 }}
+					whileHover={{ scale: 1.05, y: -2 }}
+					target="_blank"
+					href="https://medium.com/@m.corbinevans"
+					rel="noreferrer">
+					<Medium size="1.5em" />
 				</motion.a>
 			</div>
 		</div>
