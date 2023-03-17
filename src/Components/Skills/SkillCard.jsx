@@ -27,7 +27,7 @@ const SkillCard = (props) => {
 						alt="icon"
 						className="
 					text-white
-					mx-auto h-32 w-32 
+					mx-auto h-32 w-32 mb-4
 					md:w-full"
 					/>
 					<motion.h2 layout className="text-center text-lg font-semibold">

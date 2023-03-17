@@ -8,6 +8,7 @@ import image2 from "../assets/images/blue-cloud-img.png";
 import image3 from "../assets/images/drop-the-ball-img.png";
 import Project from "../Components/Project/Project";
 import ModalContext from "../helpers/ModalContext";
+import { motion } from "framer-motion";
 // Palette Pal
 const project1Content = {
 	title: "Palette Pal",
@@ -40,7 +41,24 @@ const ProjectPage = ({
 	setShowModal,
 }) => {
 	return (
-		<>
+		<div id="projects" className="bg-white h-screen">
+			<div className="h-32 text-center py-10">
+				<motion.h1
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{
+						y: 0,
+						opacity: 1,
+						transition: { delay: 0.2, type: "spring", duration: 2 },
+					}}
+					viewport={{ amount: 1, once: true }}
+					style={{
+						color: "#101923",
+						fontWeight: 700,
+						fontSize: "4.5em",
+					}}>
+					My Projects
+				</motion.h1>
+			</div>
 			<ModalContext.Provider value={{ modalContent, setModalContent }}>
 				<ProjectGroupContainer>
 					<Project
@@ -63,7 +81,7 @@ const ProjectPage = ({
 					/>
 				</ProjectGroupContainer>
 			</ModalContext.Provider>
-		</>
+		</div>
 	);
 };
 

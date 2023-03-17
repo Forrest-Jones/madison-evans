@@ -229,11 +229,15 @@ const Experience = () => {
 					</h2>
 					<motion.div
 						className="w-fit"
-						initial={{ rotate: 0 }}
+						initial={{ rotate: 0, color: "#101923" }}
 						whileHover={{
 							rotate: [5, -5, 5, -5, 5, 0],
-							scale: [1, 1.05, 1],
+							color: "#777",
 							transition: { duration: 1, type: "spring" },
+						}}
+						whileTap={{
+							scale: 0.8,
+							transition: { type: "spring", bounce: 0.6 },
 						}}>
 						<Dl
 							size="2em"

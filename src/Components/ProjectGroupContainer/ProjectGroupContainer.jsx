@@ -2,13 +2,13 @@ import React from "react";
 
 const ProjectGroupContainer = ({ children }) => {
 	return (
-		<div
-			id="projects"
-			style={{ height: "100vh" }}
-			className="
-			w-full bg-white flex flex-col px-auto justify-center items-center
-			lg:flex-row ">
-			{children}
+		<div className="h-full">
+			<div
+				className=" h-full
+				w-full flex flex-col px-auto justify-center items-center
+				lg:flex-row ">
+				{children}
+			</div>
 		</div>
 	);
 };
