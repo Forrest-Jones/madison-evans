@@ -10,7 +10,7 @@ const SkillCard = (props) => {
 			layout
 			initial={{ scale: 1 }}
 			className="
-			text-white cursor-pointer mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items-center justify-center
+			text-white mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items-center justify-center
 			md:mx-6 md:my-0 md:h-fit md:w-1/3 
 			required:h-1/3 
 			">

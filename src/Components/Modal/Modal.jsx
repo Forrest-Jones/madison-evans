@@ -44,28 +44,33 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 						className="
 						div4 flex flex-col h-60 w-full justify-center px-10 pb-3
 						md:px-0">
-						<li className="w-full">
-							Explore the{" "}
-							<strong>
-								<a
-									href={modalContent.siteLink}
-									target="_blank"
-									rel="noreferrer">
-									<span className="text-red-500 text-xl">github repo</span>
-								</a>
-							</strong>
-						</li>
-						<li>
-							Visit the site{" "}
-							<strong>
-								<a
-									href={modalContent.siteLink}
-									target="_blank"
-									rel="noreferrer">
-									<span className="text-red-500 text-xl">here</span>
-								</a>
-							</strong>
-						</li>
+						{" "}
+						{modalContent.githubLink && (
+							<li className="w-full">
+								Explore the{" "}
+								<strong>
+									<a
+										href={modalContent.githubLink}
+										target="_blank"
+										rel="noreferrer">
+										<span className="text-red-500 text-xl">github repo</span>
+									</a>
+								</strong>
+							</li>
+						)}
+						{modalContent.siteLink && (
+							<li>
+								Visit the site{" "}
+								<strong>
+									<a
+										href={modalContent.siteLink}
+										target="_blank"
+										rel="noreferrer">
+										<span className="text-red-500 text-xl">here</span>
+									</a>
+								</strong>
+							</li>
+						)}
 					</ul>
 				</div>
 			</div>

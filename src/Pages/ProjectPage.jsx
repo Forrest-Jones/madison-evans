@@ -31,7 +31,7 @@ const project3Content = {
 	description: `"Drop The Ball" is an interactive game developed using Vanilla Javascript and HTML Canvas, featuring animation and physics simulation. The game involves dropping a ball into a virtual peg board where the ball adheres to gravity and bounces off the pegs. The physics simulation is implemented using mathematical equations to accurately simulate the ball's movement and collision with the pegs. The HTML canvas is used to render the game graphics and create the user interface. Overall, 'Drop The Ball' is a fun and engaging project that showcases the power of Vanilla Javascript and HTML Canvas for game development.`,
 	video: dropTheBallVid,
 	githubLink: "https://github.com/MadisonEvans94/phase-1-Project-1",
-	siteLink: "https://palettepal.herokuapp.com/",
+	siteLink: null,
 };
 
 const ProjectPage = ({
@@ -41,7 +41,7 @@ const ProjectPage = ({
 	setShowModal,
 }) => {
 	return (
-		<div id="projects" className="bg-white h-screen">
+		<div id="projects" className="bg-secondary h-screen">
 			<div className="h-32 text-center py-6">
 				<motion.h1
 					initial={{ opacity: 0, y: 50 }}

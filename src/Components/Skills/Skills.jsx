@@ -1,20 +1,25 @@
 import React from "react";
 import SkillCard from "./SkillCard";
 import jsIcon from "../../assets/svg/icons8-javascript-logo.svg";
-import djangoIcon from "../../assets/svg/icons8-django.svg";
-import stackIcon from "../../assets/svg/stack.svg";
+import backendIcon from "../../assets/svg/backend.svg";
+import uxuiIcon from "../../assets/svg/design.svg";
 
 const Skills = () => {
 	const frontendTitle = "Frontend";
 	const backendTitle = "Backend";
-	const fullstackTitle = "Fullstack";
+	const uxuiTitle = "UX/UI";
 	const frontendContent = ["HTML, CSS, JavaScript", "React", "UX/UI"];
 	const backendContent = [
 		"Java, Node, Python",
 		"Django",
+		"Flask",
 		"Database Management",
 	];
-	const fullstackContent = ["APIs", "Problem Solving"];
+	const uxuiContent = [
+		"HCI core concepts",
+		"Figma",
+		"Procreate, Adobe Illustrator, Blender",
+	];
 	return (
 		<div
 			id="skills"
@@ -34,13 +39,9 @@ const Skills = () => {
 				<SkillCard
 					title={backendTitle}
 					content={backendContent}
-					icon={djangoIcon}
+					icon={backendIcon}
 				/>
-				<SkillCard
-					title={fullstackTitle}
-					content={fullstackContent}
-					icon={stackIcon}
-				/>
+				<SkillCard title={uxuiTitle} content={uxuiContent} icon={uxuiIcon} />
 			</div>
 		</div>
 	);
