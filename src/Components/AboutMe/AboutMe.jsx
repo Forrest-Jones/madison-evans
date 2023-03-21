@@ -32,7 +32,7 @@ function AboutMe() {
 				<p
 					className="text-sm md:text-lg text-gray-700 
 					lg:w-[800px]">
-					I'm a full-stack software enginer with a passion for creating
+					I'm a full-stack software engineer with a passion for creating
 					beautiful and functional digital experiences. I strive to create web
 					applications that not only look great but also perform flawlessly
 				</p>
