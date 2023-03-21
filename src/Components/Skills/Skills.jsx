@@ -15,11 +15,7 @@ const Skills = () => {
 		"Flask",
 		"Database Management",
 	];
-	const uxuiContent = [
-		"HCI core concepts",
-		"Figma",
-		"Procreate, Adobe Illustrator, Blender",
-	];
+	const uxuiContent = ["HCI core concepts", "Figma", "Procreate, Blender"];
 	return (
 		<div
 			id="skills"
