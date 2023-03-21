@@ -9,16 +9,19 @@ import { MdWorkOutline as Job } from "react-icons/md";
 import { AiFillCheckCircle as Current } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { RiFileDownloadFill as Dl } from "react-icons/ri";
+const resume = require("../../assets/Madison_Evans_Resume_2023.pdf").default;
 
 const Experience = () => {
-	function downloadResume() {
+	const downloadResume = () => {
+		console.log(resume);
 		const link = document.createElement("a");
-		link.href = "/assets/Madison_Evans_Resume_2023.pdf";
-		link.download = "Madison_Evans_Resume_2023.pdf";
+		link.href = resume;
+		link.download = "Madison_Evans_Resume.pdf";
 		document.body.appendChild(link);
 		link.click();
 		document.body.removeChild(link);
-	}
+	};
+
 	return (
 		<div
 			id="experience"
@@ -221,7 +224,7 @@ const Experience = () => {
 						</li>
 					</ul>
 				</VerticalTimelineElement>
-				<VerticalTimelineElement
+				{/* <VerticalTimelineElement
 					iconStyle={{ background: "#111", color: "#fff" }}
 					icon={<Current />}>
 					<h2 className="mb-6">
@@ -245,7 +248,7 @@ const Experience = () => {
 							onClick={downloadResume}
 						/>
 					</motion.div>
-				</VerticalTimelineElement>
+				</VerticalTimelineElement> */}
 			</VerticalTimeline>
 		</div>
 	);
