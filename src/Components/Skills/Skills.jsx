@@ -21,7 +21,7 @@ const Skills = () => {
 			id="skills"
 			style={{ minHeight: "100vh" }}
 			className="
-			flex flex-col w-full justify-around items-center h-fit
+			border border-pink-400 flex flex-col w-full justify-around items-center h-fit
 			">
 			<div
 				className="w-full flex flex-col h-fit 

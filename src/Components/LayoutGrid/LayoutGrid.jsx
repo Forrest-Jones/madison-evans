@@ -4,10 +4,10 @@ function LayoutGrid({ children }) {
 	const navStyling =
 		"w-full h-28 md:h-full md:w-40 fixed flex flex-col justify-center h-full";
 
-	const contentStyling = "md:pl-40";
+	const contentStyling = "md:pl-40 w-full";
 
 	const containerStyling =
-		"fixed h-screen w-screen overflow-hidden overscroll-none md:h-full overflow-y-scroll overflow-x-hidden overscroll-x-hidden flex flex-col md:flex-row";
+		"fixed h-screen w-full overflow-hidden overscroll-none md:h-full overflow-y-scroll overflow-x-hidden overscroll-x-hidden flex flex-col md:flex-row";
 
 	return (
 		<div className={containerStyling}>
