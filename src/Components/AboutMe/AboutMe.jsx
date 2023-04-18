@@ -12,7 +12,6 @@ function AboutMe() {
 		</div>
 	);
 
-	// introduction
 	function Introduction() {
 		return (
 			<div
@@ -23,11 +22,6 @@ function AboutMe() {
 					Hi, I'm
 				</h1>
 				<TypeWriterHeader text={"Madison"} />
-				{/* <h1
-					className="display-title
-					text-7xl md:text-8xl font-bold mb-2 text-left ">
-					Madison
-				</h1> */}
 
 				<p
 					className="text-sm md:text-lg text-gray-700 
@@ -60,20 +54,6 @@ function AboutMe() {
 			</div>
 		);
 	}
-
-	// // Profile Pic
-	// function ProfilePic() {
-	// 	return (
-	// 		<div className="md:w-1/2 w-full ">
-	// 			<img
-	// 				src={profilePic}
-	// 				alt="Madison Profile"
-	// 				style={{ objectFit: "cover", maxHeight: "34em", width: "100%" }}
-	// 				className="md:h-3/6"
-	// 			/>
-	// 		</div>
-	// 	);
-	// }
 }
 
 export default AboutMe;
