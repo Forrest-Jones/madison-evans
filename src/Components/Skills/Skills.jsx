@@ -21,11 +21,11 @@ const Skills = () => {
 			id="skills"
 			style={{ minHeight: "100vh" }}
 			className="
-			border border-pink-400 flex flex-col w-full justify-around items-center h-fit
+			flex flex-col w-full justify-around items-center h-fit
 			">
 			<div
 				className="w-full flex flex-col h-fit 
-				md:flex-row
+				md:flex-row justify-center
 				">
 				<SkillCard
 					title={frontendTitle}
