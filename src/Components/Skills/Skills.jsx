@@ -25,7 +25,7 @@ const Skills = () => {
 			">
 			<div
 				className="w-full flex flex-col h-fit 
-				md:flex-row justify-center
+				md:flex-row justify-center px-12
 				">
 				<SkillCard
 					title={frontendTitle}
