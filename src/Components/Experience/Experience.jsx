@@ -6,9 +6,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { TiMortarBoard as School } from "react-icons/ti";
 import { MdWorkOutline as Job } from "react-icons/md";
-import { AiFillCheckCircle as Current } from "react-icons/ai";
-import { motion } from "framer-motion";
-import { RiFileDownloadFill as Dl } from "react-icons/ri";
 const resume = require("../../assets/Madison_Evans_Resume_2023.pdf").default;
 
 const Experience = () => {
@@ -25,7 +22,7 @@ const Experience = () => {
 	return (
 		<div
 			id="experience"
-			className="bg-primary overscroll-x-none h-fit w-full overscroll-none ">
+			className="overscroll-x-none h-fit w-full overscroll-none ">
 			<VerticalTimeline>
 				{/* GT Undergrad */}
 				<VerticalTimelineElement
@@ -255,17 +252,3 @@ const Experience = () => {
 };
 
 export default Experience;
-
-/* <div className="h-60 flex items-center justify-center bg-primary">
-				<div className="h-full flex flex-col items-center justify-around px-24 ">
-					<motion.h1
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: false, amount: 1 }}
-						transition={{ type: "spring", duration: 1 }}
-						className="
-						text-secondary text-md py-12 text-4xl">
-						Experience
-					</motion.h1>
-				</div>
-			</div> */

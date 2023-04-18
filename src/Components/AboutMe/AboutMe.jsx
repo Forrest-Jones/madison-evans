@@ -7,7 +7,7 @@ function AboutMe() {
 		<div
 			style={{ height: "100vh" }}
 			id="about-me"
-			className="bg-white flex flex-col items-center justify-start md:flex-row md:py-24 md:px-4">
+			className="flex flex-col items-center justify-start md:flex-row md:py-24 md:px-4">
 			{Introduction()}
 		</div>
 	);
