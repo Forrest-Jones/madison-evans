@@ -21,7 +21,7 @@ const Navbar = () => {
 				className={`${
 					isMobileMenuOpen ? "block" : "hidden"
 				} md:flex-grow md:flex md:flex-col md:justify-start md:items-stretch md:min-h-screen`}>
-				<motion.div className="flex-grow md:flex md:flex-col md:overflow-y-auto">
+				<motion.div className="flex-grow justify-center md:flex md:flex-col md:overflow-y-auto">
 					<motion.a
 						initial={{ x: 0 }}
 						whileHover={{ x: 5, transition: { type: "spring" } }}
