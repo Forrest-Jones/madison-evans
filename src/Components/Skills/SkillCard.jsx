@@ -10,7 +10,7 @@ const SkillCard = (props) => {
 			layout
 			initial={{ scale: 1 }}
 			className="
-			shadow-[20px_20px_0_0_rgba(0,0,0,0.3)] border text-info mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items-center justify-center max-w-[300px]
+			shadow-[20px_20px_0_0_rgba(0,0,0,0.3)] border text-info mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items-center justify-start max-w-[300px]
 			md:mx-6 md:my-0 md:w-1/3 
 			required:h-1/3 
 			">
@@ -21,19 +21,10 @@ const SkillCard = (props) => {
 				flex flex-row items-center justify-center w-full 
 				md:flex-col">
 				<motion.div layout>
-					{/* <img
-						layout
-						src={icon}
-						alt="icon"
-						className="
-						text-info 
-					mx-auto h-32 w-32 mb-4
-					md:w-full"
-					/> */}
-					<Frontend className="text-accent w-36 h-36" />
+					<Frontend className="text-accent w-24 h-24 lg:w-36 lg:h-36" />
 					<motion.h2
 						layout
-						className="text-center text-lg font-semibold text-info ">
+						className="text-center text-lg lg:text-lg font-semibold text-info ">
 						{title}
 					</motion.h2>
 				</motion.div>
@@ -53,7 +44,7 @@ const SkillCard = (props) => {
 							<motion.li
 								layout
 								key={id}
-								className="text-center text-sm text-secondary ">
+								className="text-center text-xs lg:text-sm text-secondary ">
 								{content}
 							</motion.li>
 						);
