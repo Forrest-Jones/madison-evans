@@ -26,7 +26,7 @@ const Navbar = () => {
 						initial={{ x: 0 }}
 						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#about-me"
-						className="text-primary hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
 						onClick={handleClickScroll}>
 						About Me
 					</motion.a>
@@ -34,7 +34,7 @@ const Navbar = () => {
 						initial={{ x: 0 }}
 						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#skills"
-						className="text-primary hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
 						onClick={handleClickScroll}>
 						Skills
 					</motion.a>
@@ -42,7 +42,7 @@ const Navbar = () => {
 						initial={{ x: 0 }}
 						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#experience"
-						className="text-primary hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
 						onClick={handleClickScroll}>
 						Experience
 					</motion.a>
@@ -50,7 +50,7 @@ const Navbar = () => {
 						initial={{ x: 0 }}
 						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#projects"
-						className="text-primary hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
 						onClick={handleClickScroll}>
 						Projects
 					</motion.a>
@@ -58,7 +58,7 @@ const Navbar = () => {
 						initial={{ x: 0 }}
 						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#contact"
-						className="text-primary hover:text-primary block px-3 py-2 rounded-md text-base font-medium"
+						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
 						onClick={handleClickScroll}>
 						Contact
 					</motion.a>
