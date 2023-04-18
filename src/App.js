@@ -21,28 +21,21 @@ function App() {
 				setShowModal={setShowModal}
 				modalContent={modalContent}
 			/>
-			<LayoutGrid
-				nav={<Navbar />}
-				content={
-					<div className="flex-col w-full">
-						{/* about me section */}
-						<AboutMe />
-						{/* Skills */}
-						<Skills />
-						{/* experience section */}
-						<Experience />
-						{/* Projects section */}
-						<ProjectPage
-							modalContent={modalContent}
-							setModalContent={setModalContent}
-							showModal={showModal}
-							setShowModal={setShowModal}
-						/>
-						{/* contact */}
-						<Contact />
-					</div>
-				}
-			/>
+			<LayoutGrid>
+				<Navbar />
+				<div className="flex-col w-full">
+					<AboutMe />
+					<Skills />
+					<Experience />
+					<ProjectPage
+						modalContent={modalContent}
+						setModalContent={setModalContent}
+						showModal={showModal}
+						setShowModal={setShowModal}
+					/>
+					<Contact />
+				</div>
+			</LayoutGrid>
 		</div>
 	);
 }
