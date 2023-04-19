@@ -46,7 +46,7 @@ const Contact = () => {
 			id="contact"
 			style={{ minHeight: "100vh" }}
 			className="
-			p-6 flex flex-col items-center
+			bg-primary p-6 flex flex-col items-center
 			md:justify-center">
 			For business inquiries, please contact me at{" "}
 			<strong>

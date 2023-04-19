@@ -41,8 +41,8 @@ const ProjectPage = ({
 	setShowModal,
 }) => {
 	return (
-		<div id="projects" className="h-screen">
-			<div className="h-32 text-center py-6">
+		<div id="projects" className="h-screen bg-primary">
+			<div className="h-32 text-center py-6 ">
 				<motion.h1
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{

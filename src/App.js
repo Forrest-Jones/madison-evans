@@ -15,7 +15,7 @@ function App() {
 	const [showModal, setShowModal] = useState(false);
 	const [modalContent, setModalContent] = useState(null);
 	return (
-		<div className="h-full App">
+		<div className="h-full">
 			<Modal
 				showModal={showModal}
 				setShowModal={setShowModal}

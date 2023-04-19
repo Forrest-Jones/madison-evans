@@ -106,7 +106,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav className="flex flex-shrink-0 p-4 w-full">
+		<nav className="flex flex-shrink-0 p-4 w-full bg-primary">
 			<HamburgerButton />
 			<NavLinkContainer />
 		</nav>
