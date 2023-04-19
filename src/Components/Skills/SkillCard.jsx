@@ -12,28 +12,23 @@ const SkillCard = (props) => {
 
 	return (
 		<motion.div
-			layout
 			initial={{ scale: 1 }}
 			onClick={toggleBoxShadow}
 			className={`${
 				boxShadowActive
-					? "shadow-[20px_20px_0_0_rgba(0,0,0,.3)]"
-					: "shadow-[0px_0px_0_0_rgba(0,0,0,.3)]"
+					? "shadow-[20px_20px_0_0_rgba(0,0,0,.3)] absolute w-4/6"
+					: "shadow-[0px_0px_0_0_rgba(0,0,0,.3)] md:w-48 lg:w-60 xl:80"
 			}
-        	border border-secondary text-info mx-2 mt-8 w-full py-8 rounded-xl flex flex-col items-center justify-start max-w-[300px] required:h-1/3 transition
-        	md:mx-6 md:my-0 md:w-1/3 
+        	cursor-pointer border bg-primary border-secondary text-info mt-8 py-8 rounded-xl flex flex-col items-center justify-start required:h-1/3 transition md:mx-4 md:my-0 hover:shadow-[20px_20px_0_0_rgba(0,0,0,.3)]
         `}>
 			<motion.div
 				transition={{ type: "spring", damping: 20, stiffness: 80 }}
-				layout
 				className="
           flex flex-row items-center justify-center w-full 
           md:flex-col">
-				<motion.div layout>
+				<motion.div>
 					<Frontend className="text-accent w-24 h-24 lg:w-36 lg:h-36" />
-					<motion.h2
-						layout
-						className="text-center text-lg lg:text-lg font-semibold text-info font-display">
+					<motion.h2 className="text-center text-lg lg:text-lg font-semibold text-info font-display">
 						{title}
 					</motion.h2>
 				</motion.div>
@@ -51,7 +46,6 @@ const SkillCard = (props) => {
 					{content.map((content, id) => {
 						return (
 							<motion.li
-								layout
 								key={id}
 								className="text-center text-xs lg:text-sm text-secondary ">
 								{content}
