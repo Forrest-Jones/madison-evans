@@ -50,7 +50,7 @@ const Contact = () => {
 			md:justify-center">
 			For business inquiries, please contact me at{" "}
 			<strong>
-				<a href="mailto:m.corbinevans@gmail.com" className="block">
+				<a href="mailto:m.corbinevans@gmail.com" className="block text-accent">
 					m.corbinevans@gmail.com
 				</a>
 			</strong>
@@ -99,7 +99,7 @@ const Contact = () => {
 						<input
 							type="submit"
 							value="Send"
-							className="text-light bg-secondary border rounded p-1 w-full mt-3 cursor-pointer hover:bg-accent hover:border-accent hover:text-white transition "
+							className="text-light bg-secondary border rounded p-1 w-full mt-3 cursor-pointer hover:bg-accent hover:border-accent hover:text-white transition hover:shadow-[10px_10px_0_0_rgba(0,0,0,.3)]"
 						/>
 					)}
 				</form>
