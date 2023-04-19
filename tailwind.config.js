@@ -8,6 +8,7 @@ module.exports = {
 				info: "#30302d",
 				secondary: "#878784",
 				accent: "#e34f42",
+				light: "#faf9f7",
 			},
 			fontFamily: {
 				display: ["Inter", "sans-serif"],

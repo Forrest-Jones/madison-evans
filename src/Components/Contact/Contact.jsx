@@ -59,7 +59,7 @@ const Contact = () => {
 			<br />
 			<div
 				className="
-				p-6 h-fit rounded-xl w-full
+				p-6 h-fit rounded-xl w-full border border-secondary 
 				md:w-[400px]
 				lg:w-[600px]
 				xl:w-[800px]">
@@ -67,7 +67,7 @@ const Contact = () => {
 					ref={form}
 					onSubmit={sendEmail}
 					className="flex flex-col justify-center items-center">
-					<label className="w-full py-1 text-white">Name</label>
+					<label className="w-full py-1 text-secondary">Name</label>
 					<input
 						type="text"
 						name="user_name"
@@ -75,7 +75,7 @@ const Contact = () => {
 						required
 						ref={nameInput}
 					/>
-					<label className="w-full py-1 text-white">Email</label>
+					<label className="w-full py-1 text-secondary">Email</label>
 					<input
 						type="email"
 						name="user_email"
@@ -83,7 +83,7 @@ const Contact = () => {
 						required
 						ref={emailInput}
 					/>
-					<label className="w-full py-1 text-white">Message</label>
+					<label className="w-full py-1 text-secondary">Message</label>
 					<textarea
 						name="message"
 						rows="5"
@@ -92,14 +92,14 @@ const Contact = () => {
 						ref={messageInput}
 					/>
 					{sent ? (
-						<p className="text-white mt-3 p-1 border border-primary rounded">
+						<p className="text-accent mt-3 p-1 border border-primary rounded">
 							Message sent
 						</p>
 					) : (
 						<input
 							type="submit"
 							value="Send"
-							className="text-white border rounded p-1 w-full mt-3 cursor-pointer hover:bg-white hover:text-black transition "
+							className="text-light bg-secondary border rounded p-1 w-full mt-3 cursor-pointer hover:bg-accent hover:border-accent hover:text-white transition "
 						/>
 					)}
 				</form>
