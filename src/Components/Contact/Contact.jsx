@@ -59,7 +59,7 @@ const Contact = () => {
 			<br />
 			<div
 				className="
-				p-6 h-fit rounded-xl w-full border border-secondary 
+				p-6 h-fit rounded-xl w-full border border-secondary bg-primary
 				md:w-[400px]
 				lg:w-[600px]
 				xl:w-[800px]">
@@ -71,7 +71,7 @@ const Contact = () => {
 					<input
 						type="text"
 						name="user_name"
-						className="rounded p-1 w-full max-w-screen-lg"
+						className="rounded p-1 w-full max-w-screen-lg border border-secondary"
 						required
 						ref={nameInput}
 					/>
@@ -79,7 +79,7 @@ const Contact = () => {
 					<input
 						type="email"
 						name="user_email"
-						className="rounded p-1 w-full"
+						className="rounded p-1 w-full border border-secondary"
 						required
 						ref={emailInput}
 					/>
@@ -87,7 +87,7 @@ const Contact = () => {
 					<textarea
 						name="message"
 						rows="5"
-						className="rounded p-1 w-full"
+						className="rounded p-1 w-full border border-secondary"
 						required
 						ref={messageInput}
 					/>
@@ -99,7 +99,7 @@ const Contact = () => {
 						<input
 							type="submit"
 							value="Send"
-							className="text-light bg-secondary border rounded p-1 w-full mt-3 cursor-pointer hover:bg-accent hover:border-accent hover:text-white transition hover:shadow-[10px_10px_0_0_rgba(0,0,0,.3)]"
+							className="border border-secondary text-light bg-secondary border rounded p-1 w-full mt-3 cursor-pointer hover:bg-accent hover:border-accent hover:text-white transition hover:shadow-[10px_10px_0_0_rgba(0,0,0,.3)]"
 						/>
 					)}
 				</form>

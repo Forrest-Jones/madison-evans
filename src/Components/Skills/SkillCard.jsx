@@ -12,14 +12,15 @@ const SkillCard = (props) => {
 
 	return (
 		<motion.div
+			layout
 			initial={{ scale: 1 }}
 			onClick={toggleBoxShadow}
 			className={`${
 				boxShadowActive
-					? "shadow-[20px_20px_0_0_rgba(0,0,0,.3)] absolute w-4/6"
+					? "shadow-[20px_20px_0_0_rgba(0,0,0,.3)] absolute w-2/3 h-2/3 top-[20%] bg-light"
 					: "shadow-[0px_0px_0_0_rgba(0,0,0,.3)] md:w-48 lg:w-60 xl:80"
 			}
-        	cursor-pointer border bg-primary border-secondary text-info mt-8 py-8 rounded-xl flex flex-col items-center justify-start required:h-1/3 transition md:mx-4 md:my-0 hover:shadow-[20px_20px_0_0_rgba(0,0,0,.3)]
+          cursor-pointer border hover:bg-light bg-primary border-secondary text-info mt-8 py-8 rounded-xl flex flex-col items-center justify-start required:h-1/3 md:mx-4 md:my-0 hover:shadow-[20px_20px_0_0_rgba(0,0,0,.3)]
         `}>
 			<motion.div
 				transition={{ type: "spring", damping: 20, stiffness: 80 }}

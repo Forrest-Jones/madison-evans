@@ -1,11 +1,12 @@
 import React from "react";
 import TypeWriterEffect from "react-typewriter-effect";
+import colors from "../../helpers/colors";
 const TypeWriterHeader = ({ text }) => {
 	return (
 		<div className="h-32">
 			<TypeWriterEffect
 				textStyle={{
-					color: "#101923",
+					color: colors.accent,
 					fontWeight: 700,
 					fontSize: "4.5em",
 				}}

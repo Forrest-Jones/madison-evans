@@ -52,8 +52,10 @@ const ExperienceTimeline = () => {
 						date={experience.duration}
 						icon={<i className="fas fa-briefcase"></i>}
 						iconStyle={{ background: "#e34f42", color: "#eceae7" }}>
-						<h2 className="text-xl font-display">{experience.title}</h2>
-						<h3 className="font-semibold">{experience.company}</h3>
+						<h2 className="text-xl font-display font-bold text-info">
+							{experience.title}
+						</h2>
+						<h3 className="font-semibold text-accent">{experience.company}</h3>
 						<p className="text-gray-700">{experience.description}</p>
 					</VerticalTimelineElement>
 				))}
