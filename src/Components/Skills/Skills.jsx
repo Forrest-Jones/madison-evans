@@ -4,25 +4,31 @@ import jsIcon from "../../assets/svg/icons8-javascript-logo.svg";
 import skillCardInfo from "./SkillCardInfo.json";
 import { useState } from "react";
 import { BsWindowFullscreen as Frontend } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Modal = ({ title, content, setModal }) => {
 	return (
 		<>
-			<div
-				className="absolute top-0 h-[90%] w-5/6 cursor-pointer rounded-2xl border border-secondary bg-primary shadow-[20px_20px_0_0_rgba(0,0,0,0.3)]"
+			<motion.div
+				layoutId="skill-container"
+				className="absolute top-0 mt-8 h-[90%] w-5/6 cursor-pointer rounded-2xl border border-secondary bg-primary shadow-[20px_20px_0_0_rgba(0,0,0,0.3)]"
 				onClick={() => {
 					setModal(null);
 				}}>
-				<div className="flex flex-row">
-					<Frontend className="h-24 w-24 text-accent lg:h-36 lg:w-36" />
-					<h1 className="w-full text-center font-display text-4xl font-bold">
+				<div className="flex flex-row px-4">
+					<motion.div layoutId="skill-icon">
+						<Frontend className="h-24 w-24 text-accent lg:h-36 lg:w-36" />
+					</motion.div>
+					<motion.h1
+						layoutId="skill-title"
+						className="flex w-full flex-row items-center px-8 text-center font-display text-4xl font-bold">
 						{title}
-					</h1>
+					</motion.h1>
 				</div>
 				{content.map((item) => (
-					<div>{item}</div>
+					<motion.div>{item}</motion.div>
 				))}
-			</div>
+			</motion.div>
 		</>
 	);
 };
