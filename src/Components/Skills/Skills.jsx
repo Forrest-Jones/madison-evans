@@ -4,6 +4,9 @@ import jsIcon from "../../assets/svg/icons8-javascript-logo.svg";
 import backendIcon from "../../assets/svg/backend.svg";
 import uxuiIcon from "../../assets/svg/design.svg";
 
+const Modal = () => {
+	return <></>;
+};
 const Skills = () => {
 	const frontendTitle = "Frontend";
 	const backendTitle = "Backend";
@@ -20,13 +23,9 @@ const Skills = () => {
 		<div
 			id="skills"
 			style={{ minHeight: "100vh" }}
-			className="
-			bg-primary flex flex-col w-full justify-around items-center h-fit relative
-			">
-			<div
-				className="w-full flex flex-col h-fit 
-				md:flex-row justify-center
-				">
+			className="relative flex h-fit w-full flex-col items-center justify-around bg-primary">
+			<div className="flex h-fit w-full flex-col justify-center md:flex-row">
+				{/* TODO: Refactor with json and have the skill cards mapped over */}
 				<SkillCard
 					title={frontendTitle}
 					content={frontendContent}
@@ -38,6 +37,7 @@ const Skills = () => {
 					icon={backendIcon}
 				/>
 				<SkillCard title={uxuiTitle} content={uxuiContent} icon={uxuiIcon} />
+				<Modal />
 			</div>
 		</div>
 	);

@@ -15,13 +15,15 @@ const SkillCard = (props) => {
 			layout
 			initial={{ scale: 1 }}
 			onClick={toggleBoxShadow}
-			className="cursor-pointer border hover:bg-light border-secondary rounded-lg mx-4 p-2 w-60 flex flex-col items-center hover:shadow-[20px_20px_0_0_rgba(0,0,0,0.3)] transition">
+			className="mx-4 flex w-60 cursor-pointer flex-col items-center rounded-lg border border-secondary p-2 transition hover:bg-light hover:shadow-[20px_20px_0_0_rgba(0,0,0,0.3)]">
 			<motion.div
 				layout
 				transition={{ type: "spring", damping: 20, stiffness: 80 }}>
 				<motion.div className="flex flex-col items-center" layout>
-					<Frontend className="text-accent w-24 h-24 lg:w-36 lg:h-36" />
-					<h2 className="font-bold font-display text-lg">{title}</h2>
+					<Frontend className="h-24 w-24 text-accent lg:h-36 lg:w-36" />
+					<h2 className="color-black font-display text-lg  font-bold">
+						{title}
+					</h2>
 				</motion.div>
 
 				<ul
