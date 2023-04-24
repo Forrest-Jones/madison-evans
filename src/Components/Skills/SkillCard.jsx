@@ -15,7 +15,7 @@ const SkillCard = (props) => {
 			layout
 			initial={{ scale: 1 }}
 			onClick={toggleBoxShadow}
-			className="border border-secondary rounded-lg mx-4 p-2 w-60 flex flex-col items-center hover:shadow-[20px_20px_0_0_rgba(0,0,0,0.3)] transition">
+			className="cursor-pointer border hover:bg-light border-secondary rounded-lg mx-4 p-2 w-60 flex flex-col items-center hover:shadow-[20px_20px_0_0_rgba(0,0,0,0.3)] transition">
 			<motion.div
 				layout
 				transition={{ type: "spring", damping: 20, stiffness: 80 }}>
