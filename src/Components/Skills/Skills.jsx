@@ -1,32 +1,39 @@
 import React from "react";
 import SkillCard from "./SkillCard";
 import jsIcon from "../../assets/svg/icons8-javascript-logo.svg";
-import backendIcon from "../../assets/svg/backend.svg";
-import uxuiIcon from "../../assets/svg/design.svg";
 import skillCardInfo from "./SkillCardInfo.json";
-
-console.log(skillCardInfo);
-const Modal = () => {
-	return <></>;
+import { useState } from "react";
+const Modal = ({ title, setModal }) => {
+	return (
+		<>
+			<div
+				onClick={() => {
+					setModal(null);
+				}}>
+				<h1>{title}</h1>
+			</div>
+		</>
+	);
 };
 const Skills = () => {
-	const uxuiContent = ["HCI core concepts", "Figma", "Procreate, Blender"];
+	const [modal, setModal] = useState(null);
 	return (
 		<div
 			id="skills"
 			style={{ minHeight: "100vh" }}
 			className="relative flex h-fit w-full flex-col items-center justify-around bg-primary">
 			<div className="flex h-fit w-full flex-col justify-center md:flex-row">
-				{/* TODO: Refactor with json and have the skill cards mapped over */}
-				{skillCardInfo.map((item) => {
+				{skillCardInfo.map((skill) => {
 					return (
-						<SkillCard title="title" content={["content"]} icon={jsIcon} />
+						<SkillCard
+							title={skill.title}
+							content={skill.subSkills}
+							icon={jsIcon}
+							setModal={setModal}
+						/>
 					);
 				})}
-				{/* <SkillCard title="title" content={["content"]} icon={jsIcon} />
-				<SkillCard title="title" content={["content"]} icon={jsIcon} />
-				<SkillCard title="title" content={["content"]} icon={jsIcon} /> */}
-				<Modal />
+				{modal && <Modal title={modal.title} setModal={setModal} />}
 			</div>
 		</div>
 	);
