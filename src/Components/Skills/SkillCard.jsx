@@ -4,14 +4,15 @@ import { BsWindowFullscreen as Frontend } from "react-icons/bs";
 
 const SkillCard = (props) => {
 	const { title, content, setModal } = props;
-
+	console.log(content, "content");
 	return (
 		<motion.div
 			layout
 			initial={{ scale: 1 }}
 			onClick={() => {
 				setModal({
-					title: "test title",
+					title: title,
+					content: content,
 				});
 			}}
 			className="mx-4 flex w-60 cursor-pointer flex-col items-center rounded-lg border border-secondary p-2 transition hover:bg-light hover:shadow-[20px_20px_0_0_rgba(0,0,0,0.3)]">

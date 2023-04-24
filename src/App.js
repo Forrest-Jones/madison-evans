@@ -23,7 +23,7 @@ function App() {
 			/>
 			<LayoutGrid>
 				<Navbar />
-				<div className="flex-col w-full">
+				<div className="flex w-full flex-col">
 					<AboutMe />
 					<Skills />
 					<Experience />
