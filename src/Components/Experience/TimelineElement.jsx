@@ -1,11 +1,12 @@
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
 import colors from "../../helpers/colors";
+
 const TimelineElement = ({ icon: Icon, title, description, date }) => {
 	const [showDescription, setShowDescription] = useState(false);
 
+	const controls = useAnimation();
 	const [ref, inView] = useInView({
 		threshold: 0.5,
 	});
@@ -19,13 +20,18 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 		setShowDescription((prev) => !prev);
 	}
 
+	// Animate the entry only once and maintain the visibility
+	if (inView) {
+		controls.start("visible");
+	}
+
 	return (
 		<motion.div
 			layout
 			ref={ref}
 			onClick={toggleShowDescription}
 			initial="hidden"
-			animate={inView ? "visible" : "hidden"}
+			animate={controls}
 			variants={variants}
 			transition={{ type: "spring", duration: 0.45 }}
 			style={{
@@ -34,7 +40,7 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 					? `1px solid ${colors.info}`
 					: `1px solid ${colors.primaryLighter}`,
 			}}
-			className="mx-4 flex cursor-pointer items-start space-x-4  bg-primaryLighter p-4">
+			className="mx-8 flex cursor-pointer items-start space-x-4  bg-primaryLighter p-4">
 			<motion.div layout className="flex-shrink-0">
 				<Icon className="h-8 w-8 text-info" />
 			</motion.div>
