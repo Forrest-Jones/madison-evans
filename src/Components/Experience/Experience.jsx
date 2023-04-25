@@ -1,5 +1,4 @@
 import React from "react";
-import colors from "../../helpers/colors";
 
 import Timeline from "./Timeline";
 

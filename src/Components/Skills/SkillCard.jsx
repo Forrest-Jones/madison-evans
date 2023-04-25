@@ -26,7 +26,7 @@ const SkillCard = (props) => {
 					flexDirection: "column",
 					alignItems: "center",
 					borderRadius: "0.5rem",
-					border: `1px solid ${colors.light}`,
+
 					padding: "0.5rem",
 					cursor: "pointer",
 			  }

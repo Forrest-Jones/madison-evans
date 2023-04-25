@@ -2,6 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
+
 const TimelineElement = ({ icon: Icon, title, description, date }) => {
 	const [showDescription, setShowDescription] = useState(false);
 
@@ -13,9 +14,11 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 		visible: { opacity: 1, y: 0 },
 		hidden: { opacity: 0, y: 50 },
 	};
+
 	function toggleShowDescription() {
 		setShowDescription((prev) => !prev);
 	}
+
 	return (
 		<motion.div
 			layout
@@ -24,27 +27,32 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 			initial="hidden"
 			animate={inView ? "visible" : "hidden"}
 			variants={variants}
-			transition={{ duration: 0.5 }}
+			transition={{ type: "spring", duration: 0.45 }}
 			style={{ borderRadius: "8px" }}
-			className="t mx-4 flex cursor-pointer items-start space-x-4 border border-info bg-primaryLighter p-4">
+			className="t mx-4 flex cursor-pointer items-start space-x-4  bg-primaryLighter p-4">
 			<motion.div layout className="flex-shrink-0">
 				<Icon className="h-8 w-8 text-info" />
 			</motion.div>
 			<motion.div layout>
-				<motion.h3
-					layout
-					className="w-fit font-display text-lg font-semibold text-accent">
-					{title}
-				</motion.h3>
-				<AnimatePresence mode="wait">
+				<motion.div layout className="w-fit">
+					<motion.h3 className="w-fit font-display text-lg font-semibold text-accent">
+						{title}
+					</motion.h3>
+				</motion.div>
+				<AnimatePresence>
 					{showDescription && (
-						<motion.p
-							className="text-sm text-info"
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1, transition: { delay: 0.5 } }}
-							exit={{ opacity: 0 }}>
-							{description}
-						</motion.p>
+						<motion.div layout>
+							<motion.p
+								initial={{ opacity: 0 }}
+								animate={{
+									opacity: 1,
+									transition: { delay: 0.1, duration: 0.2 },
+								}}
+								exit={{ opacity: 0, transition: { duration: 0.1 } }}
+								className="text-sm text-info">
+								{description}
+							</motion.p>
+						</motion.div>
 					)}
 				</AnimatePresence>
 				{/* <p className="text-xs text-info">{date}</p> */}
