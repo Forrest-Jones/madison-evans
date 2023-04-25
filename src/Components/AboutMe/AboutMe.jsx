@@ -1,14 +1,14 @@
 import { AiFillLinkedin as Linkedin } from "react-icons/ai";
 import { AiFillGithub as Github } from "react-icons/ai";
 import TypeWriterHeader from "../Effects/TypeWriterHeader";
-
+import overlay from "./overlay.png";
 import { motion } from "framer-motion";
 function AboutMe() {
 	return (
 		<div
 			style={{ height: "100vh" }}
 			id="about-me"
-			className="bg-primary flex flex-col items-center justify-start md:flex-row md:py-24 md:px-4">
+			className="flex flex-col items-center justify-start bg-primary md:flex-row md:py-24 md:px-4">
 			{Introduction()}
 		</div>
 	);
@@ -17,22 +17,26 @@ function AboutMe() {
 		return (
 			<div
 				className="
-				pt-10 px-6 flex justify-center h-full flex-col w-96
-				md:pl-10 md:w-full text-info md:items-center z-50">
+				z-50 ml-[400px] flex h-full w-96 flex-col justify-center
+				px-6 pt-10 text-info md:w-full md:items-start md:pl-10">
 				<div>
-					<h1 className="text-2xl md:text-3xl font-bold mb-2 text-left ">
+					<h1 className="mb-2 text-left text-2xl font-bold md:text-3xl ">
 						Hi, I'm
 					</h1>
 					<TypeWriterHeader text={"Madison"} />
-
+					{/* <img
+						src={overlay}
+						alt="overlay"
+						className="absolute top-[170px] left-[400px] -z-10 w-[75%]"
+					/> */}
 					<p
-						className="text-sm md:text-lg text-gray-700 
-					lg:w-[800px]">
+						className="text-sm text-info md:text-lg 
+					lg:w-[500px]">
 						I'm a full-stack software engineer with a passion for creating
 						beautiful and functional digital experiences. I strive to create web
 						applications that not only look great but also perform flawlessly
 					</p>
-					<div className="flex flex-row w-full mt-10">
+					<div className="mt-10 flex w-full flex-row">
 						<motion.a
 							initial={{ scale: 1, y: 0 }}
 							whileHover={{ scale: 1.1, y: -2 }}

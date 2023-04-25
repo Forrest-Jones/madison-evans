@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { BsWindowFullscreen as Frontend } from "react-icons/bs";
 import colors from "../../helpers/colors";
 
@@ -22,26 +22,25 @@ const SkillCard = (props) => {
 			? {
 					marginInline: "1rem",
 					display: "flex",
-					width: "15em",
+					width: "20em",
 					flexDirection: "column",
 					alignItems: "center",
 					borderRadius: "0.5rem",
-					border: `1px solid ${colors.secondary}`,
+					border: `1px solid ${colors.light}`,
 					padding: "0.5rem",
 					cursor: "pointer",
 			  }
 			: {
 					marginInline: "1rem",
 					display: "flex",
-					width: "15em",
+					width: "20em",
 					height: "25em",
 					flexDirection: "column",
 					alignItems: "center",
 					borderRadius: "0.5rem",
-					border: `1px solid ${colors.secondary}`,
+					border: `1px solid ${colors.light}`,
 					padding: "0.5rem",
 					cursor: "pointer",
-					backgroundColor: colors.light,
 			  };
 
 	const dynamicHeaderStyle =
@@ -61,7 +60,7 @@ const SkillCard = (props) => {
 				toggleLayout();
 			}}
 			initial={{
-				backgroundColor: colors.primary,
+				backgroundColor: colors.primaryLighter,
 				transition: { duration: 0.1 },
 			}}
 			whileHover={{
@@ -74,9 +73,11 @@ const SkillCard = (props) => {
 			animate={layout === 0 ? "closed" : "opened"}>
 			<motion.div layout style={dynamicHeaderStyle}>
 				<motion.div layout>
-					<Frontend className="h-24 w-24 text-accent lg:h-36 lg:w-36" />
+					<Frontend className="h-24 w-24 text-light lg:h-36 lg:w-36" />
 				</motion.div>
-				<motion.h2 layout className="my-1 font-display text-2xl font-bold">
+				<motion.h2
+					layout
+					className="my-1 font-display text-2xl font-bold text-light">
 					{title}
 				</motion.h2>
 			</motion.div>
@@ -84,7 +85,7 @@ const SkillCard = (props) => {
 			{layout === 1 && (
 				<motion.ul
 					layout
-					className="h-60 overflow-scroll rounded-lg border border-secondary bg-darker p-4"
+					className="h-60 overflow-scroll rounded-lg border border-light  p-4"
 					variants={ulVariants}
 					initial="hidden"
 					animate="visible"

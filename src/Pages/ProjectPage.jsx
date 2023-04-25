@@ -9,6 +9,7 @@ import image3 from "../assets/images/drop-the-ball-img.png";
 import Project from "../Components/Project/Project";
 import ModalContext from "../helpers/ModalContext";
 import { motion } from "framer-motion";
+import colors from "../helpers/colors";
 // Palette Pal
 const project1Content = {
 	title: "Palette Pal",
@@ -42,7 +43,7 @@ const ProjectPage = ({
 }) => {
 	return (
 		<div id="projects" className="h-screen bg-primary">
-			<div className="h-32 text-center py-6 ">
+			<div className="h-32 py-6 text-center ">
 				<motion.h1
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{
@@ -52,7 +53,7 @@ const ProjectPage = ({
 					}}
 					viewport={{ amount: 1, once: true }}
 					style={{
-						color: "#101923",
+						color: colors.light,
 						fontWeight: 700,
 						fontSize: "4em",
 						paddingInline: ".25em",

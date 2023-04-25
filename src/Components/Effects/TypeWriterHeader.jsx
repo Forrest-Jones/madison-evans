@@ -6,7 +6,7 @@ const TypeWriterHeader = ({ text }) => {
 		<div className="h-32">
 			<TypeWriterEffect
 				textStyle={{
-					color: colors.accent,
+					color: colors.light,
 					fontWeight: 700,
 					fontSize: "4.5em",
 				}}
