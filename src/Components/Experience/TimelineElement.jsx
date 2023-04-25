@@ -41,7 +41,9 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 					: `1px solid ${colors.primaryLighter}`,
 			}}
 			className="relative mx-24 flex cursor-pointer flex-col items-start space-x-4  bg-primaryLighter p-4">
-			<motion.p className="absolute -left-[100px] rounded border border-light p-1 text-xs text-info">
+			<motion.p
+				layout
+				className="absolute -left-[100px] h-fit rounded border border-light p-1 text-xs text-info">
 				{date}
 			</motion.p>
 			<motion.div layout className="flex">
