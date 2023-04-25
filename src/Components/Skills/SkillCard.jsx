@@ -1,29 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BsWindowFullscreen as Frontend } from "react-icons/bs";
 import colors from "../../helpers/colors";
 
-const containerVariants = {
-	closed: {},
-	opened: {},
-};
-
 const ulVariants = {
-	hidden: { opacity: 0 },
-	visible: { opacity: 1, transition: { delay: 0.3 } }, // Add a delay to control the stagger effect
+	hidden: { opacity: 0, transition: { delay: 0.3 } },
+	visible: { opacity: 1, transition: { delay: 0.3 } },
 	exited: { opacity: 0, transition: { delay: 0.3 } },
 };
 
 const SkillCard = (props) => {
 	const [layout, setLayout] = useState(0);
+	const [hovered, setHovered] = useState(false);
 	const { title, content } = props;
+
+	useEffect(() => {
+		if (layout === 1) {
+			setHovered(false);
+		}
+	}, [layout]);
 
 	function toggleLayout() {
 		layout === 0 ? setLayout(1) : setLayout(0);
 	}
 
-	const dynamicContainerStyle =
-		layout === 0
+	const dynamicContainerStyle = {
+		...(layout === 0
 			? {
 					marginInline: "1rem",
 					display: "flex",
@@ -46,7 +48,12 @@ const SkillCard = (props) => {
 					border: `1px solid ${colors.secondary}`,
 					padding: "0.5rem",
 					cursor: "pointer",
-			  };
+			  }),
+		boxShadow: hovered
+			? "20px 20px 0 0 rgba(0, 0, 0, 0.3)"
+			: "0px 0px 0 0 rgba(0, 0, 0, 0.3)",
+		transition: "box-shadow 0.3s ease",
+	};
 
 	const dynamicHeaderStyle =
 		layout === 0
@@ -66,8 +73,9 @@ const SkillCard = (props) => {
 					toggleLayout();
 				}}
 				style={dynamicContainerStyle}
-				variants={containerVariants} // Add variants to the container
-				animate={layout === 0 ? "closed" : "opened"}>
+				animate={layout === 0 ? "closed" : "opened"}
+				onMouseEnter={() => setHovered(true)}
+				onMouseLeave={() => setHovered(false)}>
 				<div className="w-full">
 					<motion.div layout style={dynamicHeaderStyle}>
 						<motion.div layout>
@@ -82,7 +90,7 @@ const SkillCard = (props) => {
 						<motion.ul
 							layout
 							className="text-center"
-							variants={ulVariants} // Add variants to the motion.ul element
+							variants={ulVariants}
 							initial="hidden"
 							animate="visible"
 							exit="exited">
