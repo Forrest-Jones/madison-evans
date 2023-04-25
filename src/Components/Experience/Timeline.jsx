@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion, LayoutGroup } from "framer-motion";
 import { FiCode, FiServer, FiUsers } from "react-icons/fi";
 import TimelineElement from "./TimelineElement";
 
@@ -29,8 +29,8 @@ const Timeline = () => {
 	];
 
 	return (
-		<div className="w-full py-8">
-			<divn className="space-y-6">
+		<LayoutGroup>
+			<motion.div layout className="w-full space-y-6">
 				{timelineData.map((item, index) => (
 					<TimelineElement
 						key={index}
@@ -40,8 +40,8 @@ const Timeline = () => {
 						date={item.date}
 					/>
 				))}
-			</divn>
-		</div>
+			</motion.div>
+		</LayoutGroup>
 	);
 };
 

@@ -6,7 +6,7 @@ import Timeline from "./Timeline";
 const ExperienceTimeline = () => {
 	return (
 		<>
-			<div id="experience" className=" h-screen w-full bg-primary ">
+			<div id="experience" className="h-fit w-full bg-primary ">
 				<h1 className="w-full px-1 text-center font-display text-[4em] font-bold text-light">
 					Experience
 				</h1>
