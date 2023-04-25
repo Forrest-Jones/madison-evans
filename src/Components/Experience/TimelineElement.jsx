@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 const TimelineElement = ({ icon: Icon, title, description, date }) => {
@@ -33,17 +33,20 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 			<motion.div layout>
 				<motion.h3
 					layout
-					className="w-full font-display text-lg font-semibold text-accent">
+					className="w-fit font-display text-lg font-semibold text-accent">
 					{title}
 				</motion.h3>
-				{showDescription && (
-					<motion.p
-						className="text-sm text-info"
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1, transition: { delay: 0.5 } }}>
-						{description}
-					</motion.p>
-				)}
+				<AnimatePresence mode="wait">
+					{showDescription && (
+						<motion.p
+							className="text-sm text-info"
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1, transition: { delay: 0.5 } }}
+							exit={{ opacity: 0 }}>
+							{description}
+						</motion.p>
+					)}
+				</AnimatePresence>
 				{/* <p className="text-xs text-info">{date}</p> */}
 			</motion.div>
 		</motion.div>
