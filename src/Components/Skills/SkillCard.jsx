@@ -4,9 +4,9 @@ import { BsWindowFullscreen as Frontend } from "react-icons/bs";
 import colors from "../../helpers/colors";
 
 const ulVariants = {
-	hidden: { opacity: 0, transition: { delay: 0.3 } },
-	visible: { opacity: 1, transition: { delay: 0.3 } },
-	exited: { opacity: 0, transition: { delay: 0.3 } },
+	hidden: { opacity: 0, transition: { delay: 0.1 } },
+	visible: { opacity: 1, transition: { delay: 0.1 } },
+	exited: { opacity: 0, transition: { delay: 0.1 } },
 };
 
 const SkillCard = (props) => {
@@ -34,6 +34,7 @@ const SkillCard = (props) => {
 					marginInline: "1rem",
 					display: "flex",
 					width: "15em",
+					height: "25em",
 					flexDirection: "column",
 					alignItems: "center",
 					borderRadius: "0.5rem",
@@ -59,38 +60,56 @@ const SkillCard = (props) => {
 			onClick={() => {
 				toggleLayout();
 			}}
-			initial={{ backgroundColor: colors.primary }}
-			whileHover={{
-				backgroundColor: colors.light,
-				boxShadow: "10px 10px 0 0 rgba(0,0,0,.3)",
+			initial={{
+				backgroundColor: colors.primary,
+				transition: { duration: 0.1 },
 			}}
-			transition={{ type: "spring", duration: 0.8 }}
+			whileHover={{
+				// backgroundColor: colors.light,
+				boxShadow: "16px 16px 0 0 rgba(0,0,0,.3)",
+				transition: { duration: 0.1 },
+			}}
+			transition={{ type: "ease", duration: 0.25 }}
 			style={dynamicContainerStyle}
 			animate={layout === 0 ? "closed" : "opened"}>
-			<div className="w-full ">
-				<motion.div layout style={dynamicHeaderStyle}>
-					<motion.div layout>
-						<Frontend className="h-24 w-24 text-accent lg:h-36 lg:w-36" />
-					</motion.div>
-					<motion.h2 layout className="font-display">
-						{title}
-					</motion.h2>
+			<motion.div layout style={dynamicHeaderStyle}>
+				<motion.div layout>
+					<Frontend className="h-24 w-24 text-accent lg:h-36 lg:w-36" />
 				</motion.div>
+				<motion.h2 layout className="my-1 font-display text-2xl font-bold">
+					{title}
+				</motion.h2>
+			</motion.div>
 
-				{layout === 1 && (
-					<motion.ul
-						layout
-						className="text-center"
-						variants={ulVariants}
-						initial="hidden"
-						animate="visible"
-						exit="exited">
-						{content.map((content, id) => {
+			{layout === 1 && (
+				<motion.ul
+					layout
+					className="h-60 overflow-scroll rounded-lg border border-secondary  p-4"
+					variants={ulVariants}
+					initial="hidden"
+					animate="visible"
+					exit="exited">
+					{/* {content.map((content, id) => {
 							return <li key={id}>{content}</li>;
-						})}
-					</motion.ul>
-				)}
-			</div>
+						})} */}
+					<li>
+						<h3>HTML, CSS, Javascript</h3>
+						<p className="text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+							eaque suscipit nulla voluptas vel ex, sequi pariatur expedita.
+						</p>
+					</li>
+
+					<li>
+						<h3>React</h3>
+						<p className="text-xs">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+							eaque suscipit nulla voluptas vel ex, sequi pariatur expedita.
+						</p>
+					</li>
+				</motion.ul>
+			)}
 		</motion.div>
 	);
 };
