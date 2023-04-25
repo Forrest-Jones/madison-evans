@@ -44,14 +44,7 @@ const ProjectPage = ({
 	return (
 		<div id="projects" className="h-screen bg-primary">
 			<div className="h-32 py-6 text-center ">
-				<motion.h1
-					initial={{ opacity: 0, y: 50 }}
-					whileInView={{
-						y: 0,
-						opacity: 1,
-						transition: { delay: 0.2, type: "spring", duration: 2 },
-					}}
-					viewport={{ amount: 1, once: true }}
+				<h1
 					style={{
 						color: colors.light,
 						fontWeight: 700,
@@ -59,7 +52,7 @@ const ProjectPage = ({
 						paddingInline: ".25em",
 					}}>
 					My Projects
-				</motion.h1>
+				</h1>
 			</div>
 			<ModalContext.Provider value={{ modalContent, setModalContent }}>
 				<ProjectGroupContainer>
