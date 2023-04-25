@@ -84,7 +84,7 @@ const SkillCard = (props) => {
 			{layout === 1 && (
 				<motion.ul
 					layout
-					className="h-60 overflow-scroll rounded-lg border border-secondary  p-4"
+					className="h-60 overflow-scroll rounded-lg border border-secondary bg-darker p-4"
 					variants={ulVariants}
 					initial="hidden"
 					animate="visible"
@@ -93,8 +93,10 @@ const SkillCard = (props) => {
 							return <li key={id}>{content}</li>;
 						})} */}
 					<li>
-						<h3>HTML, CSS, Javascript</h3>
-						<p className="text-xs">
+						<h3 className="font-display text-sm font-bold text-accent">
+							HTML, CSS, Javascript
+						</h3>
+						<p className="text-xs text-info">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
 							eaque suscipit nulla voluptas vel ex, sequi pariatur expedita.
@@ -102,8 +104,10 @@ const SkillCard = (props) => {
 					</li>
 
 					<li>
-						<h3>React</h3>
-						<p className="text-xs">
+						<h3 className="font-display text-sm font-bold text-accent">
+							React
+						</h3>
+						<p className="text-xs text-info">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
 							eaque suscipit nulla voluptas vel ex, sequi pariatur expedita.
 						</p>

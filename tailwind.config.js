@@ -9,7 +9,7 @@ module.exports = {
 				info: "#30302d",
 				secondary: "#878784",
 				accent: "#e34f42",
-				accentLighter: "#e96156",
+				accentLighter: "#e39a94",
 				light: "#faf9f7",
 			},
 			boxShadow: {
