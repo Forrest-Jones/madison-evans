@@ -6,5 +6,9 @@
 	{
 		"title": "Backend",
 		"subSkills": ["Flask", "Django"]
+	},
+	{
+		"title": "UX/UI",
+		"subSkills": ["Tailwind", "HCI"]
 	}
 ]

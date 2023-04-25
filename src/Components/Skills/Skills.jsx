@@ -2,7 +2,6 @@ import React from "react";
 import SkillCard from "./SkillCard";
 import jsIcon from "../../assets/svg/icons8-javascript-logo.svg";
 import skillCardInfo from "./SkillCardInfo.json";
-
 const Skills = () => {
 	return (
 		<div
