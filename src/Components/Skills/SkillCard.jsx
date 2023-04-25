@@ -28,6 +28,7 @@ const SkillCard = (props) => {
 		padding: "0.5rem",
 		cursor: "pointer",
 		height: layout === 1 ? "auto" : "fit-content",
+		backgroundColor: layout === 0 ? colors.primary : colors.light,
 	};
 
 	const dynamicHeaderStyle =
