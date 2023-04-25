@@ -26,6 +26,41 @@ const Timeline = () => {
 				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
 			date: "June 2021",
 		},
+		{
+			icon: FiUsers,
+			title: "First Job",
+			description:
+				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
+			date: "June 2021",
+		},
+		{
+			icon: FiUsers,
+			title: "First Job",
+			description:
+				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
+			date: "June 2021",
+		},
+		{
+			icon: FiUsers,
+			title: "First Job",
+			description:
+				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
+			date: "June 2021",
+		},
+		{
+			icon: FiUsers,
+			title: "First Job",
+			description:
+				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
+			date: "June 2021",
+		},
+		{
+			icon: FiUsers,
+			title: "First Job",
+			description:
+				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
+			date: "June 2021",
+		},
 	];
 
 	return (
