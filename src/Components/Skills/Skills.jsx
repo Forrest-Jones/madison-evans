@@ -8,7 +8,7 @@ const Skills = () => {
 		<div
 			id="skills"
 			className="flex h-screen w-full flex-col items-center justify-around bg-primary">
-			<div className="flex h-fit w-full flex-col justify-center md:flex-row">
+			<div className="flex h-fit w-full flex-col items-center justify-center md:flex-row">
 				{skillCardInfo.map((skill, key) => {
 					return (
 						<SkillCard

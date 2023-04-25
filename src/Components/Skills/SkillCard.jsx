@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BsWindowFullscreen as Frontend } from "react-icons/bs";
 import colors from "../../helpers/colors";
@@ -11,48 +11,23 @@ const ulVariants = {
 
 const SkillCard = (props) => {
 	const [layout, setLayout] = useState(0);
-	const [hovered, setHovered] = useState(false);
 	const { title, content } = props;
-
-	useEffect(() => {
-		if (layout === 1) {
-			setHovered(false);
-		}
-	}, [layout]);
 
 	function toggleLayout() {
 		layout === 0 ? setLayout(1) : setLayout(0);
 	}
 
 	const dynamicContainerStyle = {
-		...(layout === 0
-			? {
-					marginInline: "1rem",
-					display: "flex",
-					width: "15em",
-					flexDirection: "column",
-					alignItems: "center",
-					borderRadius: "0.5rem",
-					border: `1px solid ${colors.secondary}`,
-					padding: "0.5rem",
-					cursor: "pointer",
-			  }
-			: {
-					marginInline: "1rem",
-					display: "flex",
-					width: "15em",
-					height: "fit",
-					flexDirection: "column",
-					alignItems: "center",
-					borderRadius: "0.5rem",
-					border: `1px solid ${colors.secondary}`,
-					padding: "0.5rem",
-					cursor: "pointer",
-			  }),
-		boxShadow: hovered
-			? "20px 20px 0 0 rgba(0, 0, 0, 0.3)"
-			: "0px 0px 0 0 rgba(0, 0, 0, 0.3)",
-		transition: "box-shadow 0.3s ease",
+		marginInline: "1rem",
+		display: "flex",
+		width: "15em",
+		flexDirection: "column",
+		alignItems: "center",
+		borderRadius: "0.5rem",
+		border: `1px solid ${colors.secondary}`,
+		padding: "0.5rem",
+		cursor: "pointer",
+		height: layout === 1 ? "auto" : "fit-content",
 	};
 
 	const dynamicHeaderStyle =
@@ -66,42 +41,38 @@ const SkillCard = (props) => {
 			  };
 
 	return (
-		<AnimatePresence mode="wait">
-			<motion.div
-				layout
-				onClick={() => {
-					toggleLayout();
-				}}
-				style={dynamicContainerStyle}
-				animate={layout === 0 ? "closed" : "opened"}
-				onMouseEnter={() => setHovered(true)}
-				onMouseLeave={() => setHovered(false)}>
-				<div className="w-full">
-					<motion.div layout style={dynamicHeaderStyle}>
-						<motion.div layout>
-							<Frontend className="h-24 w-24 text-accent lg:h-36 lg:w-36" />
-						</motion.div>
-						<motion.h2 layout className="font-display">
-							{title}
-						</motion.h2>
+		<motion.div
+			layout
+			onClick={() => {
+				toggleLayout();
+			}}
+			style={dynamicContainerStyle}
+			animate={layout === 0 ? "closed" : "opened"}>
+			<div className="w-full">
+				<motion.div layout style={dynamicHeaderStyle}>
+					<motion.div layout>
+						<Frontend className="h-24 w-24 text-accent lg:h-36 lg:w-36" />
 					</motion.div>
+					<motion.h2 layout className="font-display">
+						{title}
+					</motion.h2>
+				</motion.div>
 
-					{layout === 1 && (
-						<motion.ul
-							layout
-							className="text-center"
-							variants={ulVariants}
-							initial="hidden"
-							animate="visible"
-							exit="exited">
-							{content.map((content, id) => {
-								return <li key={id}>{content}</li>;
-							})}
-						</motion.ul>
-					)}
-				</div>
-			</motion.div>
-		</AnimatePresence>
+				{layout === 1 && (
+					<motion.ul
+						layout
+						className="text-center"
+						variants={ulVariants}
+						initial="hidden"
+						animate="visible"
+						exit="exited">
+						{content.map((content, id) => {
+							return <li key={id}>{content}</li>;
+						})}
+					</motion.ul>
+				)}
+			</div>
+		</motion.div>
 	);
 };
 
