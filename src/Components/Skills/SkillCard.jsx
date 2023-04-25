@@ -17,19 +17,31 @@ const SkillCard = (props) => {
 		layout === 0 ? setLayout(1) : setLayout(0);
 	}
 
-	const dynamicContainerStyle = {
-		marginInline: "1rem",
-		display: "flex",
-		width: "15em",
-		flexDirection: "column",
-		alignItems: "center",
-		borderRadius: "0.5rem",
-		border: `1px solid ${colors.secondary}`,
-		padding: "0.5rem",
-		cursor: "pointer",
-		height: layout === 1 ? "auto" : "fit-content",
-		backgroundColor: layout === 0 ? colors.primary : colors.light,
-	};
+	const dynamicContainerStyle =
+		layout === 0
+			? {
+					marginInline: "1rem",
+					display: "flex",
+					width: "15em",
+					flexDirection: "column",
+					alignItems: "center",
+					borderRadius: "0.5rem",
+					border: `1px solid ${colors.secondary}`,
+					padding: "0.5rem",
+					cursor: "pointer",
+			  }
+			: {
+					marginInline: "1rem",
+					display: "flex",
+					width: "15em",
+					flexDirection: "column",
+					alignItems: "center",
+					borderRadius: "0.5rem",
+					border: `1px solid ${colors.secondary}`,
+					padding: "0.5rem",
+					cursor: "pointer",
+					backgroundColor: colors.light,
+			  };
 
 	const dynamicHeaderStyle =
 		layout === 0
@@ -47,8 +59,8 @@ const SkillCard = (props) => {
 			onClick={() => {
 				toggleLayout();
 			}}
-			initial={{ backgroundColor: colors.primary }}
-			whileHover={{ backgroundColor: colors.light }}
+			// initial={{ backgroundColor: colors.primary }}
+			// whileHover={{ backgroundColor: colors.light }}
 			style={dynamicContainerStyle}
 			animate={layout === 0 ? "closed" : "opened"}>
 			<div className="w-full ">
