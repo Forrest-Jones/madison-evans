@@ -64,6 +64,7 @@ const SkillCard = (props) => {
 				backgroundColor: colors.light,
 				boxShadow: "10px 10px 0 0 rgba(0,0,0,.3)",
 			}}
+			transition={{ type: "spring", duration: 0.4 }}
 			style={dynamicContainerStyle}
 			animate={layout === 0 ? "closed" : "opened"}>
 			<div className="w-full ">
