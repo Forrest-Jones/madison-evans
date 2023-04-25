@@ -59,8 +59,11 @@ const SkillCard = (props) => {
 			onClick={() => {
 				toggleLayout();
 			}}
-			// initial={{ backgroundColor: colors.primary }}
-			// whileHover={{ backgroundColor: colors.light }}
+			initial={{ backgroundColor: colors.primary }}
+			whileHover={{
+				backgroundColor: colors.light,
+				boxShadow: "10px 10px 0 0 rgba(0,0,0,.3)",
+			}}
 			style={dynamicContainerStyle}
 			animate={layout === 0 ? "closed" : "opened"}>
 			<div className="w-full ">
