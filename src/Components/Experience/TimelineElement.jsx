@@ -8,12 +8,12 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 
 	const controls = useAnimation();
 	const [ref, inView] = useInView({
-		threshold: 0.5,
+		threshold: 0.9,
 	});
 
 	const variants = {
-		visible: { opacity: 1, y: 0 },
-		hidden: { opacity: 0, y: 50 },
+		visible: { opacity: 1, x: 0 },
+		hidden: { opacity: 0, x: 50 },
 	};
 
 	function toggleShowDescription() {
@@ -40,8 +40,11 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 					? `1px solid ${colors.info}`
 					: `1px solid ${colors.primaryLighter}`,
 			}}
-			className="mx-8 flex cursor-pointer items-start space-x-4  bg-primaryLighter p-4">
-			<motion.div layout className="flex-shrink-0">
+			className="relative mx-24 flex cursor-pointer flex-col items-start space-x-4  bg-primaryLighter p-4">
+			<motion.p className="absolute -left-[100px] rounded border border-light p-1 text-xs text-info">
+				{date}
+			</motion.p>
+			<motion.div layout className="flex">
 				<Icon className="h-8 w-8 text-info" />
 			</motion.div>
 			<motion.div layout>
@@ -66,7 +69,6 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 						</motion.div>
 					)}
 				</AnimatePresence>
-				{/* <p className="text-xs text-info">{date}</p> */}
 			</motion.div>
 		</motion.div>
 	);
