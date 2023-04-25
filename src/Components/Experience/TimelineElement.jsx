@@ -2,7 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
-
+import colors from "../../helpers/colors";
 const TimelineElement = ({ icon: Icon, title, description, date }) => {
 	const [showDescription, setShowDescription] = useState(false);
 
@@ -28,8 +28,13 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 			animate={inView ? "visible" : "hidden"}
 			variants={variants}
 			transition={{ type: "spring", duration: 0.45 }}
-			style={{ borderRadius: "8px" }}
-			className="t mx-4 flex cursor-pointer items-start space-x-4  bg-primaryLighter p-4">
+			style={{
+				borderRadius: "8px",
+				border: showDescription
+					? `1px solid ${colors.info}`
+					: `1px solid ${colors.primaryLighter}`,
+			}}
+			className="mx-4 flex cursor-pointer items-start space-x-4  bg-primaryLighter p-4">
 			<motion.div layout className="flex-shrink-0">
 				<Icon className="h-8 w-8 text-info" />
 			</motion.div>
