@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import colors from "../../helpers/colors";
-import GT from "../../assets/svg/Primary Logos/GT Extended/GTExtended_Navy.svg";
+
 const TimelineElement = ({
 	icon: Icon,
 	location,
 	role,
 	description,
 	date,
+	svg,
 	employer,
 }) => {
 	const [showDescription, setShowDescription] = useState(false);
@@ -81,7 +82,7 @@ const TimelineElement = ({
 								className="w-full pt-4 text-sm text-info">
 								<div className="relative my-auto flex h-[100px] w-[300px] flex-row justify-center rounded-2xl">
 									<img
-										src={GT}
+										src={svg}
 										alt="GT"
 										className="absolute top-1/2 w-full -translate-y-1/2"
 									/>
