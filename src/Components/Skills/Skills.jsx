@@ -16,7 +16,8 @@ const Skills = () => {
 						<SkillCard
 							key={key}
 							title={skill.title}
-							content={skill.subSkills}
+							content={skill.content}
+							description={skill.description}
 							icon={icons[key]}
 						/>
 					);

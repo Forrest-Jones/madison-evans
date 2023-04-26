@@ -89,29 +89,23 @@ const SkillCard = (props) => {
 					initial="hidden"
 					animate="visible"
 					exit="exited">
-					{/* {content.map((content, id) => {
-							return <li key={id}>{content}</li>;
-						})} */}
-					<li>
-						<h3 className="font-display text-sm font-bold text-accent">
-							HTML, CSS, Javascript
-						</h3>
-						<p className="text-xs text-info">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-							eaque suscipit nulla voluptas vel ex, sequi pariatur expedita.
-						</p>
-					</li>
-
-					<li>
-						<h3 className="font-display text-sm font-bold text-accent">
-							React
-						</h3>
-						<p className="text-xs text-info">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-							eaque suscipit nulla voluptas vel ex, sequi pariatur expedita.
-						</p>
-					</li>
+					{content.map((content, id) => {
+						return (
+							<>
+								{" "}
+								<li>
+									<h3 className="font-display text-sm font-bold text-accent">
+										{content.subSkill}
+									</h3>
+									<ul className="text-xs text-info">
+										{content.description.map((description) => {
+											return <li className="mx-4 list-disc">{description}</li>;
+										})}
+									</ul>
+								</li>
+							</>
+						);
+					})}
 				</motion.ul>
 			)}
 		</motion.div>

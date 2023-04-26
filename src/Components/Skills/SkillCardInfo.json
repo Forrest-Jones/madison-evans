@@ -1,14 +1,89 @@
 [
 	{
 		"title": "Frontend",
-		"subSkills": ["HTML", "CSS", "Javascript", "React"]
+		"content": [
+			{
+				"subSkill": "HTML, CSS, Javascript",
+				"description": [
+					"Strong proficiency in CSS, HTML, and modern ES6 JavaScript",
+					"Deep understanding of SOLID principles and best practices",
+					"Experience with CSS methodologies: BEM, OOCSS, SMACSS",
+					"Mastery of vanilla JavaScript for efficient web applications",
+					"Skilled in HTML Canvas API for interactive graphics and animations",
+					"Employ Jest for testing to ensure quality and reliability",
+					"Well-versed in numerous modern frontend best practices"
+				]
+			},
+			{
+				"subSkill": "React",
+				"description": [
+					"Strong proficiency in CSS, HTML, and modern ES6 JavaScript",
+					"Deep understanding of SOLID principles and best practices",
+					"Experience with CSS methodologies: BEM, OOCSS, SMACSS",
+					"Mastery of vanilla JavaScript for efficient web applications",
+					"Skilled in HTML Canvas API for interactive graphics and animations",
+					"Employ Jest for testing to ensure quality and reliability",
+					"Well-versed in numerous modern frontend best practices"
+				]
+			}
+		]
 	},
 	{
 		"title": "Backend",
-		"subSkills": ["Flask", "Django"]
+		"content": [
+			{
+				"subSkill": "HTML, CSS, Javascript",
+				"description": [
+					"Strong proficiency in CSS, HTML, and modern ES6 JavaScript",
+					"Deep understanding of SOLID principles and best practices",
+					"Experience with CSS methodologies: BEM, OOCSS, SMACSS",
+					"Mastery of vanilla JavaScript for efficient web applications",
+					"Skilled in HTML Canvas API for interactive graphics and animations",
+					"Employ Jest for testing to ensure quality and reliability",
+					"Well-versed in numerous modern frontend best practices"
+				]
+			},
+			{
+				"subSkill": "React",
+				"description": [
+					"Strong proficiency in CSS, HTML, and modern ES6 JavaScript",
+					"Deep understanding of SOLID principles and best practices",
+					"Experience with CSS methodologies: BEM, OOCSS, SMACSS",
+					"Mastery of vanilla JavaScript for efficient web applications",
+					"Skilled in HTML Canvas API for interactive graphics and animations",
+					"Employ Jest for testing to ensure quality and reliability",
+					"Well-versed in numerous modern frontend best practices"
+				]
+			}
+		]
 	},
 	{
 		"title": "UX/UI",
-		"subSkills": ["Tailwind", "HCI"]
+		"content": [
+			{
+				"subSkill": "HTML, CSS, Javascript",
+				"description": [
+					"Strong proficiency in CSS, HTML, and modern ES6 JavaScript",
+					"Deep understanding of SOLID principles and best practices",
+					"Experience with CSS methodologies: BEM, OOCSS, SMACSS",
+					"Mastery of vanilla JavaScript for efficient web applications",
+					"Skilled in HTML Canvas API for interactive graphics and animations",
+					"Employ Jest for testing to ensure quality and reliability",
+					"Well-versed in numerous modern frontend best practices"
+				]
+			},
+			{
+				"subSkill": "React",
+				"description": [
+					"Strong proficiency in CSS, HTML, and modern ES6 JavaScript",
+					"Deep understanding of SOLID principles and best practices",
+					"Experience with CSS methodologies: BEM, OOCSS, SMACSS",
+					"Mastery of vanilla JavaScript for efficient web applications",
+					"Skilled in HTML Canvas API for interactive graphics and animations",
+					"Employ Jest for testing to ensure quality and reliability",
+					"Well-versed in numerous modern frontend best practices"
+				]
+			}
+		]
 	}
 ]

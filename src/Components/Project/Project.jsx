@@ -16,9 +16,17 @@ function Project({ projectContent, image, video }) {
 				<motion.div className="my-2 flex h-fit w-full flex-col font-display text-3xl font-bold text-accent">
 					<motion.h2 className="">{projectContent.title}</motion.h2>
 
-					<div className="flex w-[70px] flex-row justify-between">
-						{projectContent.githubLink && <Github />}
-						{projectContent.siteLink && <Website />}
+					<div className="my-1 flex w-[70px] flex-row justify-between text-accentLighter">
+						{projectContent.githubLink && (
+							<a href={projectContent.githubLink}>
+								<Github />
+							</a>
+						)}
+						{projectContent.siteLink && (
+							<a href={projectContent.siteLink}>
+								<Website />
+							</a>
+						)}
 					</div>
 				</motion.div>
 				<motion.p className="items-center text-info">
