@@ -3,8 +3,9 @@ import SkillCard from "./SkillCard";
 import skillCardInfo from "./SkillCardInfo.json";
 import backend from "../../assets/svg/backend.svg";
 import frontend from "../../assets/svg/frontend.svg";
+import uxui from "../../assets/svg/uxui.svg";
 const Skills = () => {
-	const icons = [backend, frontend, backend];
+	const icons = [frontend, backend, uxui];
 	return (
 		<div
 			id="skills"

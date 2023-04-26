@@ -22,6 +22,7 @@ const SkillCard = (props) => {
 					marginInline: "1rem",
 					display: "flex",
 					width: "20em",
+					height: "16em",
 					flexDirection: "column",
 					alignItems: "center",
 					borderRadius: "0.5rem",
@@ -71,7 +72,7 @@ const SkillCard = (props) => {
 			animate={layout === 0 ? "closed" : "opened"}>
 			<motion.div layout style={dynamicHeaderStyle}>
 				<motion.div layout>
-					<img src={icon} alt="backend" className="h-32 w-full" />
+					<img src={icon} alt="backend" className="my-4 h-32 w-full" />
 				</motion.div>
 				<motion.h2
 					layout
@@ -83,7 +84,7 @@ const SkillCard = (props) => {
 			{layout === 1 && (
 				<motion.ul
 					layout
-					className="h-60 overflow-scroll rounded-lg border border-light  p-4"
+					className="h-60 overflow-scroll overscroll-none rounded-lg border border-light p-2"
 					variants={ulVariants}
 					initial="hidden"
 					animate="visible"
