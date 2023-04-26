@@ -5,6 +5,8 @@ import { MdWork as Work } from "react-icons/md";
 import TimelineElement from "./TimelineElement";
 import gt from "../../assets/svg/Primary Logos/GT Extended/GTExtended_Navy.svg";
 import Porex from "../../assets/svg/Porex.svg";
+import Eaton from "../../assets/svg/Eaton.svg";
+import Intel from "../../assets/svg/intel.svg";
 const Timeline = () => {
 	const timelineData = [
 		{
@@ -23,7 +25,7 @@ const Timeline = () => {
 			location: "Atlanta, GA",
 			role: "Engineering Intern",
 			description:
-				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
+				"In 2018, I graduated from the George W. Woodruff School of Mechanical Engineering. My undergraduate studies in mechanical engineering were complemented with my concentration in Automation and Robotics; during my time at Georgia Tech, I discovered my affinity for design and really enjoyed blending that skillset with my programming skills. I dove into a variety of mechatronics projects that involved working with microcontrollers and robotic kinematics. This hands-on experience not only helped me develop a versatile skillset, but also gave me a unique perspective to tackle real-world engineering challenges in a more personable and approachable way.",
 			date: "May 2015 - Aug 2015",
 			svg: Porex,
 		},
@@ -33,29 +35,29 @@ const Timeline = () => {
 			location: "Atlanta, GA",
 			role: "Product Sustaining Intern",
 			description:
-				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
+				"In 2018, I graduated from the George W. Woodruff School of Mechanical Engineering. My undergraduate studies in mechanical engineering were complemented with my concentration in Automation and Robotics; during my time at Georgia Tech, I discovered my affinity for design and really enjoyed blending that skillset with my programming skills. I dove into a variety of mechatronics projects that involved working with microcontrollers and robotic kinematics. This hands-on experience not only helped me develop a versatile skillset, but also gave me a unique perspective to tackle real-world engineering challenges in a more personable and approachable way.",
 			date: "May 2015 - Aug 2015",
-			svg: gt,
+			svg: Eaton,
 		},
-		{
-			icon: Work,
-			employer: "Modif Media",
-			location: "Atlanta, GA",
-			role: "Cofounder",
-			description:
-				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
-			date: "May 2015 - Aug 2015",
-			svg: gt,
-		},
+		// {
+		// 	icon: Work,
+		// 	employer: "Modif Media",
+		// 	location: "Atlanta, GA",
+		// 	role: "Cofounder",
+		// 	description:
+		// 		"In 2018, I graduated from the George W. Woodruff School of Mechanical Engineering. My undergraduate studies in mechanical engineering were complemented with my concentration in Automation and Robotics; during my time at Georgia Tech, I discovered my affinity for design and really enjoyed blending that skillset with my programming skills. I dove into a variety of mechatronics projects that involved working with microcontrollers and robotic kinematics. This hands-on experience not only helped me develop a versatile skillset, but also gave me a unique perspective to tackle real-world engineering challenges in a more personable and approachable way.",
+		// 	date: "May 2015 - Aug 2015",
+		// 	svg: gt,
+		// },
 		{
 			icon: Work,
 			employer: "Intel",
 			location: "Phoenix, AZ",
 			role: "Mechanical Engineer",
 			description:
-				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
+				"In 2018, I graduated from the George W. Woodruff School of Mechanical Engineering. My undergraduate studies in mechanical engineering were complemented with my concentration in Automation and Robotics; during my time at Georgia Tech, I discovered my affinity for design and really enjoyed blending that skillset with my programming skills. I dove into a variety of mechatronics projects that involved working with microcontrollers and robotic kinematics. This hands-on experience not only helped me develop a versatile skillset, but also gave me a unique perspective to tackle real-world engineering challenges in a more personable and approachable way.",
 			date: "May 2015 - Aug 2015",
-			svg: gt,
+			svg: Intel,
 		},
 		{
 			icon: School,
@@ -63,7 +65,7 @@ const Timeline = () => {
 			location: "Phoenix, AZ",
 			role: "Computer Science Grad Student",
 			description:
-				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
+				"In 2018, I graduated from the George W. Woodruff School of Mechanical Engineering. My undergraduate studies in mechanical engineering were complemented with my concentration in Automation and Robotics; during my time at Georgia Tech, I discovered my affinity for design and really enjoyed blending that skillset with my programming skills. I dove into a variety of mechatronics projects that involved working with microcontrollers and robotic kinematics. This hands-on experience not only helped me develop a versatile skillset, but also gave me a unique perspective to tackle real-world engineering challenges in a more personable and approachable way.",
 			date: "May 2015 - Aug 2015",
 			svg: gt,
 		},

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { BsWindowFullscreen as Frontend } from "react-icons/bs";
 import colors from "../../helpers/colors";
-
+import backend from "../../assets/svg/backend.svg";
 const ulVariants = {
 	hidden: { opacity: 0, transition: { delay: 0.1 } },
 	visible: { opacity: 1, transition: { delay: 0.1 } },
@@ -11,7 +10,7 @@ const ulVariants = {
 
 const SkillCard = (props) => {
 	const [layout, setLayout] = useState(0);
-	const { title, content } = props;
+	const { title, content, icon } = props;
 
 	function toggleLayout() {
 		layout === 0 ? setLayout(1) : setLayout(0);
@@ -72,7 +71,7 @@ const SkillCard = (props) => {
 			animate={layout === 0 ? "closed" : "opened"}>
 			<motion.div layout style={dynamicHeaderStyle}>
 				<motion.div layout>
-					<Frontend className="h-24 w-24 text-light lg:h-36 lg:w-36" />
+					<img src={icon} alt="backend" className="h-32 w-full" />
 				</motion.div>
 				<motion.h2
 					layout

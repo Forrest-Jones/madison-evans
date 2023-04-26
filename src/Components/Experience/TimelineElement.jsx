@@ -83,8 +83,8 @@ const TimelineElement = ({
 								<div className="relative my-auto flex h-[100px] w-[300px] flex-row justify-center rounded-2xl">
 									<img
 										src={svg}
-										alt="GT"
-										className="absolute top-1/2 w-full -translate-y-1/2"
+										alt="svg"
+										className="absolute top-1/2 w-full -translate-y-1/2 py-2"
 									/>
 								</div>
 								<p className="my-1 text-accent">Summary</p>

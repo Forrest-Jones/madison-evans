@@ -1,8 +1,10 @@
 import React from "react";
 import SkillCard from "./SkillCard";
-import jsIcon from "../../assets/svg/icons8-javascript-logo.svg";
 import skillCardInfo from "./SkillCardInfo.json";
+import backend from "../../assets/svg/backend.svg";
+import frontend from "../../assets/svg/frontend.svg";
 const Skills = () => {
+	const icons = [backend, frontend, backend];
 	return (
 		<div
 			id="skills"
@@ -14,7 +16,7 @@ const Skills = () => {
 							key={key}
 							title={skill.title}
 							content={skill.subSkills}
-							icon={jsIcon}
+							icon={icons[key]}
 						/>
 					);
 				})}

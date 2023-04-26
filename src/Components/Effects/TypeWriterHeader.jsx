@@ -6,12 +6,12 @@ const TypeWriterHeader = ({ text }) => {
 		<div className="h-32">
 			<TypeWriterEffect
 				textStyle={{
-					color: colors.light,
+					color: colors.accent,
 					fontWeight: 700,
 					fontSize: "4.5em",
 				}}
 				startDelay={10}
-				cursorColor="#101923"
+				cursorColor={colors.info}
 				multiText={["Madison"]}
 				multiTextDelay={0}
 				typeSpeed={300}
