@@ -12,27 +12,15 @@ import Modal from "./Components/Modal/Modal";
 import { useState } from "react";
 
 function App() {
-	const [showModal, setShowModal] = useState(false);
-	const [modalContent, setModalContent] = useState(null);
 	return (
 		<div className="h-full">
-			<Modal
-				showModal={showModal}
-				setShowModal={setShowModal}
-				modalContent={modalContent}
-			/>
 			<LayoutGrid>
 				<Navbar />
 				<div className="flex w-full flex-col">
 					<AboutMe />
 					<Skills />
 					<Experience />
-					<ProjectPage
-						modalContent={modalContent}
-						setModalContent={setModalContent}
-						showModal={showModal}
-						setShowModal={setShowModal}
-					/>
+					<ProjectPage />
 					<Contact />
 				</div>
 			</LayoutGrid>
