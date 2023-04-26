@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import colors from "../../helpers/colors";
-import GT from "../../assets/svg/GT.svg";
+import GT from "../../assets/svg/Primary Logos/GT Extended/GTExtended_Navy.svg";
 const TimelineElement = ({
 	icon: Icon,
 	location,
@@ -60,7 +60,7 @@ const TimelineElement = ({
 			<motion.div layout className="flex">
 				<Icon className="h-8 w-8 text-accent" />
 			</motion.div>
-			<motion.div layout>
+			<motion.div layout className="w-full pr-8">
 				<motion.div layout className="w-fit">
 					<motion.h2 className="text-info">{employer}</motion.h2>
 					<motion.h3 className="w-fit font-display text-lg font-semibold text-accent">
@@ -71,22 +71,26 @@ const TimelineElement = ({
 				<AnimatePresence>
 					{showDescription && (
 						<motion.div layout>
-							<motion.p
+							<motion.div
 								initial={{ opacity: 0 }}
 								animate={{
 									opacity: 1,
 									transition: { delay: 0.1, duration: 0.2 },
 								}}
 								exit={{ opacity: 0, transition: { duration: 0.1 } }}
-								className="pt-4 text-sm text-info">
+								className="w-full pt-4 text-sm text-info">
+								<div className="relative my-auto flex h-[100px] w-[300px] flex-row justify-center rounded-2xl">
+									<img
+										src={GT}
+										alt="GT"
+										className="absolute top-1/2 w-full -translate-y-1/2"
+									/>
+								</div>
 								<p className="my-1 text-accent">Summary</p>
-								<div className="flex w-full flex-row">
-									<p className="mb-4 max-h-[160px] w-full overflow-scroll overscroll-none rounded-lg p-2">
+								<div className="flex w-full flex-col">
+									<p className="mb-4 max-h-[160px] w-full overflow-scroll overscroll-none rounded-lg">
 										{description}
 									</p>
-									<div className="my-auto flex h-32 w-48 flex-row justify-center rounded-2xl bg-accent">
-										<img src={GT} alt="GT" className="w-3/4" />
-									</div>
 								</div>
 								<p className="my-1 text-accent">Skills</p>
 								<ul>
@@ -94,7 +98,7 @@ const TimelineElement = ({
 									<li>skill 2</li>
 									<li>skill 3</li>
 								</ul>
-							</motion.p>
+							</motion.div>
 						</motion.div>
 					)}
 				</AnimatePresence>
