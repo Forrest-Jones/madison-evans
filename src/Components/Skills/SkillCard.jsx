@@ -64,7 +64,6 @@ const SkillCard = (props) => {
 				transition: { duration: 0.1 },
 			}}
 			whileHover={{
-				// backgroundColor: colors.light,
 				boxShadow: "12px 12px 0 0 rgba(0,0,0,.3)",
 				transition: { duration: 0.1 },
 			}}

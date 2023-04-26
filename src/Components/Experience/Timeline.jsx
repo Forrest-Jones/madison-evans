@@ -1,65 +1,64 @@
 import React from "react";
 import { motion, LayoutGroup } from "framer-motion";
-import { FiCode, FiServer, FiUsers } from "react-icons/fi";
+import { FaGraduationCap as School } from "react-icons/fa";
+import { MdWork as Work } from "react-icons/md";
 import TimelineElement from "./TimelineElement";
 
 const Timeline = () => {
 	const timelineData = [
 		{
-			icon: FiCode,
-			title: "Learned to Code",
+			icon: School,
+			employer: "Georgia Institute of Technology",
+			location: "Atlanta, GA",
+			role: "Undergraduate Student",
 			description:
-				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
-			date: "January 2021",
+				"In 2018, I graduated from the George W. Woodruff School of Mechanical Engineering. My undergraduate studies in mechanical engineering were complemented with my concentration in Automation and Robotics; during my time at Georgia Tech, I discovered my affinity for design and really enjoyed blending that skillset with my programming skills. I dove into a variety of mechatronics projects that involved working with microcontrollers and robotic kinematics. This hands-on experience not only helped me develop a versatile skillset, but also gave me a unique perspective to tackle real-world engineering challenges in a more personable and approachable way.",
+			date: "Sep 2013 - Jun 2018",
 		},
 		{
-			icon: FiServer,
-			title: "Back-end Development",
+			icon: Work,
+			employer: "Porex",
+			location: "Atlanta, GA",
+			role: "Engineering Intern",
 			description:
-				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
-			date: "March 2021",
+				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
+			date: "May 2015 - Aug 2015",
 		},
 		{
-			icon: FiUsers,
-			title: "First Job",
+			icon: Work,
+			employer: "Eaton",
+			location: "Atlanta, GA",
+			role: "Product Sustaining Intern",
 			description:
-				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
-			date: "June 2021",
+				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
+			date: "May 2015 - Aug 2015",
 		},
 		{
-			icon: FiUsers,
-			title: "First Job",
+			icon: Work,
+			employer: "Modif Media",
+			location: "Atlanta, GA",
+			role: "Cofounder",
 			description:
-				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
-			date: "June 2021",
+				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
+			date: "May 2015 - Aug 2015",
 		},
 		{
-			icon: FiUsers,
-			title: "First Job",
+			icon: Work,
+			employer: "Intel",
+			location: "Phoenix, AZ",
+			role: "Mechanical Engineer",
 			description:
-				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
-			date: "June 2021",
+				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
+			date: "May 2015 - Aug 2015",
 		},
 		{
-			icon: FiUsers,
-			title: "First Job",
+			icon: School,
+			employer: "Georgia Institue of Technology",
+			location: "Phoenix, AZ",
+			role: "Computer Science Grad Student",
 			description:
-				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
-			date: "June 2021",
-		},
-		{
-			icon: FiUsers,
-			title: "First Job",
-			description:
-				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
-			date: "June 2021",
-		},
-		{
-			icon: FiUsers,
-			title: "First Job",
-			description:
-				"Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript. Started learning to code with HTML, CSS, and JavaScript.",
-			date: "June 2021",
+				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
+			date: "May 2015 - Aug 2015",
 		},
 	];
 
@@ -70,9 +69,11 @@ const Timeline = () => {
 					<TimelineElement
 						key={index}
 						icon={item.icon}
-						title={item.title}
+						role={item.role}
+						employer={item.employer}
 						description={item.description}
 						date={item.date}
+						location={item.location}
 					/>
 				))}
 			</motion.div>

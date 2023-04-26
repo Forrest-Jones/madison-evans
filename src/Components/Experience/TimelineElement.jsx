@@ -3,7 +3,14 @@ import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import colors from "../../helpers/colors";
 
-const TimelineElement = ({ icon: Icon, title, description, date }) => {
+const TimelineElement = ({
+	icon: Icon,
+	location,
+	role,
+	description,
+	date,
+	employer,
+}) => {
 	const [showDescription, setShowDescription] = useState(false);
 
 	const controls = useAnimation();
@@ -32,6 +39,10 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 			onClick={toggleShowDescription}
 			initial="hidden"
 			animate={controls}
+			whileHover={{
+				boxShadow: "12px 12px 0 0 rgba(0,0,0,.3)",
+				transition: { duration: 0.1 },
+			}}
 			variants={variants}
 			transition={{ type: "spring", duration: 0.45 }}
 			style={{
@@ -40,20 +51,22 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 					? `1px solid ${colors.info}`
 					: `1px solid ${colors.primaryLighter}`,
 			}}
-			className="relative mx-24 flex cursor-pointer flex-col items-start space-x-4  bg-primaryLighter p-4">
+			className="relative mx-[200px] flex cursor-pointer flex-col items-start space-x-4  bg-primaryLighter p-4">
 			<motion.p
 				layout
-				className="absolute -left-[100px] h-fit rounded border border-light p-1 text-xs text-info">
+				className="absolute -left-[150px] h-fit rounded border border-light p-1 text-xs text-info">
 				{date}
 			</motion.p>
 			<motion.div layout className="flex">
-				<Icon className="h-8 w-8 text-info" />
+				<Icon className="h-8 w-8 text-accent" />
 			</motion.div>
 			<motion.div layout>
 				<motion.div layout className="w-fit">
+					<motion.h2 className="text-info">{employer}</motion.h2>
 					<motion.h3 className="w-fit font-display text-lg font-semibold text-accent">
-						{title}
+						{role}
 					</motion.h3>
+					<motion.p className="italic text-info">{location}</motion.p>
 				</motion.div>
 				<AnimatePresence>
 					{showDescription && (
@@ -65,8 +78,17 @@ const TimelineElement = ({ icon: Icon, title, description, date }) => {
 									transition: { delay: 0.1, duration: 0.2 },
 								}}
 								exit={{ opacity: 0, transition: { duration: 0.1 } }}
-								className="text-sm text-info">
-								{description}
+								className="pt-4 text-sm text-info">
+								<p className="my-1 text-accent">Summary</p>
+								<p className="mb-4 max-h-[160px] overflow-scroll overscroll-none rounded-lg p-2">
+									{description}
+								</p>
+								<p className="my-1 text-accent">Skills</p>
+								<ul>
+									<li>skill 1</li>
+									<li>skill 2</li>
+									<li>skill 3</li>
+								</ul>
 							</motion.p>
 						</motion.div>
 					)}
