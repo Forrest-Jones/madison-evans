@@ -46,7 +46,7 @@ const Contact = () => {
 			id="contact"
 			style={{ minHeight: "100vh" }}
 			className="
-			bg-primary p-6 flex flex-col items-center
+			flex flex-col items-center bg-primary p-6
 			md:justify-center">
 			For business inquiries, please contact me at{" "}
 			<strong>
@@ -59,47 +59,47 @@ const Contact = () => {
 			<br />
 			<div
 				className="
-				p-6 h-fit rounded-xl w-full border border-secondary bg-primary
+				h-fit w-full rounded-xl border border-accent bg-primary p-6
 				md:w-[400px]
 				lg:w-[600px]
 				xl:w-[800px]">
 				<form
 					ref={form}
 					onSubmit={sendEmail}
-					className="flex flex-col justify-center items-center">
-					<label className="w-full py-1 text-secondary">Name</label>
+					className="flex flex-col items-center justify-center">
+					<label className="w-full py-1 text-accent">Name</label>
 					<input
 						type="text"
 						name="user_name"
-						className="rounded p-1 w-full max-w-screen-lg border border-secondary"
+						className="w-full max-w-screen-lg rounded border border-accent p-1"
 						required
 						ref={nameInput}
 					/>
-					<label className="w-full py-1 text-secondary">Email</label>
+					<label className="w-full py-1 text-accent">Email</label>
 					<input
 						type="email"
 						name="user_email"
-						className="rounded p-1 w-full border border-secondary"
+						className="w-full rounded border border-accent p-1"
 						required
 						ref={emailInput}
 					/>
-					<label className="w-full py-1 text-secondary">Message</label>
+					<label className="w-full py-1 text-accent">Message</label>
 					<textarea
 						name="message"
 						rows="5"
-						className="rounded p-1 w-full border border-secondary"
+						className="w-full rounded border border-accent p-1"
 						required
 						ref={messageInput}
 					/>
 					{sent ? (
-						<p className="text-accent mt-3 p-1 border border-primary rounded">
+						<p className="mt-3 rounded border border-primary p-1 text-accent">
 							Message sent
 						</p>
 					) : (
 						<input
 							type="submit"
 							value="Send"
-							className="border border-secondary text-light bg-secondary border rounded p-1 w-full mt-3 cursor-pointer hover:bg-accent hover:border-accent hover:text-white transition hover:shadow-[10px_10px_0_0_rgba(0,0,0,.3)]"
+							className="mt-3 w-full cursor-pointer rounded border border border-accent bg-accent p-1 text-light transition hover:border-accent hover:bg-accent hover:text-white hover:shadow-[10px_10px_0_0_rgba(0,0,0,.3)]"
 						/>
 					)}
 				</form>
@@ -109,7 +109,7 @@ const Contact = () => {
 				Connect with me on Linkedin, follow my development projects on Github,
 				and subscribe to my blog:
 			</p>
-			<div className="flex flex-row my-4">
+			<div className="my-4 flex flex-row">
 				<motion.a
 					initial={{ scale: 1, y: 0 }}
 					whileHover={{ scale: 1.05, y: -2 }}

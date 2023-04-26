@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosCloseCircle as CloseButton } from "react-icons/io";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
-
+import { motion } from "framer-motion";
 const Modal = ({ showModal, setShowModal, modalContent }) => {
 	console.log(showModal);
 	const toggleModal = () => {
@@ -9,71 +9,23 @@ const Modal = ({ showModal, setShowModal, modalContent }) => {
 	};
 	if (showModal) {
 		return (
-			<div
+			<motion.div
 				className="
-				fixed w-screen h-screen bg-opacity-90 flex bg-black z-10 items-center
+				fixed z-10 flex h-screen w-full flex-row items-center justify-center bg-black bg-opacity-90
 				">
-				<div
-					style={{ backgroundColor: "#111111", maxWidth: "1280px" }}
+				<motion.button
+					onClick={toggleModal}
 					className="
-					text-white relative rounded-xl w-4/5 mx-auto h-4/5 parent pt-6 
-					md:h-4/5 md:w-full md:pb-10 md:m-6 
-					xl:mx-auto">
-					<button
-						onClick={toggleModal}
-						className="
-						absolute text-white -right-10 -top-10
+						absolute -right-10 -top-10 text-white
 						md:right-1 md:top-1
 						">
-						<CloseButton size="2.5em" />
-					</button>
-					<h1
-						className="
-						div1 text-4xl text-center flex justify-center items-center 
-						md:text-6xl">
-						{modalContent.title}
-					</h1>
-					<div className="div2 py-2 h-full my-auto">
-						<VideoPlayer videoSource={modalContent.video} />
-					</div>
-					<p className="div3 overflow-y-auto px-10 my-2 h-full text-lg">
-						{modalContent.description}
-					</p>
+					<CloseButton size="2.5em" />
+				</motion.button>
 
-					<ul
-						className="
-						div4 flex flex-col h-60 w-full justify-center px-10 pb-3
-						md:px-0">
-						{" "}
-						{modalContent.githubLink && (
-							<li className="w-full">
-								Explore the{" "}
-								<strong>
-									<a
-										href={modalContent.githubLink}
-										target="_blank"
-										rel="noreferrer">
-										<span className="text-red-500 text-xl">github repo</span>
-									</a>
-								</strong>
-							</li>
-						)}
-						{modalContent.siteLink && (
-							<li>
-								Visit the site{" "}
-								<strong>
-									<a
-										href={modalContent.siteLink}
-										target="_blank"
-										rel="noreferrer">
-										<span className="text-red-500 text-xl">here</span>
-									</a>
-								</strong>
-							</li>
-						)}
-					</ul>
-				</div>
-			</div>
+				<motion.div className="div2 my-auto h-5/6 w-5/6 py-2">
+					<VideoPlayer videoSource={modalContent.video} />
+				</motion.div>
+			</motion.div>
 		);
 	} else {
 		return <></>;

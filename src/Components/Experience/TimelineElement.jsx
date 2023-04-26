@@ -55,7 +55,7 @@ const TimelineElement = ({
 			className="relative mx-[200px] flex cursor-pointer flex-col items-start space-x-4  bg-primaryLighter p-4">
 			<motion.p
 				layout
-				className="absolute -left-[150px] h-fit rounded border border-light p-1 text-xs text-info">
+				className="absolute -left-[150px] h-fit rounded border border-light p-1 text-xs text-accentLighter">
 				{date}
 			</motion.p>
 			<motion.div layout className="flex">

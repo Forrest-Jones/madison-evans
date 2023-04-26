@@ -65,7 +65,7 @@ const SkillCard = (props) => {
 			}}
 			whileHover={{
 				boxShadow: "12px 12px 0 0 rgba(0,0,0,.3)",
-				transition: { duration: 0.1 },
+				transition: { type: "spring", duration: 0.2 },
 			}}
 			transition={{ type: "ease", duration: 0.25 }}
 			style={dynamicContainerStyle}
