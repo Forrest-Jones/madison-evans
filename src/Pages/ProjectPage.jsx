@@ -42,7 +42,7 @@ const ProjectPage = ({
 	setShowModal,
 }) => {
 	return (
-		<div id="projects" className="h-screen bg-primary">
+		<div id="projects" className="h-fit bg-primary">
 			<div className="h-32 py-6 text-center ">
 				<h1
 					style={{
@@ -55,7 +55,7 @@ const ProjectPage = ({
 				</h1>
 			</div>
 			<ModalContext.Provider value={{ modalContent, setModalContent }}>
-				<ProjectGroupContainer>
+				<div className="mx-10">
 					<Project
 						image={image1}
 						setShowModal={setShowModal}
@@ -74,7 +74,7 @@ const ProjectPage = ({
 						showModal={showModal}
 						projectContent={project3Content}
 					/>
-				</ProjectGroupContainer>
+				</div>
 			</ModalContext.Provider>
 		</div>
 	);

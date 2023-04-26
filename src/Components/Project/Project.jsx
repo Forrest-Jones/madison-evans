@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useContext } from "react";
+import colors from "../../helpers/colors";
 import ModalContext from "../../helpers/ModalContext";
 
 function Project({ setShowModal, showModal, projectContent, image }) {
@@ -13,14 +14,25 @@ function Project({ setShowModal, showModal, projectContent, image }) {
 	};
 
 	return (
-		<>
+		<div className="my-12 flex flex-row items-center justify-center">
 			<motion.div
 				className="
-				object-contain bg-center bg-cover w-48 h-48 cursor-pointer bg-primary text-info mt-8 py-8 rounded-xl flex flex-col items-center justify-start transition hover:shadow-[20px_20px_0_0_rgba(0,0,0,.3)]
+				flex h-48 w-96 cursor-pointer flex-col items-center justify-start rounded-md bg-primary bg-cover bg-center object-contain py-8 text-info 
 				md:mx-4"
 				style={{ backgroundImage: `url(${image})` }}
-				onClick={handleProjectClick}></motion.div>
-		</>
+				whileHover={{
+					boxShadow: "20px 20px 0px 0px rgba(0,0,0,0.3)",
+					transition: { duration: 0.1 },
+				}}
+				onClick={handleProjectClick}
+			/>
+			<div className="flex h-full w-full flex-col px-8">
+				<h2 className="my-2 font-display text-3xl font-bold text-accent">
+					{projectContent.title}
+				</h2>
+				<p className="items-center text-info">{projectContent.description}</p>
+			</div>
+		</div>
 	);
 }
 
