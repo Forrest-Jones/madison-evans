@@ -1,8 +1,7 @@
 import React from "react";
+import ReactPlayer from "react-player";
 
-import ReactPlayer from "react-player"; // import the ReactPlayer component from the package
-
-const VideoPlayer = ({ videoSource }) => {
+const VideoPlayer = ({ videoSource, image }) => {
 	return (
 		<ReactPlayer
 			url={videoSource}
@@ -10,6 +9,7 @@ const VideoPlayer = ({ videoSource }) => {
 			width="100%"
 			height="100%"
 			style={{ backgroundColor: "transparent" }}
+			light={image}
 		/>
 	);
 };
