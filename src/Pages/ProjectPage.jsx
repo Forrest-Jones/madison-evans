@@ -8,7 +8,6 @@ import image2 from "../assets/images/blue-cloud-img.png";
 import image3 from "../assets/images/drop-the-ball-img.png";
 import Project from "../Components/Project/Project";
 import ModalContext from "../helpers/ModalContext";
-import { motion } from "framer-motion";
 import colors from "../helpers/colors";
 // Palette Pal
 const project1Content = {
@@ -43,14 +42,8 @@ const ProjectPage = ({
 }) => {
 	return (
 		<div id="projects" className="h-fit bg-primary">
-			<div className="h-32 py-6 text-center ">
-				<h1
-					style={{
-						color: colors.light,
-						fontWeight: 700,
-						fontSize: "4em",
-						paddingInline: ".25em",
-					}}>
+			<div className="mb-40 h-32 py-6 text-center">
+				<h1 className="font-display text-6xl font-bold text-info">
 					My Projects
 				</h1>
 			</div>

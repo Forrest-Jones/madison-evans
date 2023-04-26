@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useContext } from "react";
-import colors from "../../helpers/colors";
+
 import ModalContext from "../../helpers/ModalContext";
 
 function Project({ setShowModal, showModal, projectContent, image }) {
@@ -17,8 +17,8 @@ function Project({ setShowModal, showModal, projectContent, image }) {
 		<div className="my-12 flex flex-row items-center justify-center">
 			<motion.div
 				className="
-				flex h-48 w-96 cursor-pointer flex-col items-center justify-start rounded-md bg-primary bg-cover bg-center object-contain py-8 text-info 
-				md:mx-4"
+				flex h-80 w-96 cursor-pointer flex-col items-center justify-start rounded-md bg-primary bg-cover bg-center object-contain py-8 text-info 
+				md:mx-10"
 				style={{ backgroundImage: `url(${image})` }}
 				whileHover={{
 					boxShadow: "20px 20px 0px 0px rgba(0,0,0,0.3)",
