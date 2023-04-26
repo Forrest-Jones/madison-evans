@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import colors from "../../helpers/colors";
-
+import GT from "../../assets/svg/GT.svg";
 const TimelineElement = ({
 	icon: Icon,
 	location,
@@ -80,9 +80,14 @@ const TimelineElement = ({
 								exit={{ opacity: 0, transition: { duration: 0.1 } }}
 								className="pt-4 text-sm text-info">
 								<p className="my-1 text-accent">Summary</p>
-								<p className="mb-4 max-h-[160px] overflow-scroll overscroll-none rounded-lg p-2">
-									{description}
-								</p>
+								<div className="flex w-full flex-row">
+									<p className="mb-4 max-h-[160px] w-full overflow-scroll overscroll-none rounded-lg p-2">
+										{description}
+									</p>
+									<div className="my-auto flex h-32 w-48 flex-row justify-center rounded-2xl bg-accent">
+										<img src={GT} alt="GT" className="w-3/4" />
+									</div>
+								</div>
 								<p className="my-1 text-accent">Skills</p>
 								<ul>
 									<li>skill 1</li>
