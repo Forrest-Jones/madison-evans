@@ -3,7 +3,8 @@ import { motion, LayoutGroup } from "framer-motion";
 import { FaGraduationCap as School } from "react-icons/fa";
 import { MdWork as Work } from "react-icons/md";
 import TimelineElement from "./TimelineElement";
-import GT from "../../assets/svg/Primary Logos/GT Extended/GTExtended_Navy.svg";
+import gt from "../../assets/svg/Primary Logos/GT Extended/GTExtended_Navy.svg";
+import Porex from "../../assets/svg/Porex.svg";
 const Timeline = () => {
 	const timelineData = [
 		{
@@ -14,7 +15,7 @@ const Timeline = () => {
 			description:
 				"In 2018, I graduated from the George W. Woodruff School of Mechanical Engineering. My undergraduate studies in mechanical engineering were complemented with my concentration in Automation and Robotics; during my time at Georgia Tech, I discovered my affinity for design and really enjoyed blending that skillset with my programming skills. I dove into a variety of mechatronics projects that involved working with microcontrollers and robotic kinematics. This hands-on experience not only helped me develop a versatile skillset, but also gave me a unique perspective to tackle real-world engineering challenges in a more personable and approachable way.",
 			date: "Sep 2013 - Jun 2018",
-			svg: GT,
+			svg: gt,
 		},
 		{
 			icon: Work,
@@ -24,7 +25,7 @@ const Timeline = () => {
 			description:
 				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
 			date: "May 2015 - Aug 2015",
-			svg: GT,
+			svg: Porex,
 		},
 		{
 			icon: Work,
@@ -34,7 +35,7 @@ const Timeline = () => {
 			description:
 				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
 			date: "May 2015 - Aug 2015",
-			svg: GT,
+			svg: gt,
 		},
 		{
 			icon: Work,
@@ -44,7 +45,7 @@ const Timeline = () => {
 			description:
 				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
 			date: "May 2015 - Aug 2015",
-			svg: GT,
+			svg: gt,
 		},
 		{
 			icon: Work,
@@ -54,7 +55,7 @@ const Timeline = () => {
 			description:
 				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
 			date: "May 2015 - Aug 2015",
-			svg: GT,
+			svg: gt,
 		},
 		{
 			icon: School,
@@ -64,7 +65,7 @@ const Timeline = () => {
 			description:
 				"- Conducted design-of-experiements that led to improved production capabilities - Created process flow charts and time studies for various tooling processes",
 			date: "May 2015 - Aug 2015",
-			svg: GT,
+			svg: gt,
 		},
 	];
 
@@ -80,7 +81,7 @@ const Timeline = () => {
 						description={item.description}
 						date={item.date}
 						location={item.location}
-						svg={GT}
+						svg={item.svg}
 					/>
 				))}
 			</motion.div>
