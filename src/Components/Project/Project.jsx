@@ -7,7 +7,7 @@ function ProjectVideo({ toggler, video }) {
 	return (
 		<motion.div
 			className="
-					z-10 flex h-[450px] w-full flex-row items-center justify-center bg-black bg-opacity-90
+					z-10 flex h-[450px] w-[1000px] flex-row items-center justify-center bg-black bg-opacity-90
 					">
 			<motion.button
 				onClick={toggler}
@@ -20,7 +20,7 @@ function ProjectVideo({ toggler, video }) {
 
 			<motion.div
 				layoutId="project-video"
-				className="div2 my-auto h-5/6 w-5/6 py-2">
+				className="div2 my-auto h-full w-full py-2">
 				<VideoPlayer videoSource={video} />
 			</motion.div>
 		</motion.div>
@@ -32,7 +32,7 @@ function ProjectCard({ toggler, image }) {
 		<motion.div
 			layoutId="project-video"
 			className="
-					flex h-80 w-96 cursor-pointer flex-col items-center justify-start rounded-md bg-primary bg-cover bg-center object-contain py-8 text-info 
+					flex h-80 w-[1000px] cursor-pointer flex-col items-center justify-start bg-primary bg-cover bg-center object-contain py-8 text-info 
 					md:mx-10"
 			style={{ backgroundImage: `url(${image})` }}
 			whileHover={{
@@ -58,11 +58,15 @@ function Project({ projectContent, image }) {
 			) : (
 				<ProjectVideo toggler={toggleVideo} video={projectContent.video} />
 			)}
-			<motion.div className="flex h-full w-full flex-col px-8">
-				<h2 className="my-2 font-display text-3xl font-bold text-accent">
+			<motion.div
+				layout
+				className="flex h-full w-full flex-col items-center justify-center px-8">
+				<motion.h2 className="my-2 h-fit w-full font-display text-3xl font-bold text-accent">
 					{projectContent.title}
-				</h2>
-				<p className="items-center text-info">{projectContent.description}</p>
+				</motion.h2>
+				<motion.p className="items-center text-info">
+					{projectContent.description}
+				</motion.p>
 			</motion.div>
 		</motion.div>
 	);
