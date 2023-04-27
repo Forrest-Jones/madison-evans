@@ -19,7 +19,7 @@ function AboutMe() {
 				className="
 				z-50 flex h-full w-full flex-col justify-center
 				px-6 pt-10 text-info md:w-full">
-				<div className="flex w-full flex-row items-center justify-between md:justify-start lg:pl-[200px]">
+				<div className="flex w-full flex-row items-center justify-between md:justify-start ">
 					<div>
 						<h1 className="mb-2 text-left text-2xl font-bold md:text-3xl ">
 							Hi, I'm
@@ -57,7 +57,7 @@ function AboutMe() {
 					<img
 						src={lightbulbGear}
 						alt="overlay"
-						className="mx-auto w-[150px] md:w-[300px] lg:ml-[150px]"
+						className="mx-auto w-[150px] md:w-[200px] lg:w-[250px]"
 					/>
 				</div>
 			</div>

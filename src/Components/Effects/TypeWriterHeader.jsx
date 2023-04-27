@@ -3,16 +3,11 @@ import TypeWriterEffect from "react-typewriter-effect";
 import colors from "../../helpers/colors";
 const TypeWriterHeader = ({ text }) => {
 	return (
-		<div className="h-32">
+		<div className="font-dispaly h-fit text-[4em] font-bold text-accent">
 			<TypeWriterEffect
-				textStyle={{
-					color: colors.accent,
-					fontWeight: 700,
-					fontSize: "4.5em",
-				}}
 				startDelay={10}
 				cursorColor={colors.info}
-				multiText={["Madison"]}
+				multiText={[text]}
 				multiTextDelay={0}
 				typeSpeed={300}
 			/>
