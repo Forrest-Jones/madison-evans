@@ -11,6 +11,7 @@ const TimelineElement = ({
 	date,
 	svg,
 	employer,
+	skills,
 }) => {
 	const [showDescription, setShowDescription] = useState(false);
 
@@ -96,9 +97,9 @@ const TimelineElement = ({
 								</div>
 								<p className="my-1 text-accent">Skills</p>
 								<ul>
-									<li>skill 1</li>
-									<li>skill 2</li>
-									<li>skill 3</li>
+									{skills.map((skill) => {
+										return <li className="list-disc">{skill}</li>;
+									})}
 								</ul>
 							</motion.div>
 						</motion.div>
