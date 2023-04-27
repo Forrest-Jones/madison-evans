@@ -52,7 +52,7 @@ const SkillCard = (props) => {
 			transition={{ type: "ease", duration: 0.25 }}
 			style={dynamicContainerStyle}
 			animate={layout === 0 ? "closed" : "opened"}
-			className="my-2 flex flex-col items-center border">
+			className="my-2 flex flex-col items-center border md:mx-2 lg:mx-6">
 			<CardHeader icon={icon} title={title} />
 
 			{layout === 1 && (

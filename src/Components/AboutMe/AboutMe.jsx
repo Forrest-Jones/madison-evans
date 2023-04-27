@@ -20,7 +20,7 @@ function AboutMe() {
 				z-50 flex h-full w-full flex-col justify-center
 				px-6 text-info md:w-full">
 				<div className="flex w-full flex-row items-center justify-between md:justify-start ">
-					<div>
+					<div className="md:ml-32">
 						<h1 className="mb-2 text-left text-2xl font-bold md:text-3xl ">
 							Hi, I'm
 						</h1>
@@ -57,7 +57,7 @@ function AboutMe() {
 					<img
 						src={lightbulbGear}
 						alt="overlay"
-						className="mx-auto w-[25%] md:w-[170px] lg:w-[250px]"
+						className="mx-auto w-[25%] md:w-[170px] lg:w-[250px] xl:w-[320px]"
 					/>
 				</div>
 			</div>

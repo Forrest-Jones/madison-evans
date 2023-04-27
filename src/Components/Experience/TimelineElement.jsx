@@ -52,13 +52,14 @@ const TimelineElement = ({
 					? `1px solid ${colors.info}`
 					: `1px solid ${colors.primaryLighter}`,
 			}}
-			className="relative mx-[200px] flex cursor-pointer flex-col items-start space-x-4  bg-primaryLighter p-4">
+			className="relative ml-[140px] mr-[20px] flex cursor-pointer flex-col items-start space-x-4 bg-primaryLighter  p-4 md:mx-[200px]">
 			<motion.p
 				layout
-				className="absolute -left-[150px] h-fit rounded border border-light p-1 text-xs text-accentLighter">
+				className="absolute -left-[120px] h-fit rounded border border-light p-1 text-[.5em] text-accentLighter md:-left-[140px] md:text-xs">
 				{date}
 			</motion.p>
-			<motion.div layout className="flex">
+
+			<motion.div layout className="flex w-fit">
 				<Icon className="h-8 w-8 text-accent" />
 			</motion.div>
 			<motion.div layout className="w-full pr-8">
@@ -80,7 +81,7 @@ const TimelineElement = ({
 								}}
 								exit={{ opacity: 0, transition: { duration: 0.1 } }}
 								className="w-full pt-4 text-sm text-info">
-								<div className="relative my-auto flex h-[100px] w-[300px] flex-row justify-center rounded-2xl">
+								<div className="relative my-auto flex h-[100px] w-[200px] flex-row justify-center rounded-2xl lg:w-[300px]">
 									<img
 										src={svg}
 										alt="svg"
