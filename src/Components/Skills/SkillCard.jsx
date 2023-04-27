@@ -19,38 +19,22 @@ const SkillCard = (props) => {
 	const dynamicContainerStyle =
 		layout === 0
 			? {
-					marginInline: "1rem",
-					display: "flex",
 					width: "22em",
 					height: "16em",
-					flexDirection: "column",
 					alignItems: "center",
 					borderRadius: "0.5rem",
-
+					border: `1px solid ${colors.primaryLighter}`,
 					padding: "0.5rem",
 					cursor: "pointer",
 			  }
 			: {
-					marginInline: "1rem",
-					display: "flex",
 					width: "22em",
 					height: "36em",
-					flexDirection: "column",
 					alignItems: "center",
 					borderRadius: "0.5rem",
 					border: `1px solid ${colors.light}`,
 					padding: "0.5rem",
 					cursor: "pointer",
-			  };
-
-	const dynamicHeaderStyle =
-		layout === 0
-			? { display: "flex", flexDirection: "column", alignItems: "center" }
-			: {
-					display: "flex",
-					flexDirection: "column",
-					alignItems: "center",
-					width: "100%",
 			  };
 
 	return (
@@ -69,8 +53,9 @@ const SkillCard = (props) => {
 			}}
 			transition={{ type: "ease", duration: 0.25 }}
 			style={dynamicContainerStyle}
-			animate={layout === 0 ? "closed" : "opened"}>
-			<motion.div layout style={dynamicHeaderStyle}>
+			animate={layout === 0 ? "closed" : "opened"}
+			className="my-2 flex flex-col">
+			<motion.div layout>
 				<motion.div
 					layout
 					className="mx-auto flex flex-row items-center justify-center">
@@ -78,7 +63,7 @@ const SkillCard = (props) => {
 				</motion.div>
 				<motion.h2
 					layout
-					className="my-1 font-display text-2xl font-bold text-light">
+					className="my-1 mx-auto w-fit font-display text-2xl font-bold text-light">
 					{title}
 				</motion.h2>
 			</motion.div>
