@@ -21,8 +21,7 @@ const SkillCard = (props) => {
 			? {
 					width: "22em",
 					height: "16em",
-					alignItems: "center",
-					borderRadius: "0.5rem",
+					borderRadius: "10px",
 					border: `1px solid ${colors.primaryLighter}`,
 					padding: "0.5rem",
 					cursor: "pointer",
@@ -30,8 +29,7 @@ const SkillCard = (props) => {
 			: {
 					width: "22em",
 					height: "36em",
-					alignItems: "center",
-					borderRadius: "0.5rem",
+					borderRadius: "10px",
 					border: `1px solid ${colors.light}`,
 					padding: "0.5rem",
 					cursor: "pointer",
@@ -54,19 +52,8 @@ const SkillCard = (props) => {
 			transition={{ type: "ease", duration: 0.25 }}
 			style={dynamicContainerStyle}
 			animate={layout === 0 ? "closed" : "opened"}
-			className="my-2 flex flex-col">
-			<motion.div layout>
-				<motion.div
-					layout
-					className="mx-auto flex flex-row items-center justify-center">
-					<img src={icon} alt="backend" className="my-4 mx-auto h-32 w-fit" />
-				</motion.div>
-				<motion.h2
-					layout
-					className="my-1 mx-auto w-fit font-display text-2xl font-bold text-light">
-					{title}
-				</motion.h2>
-			</motion.div>
+			className="my-2 flex flex-col items-center border">
+			<CardHeader icon={icon} title={title} />
 
 			{layout === 1 && (
 				<motion.ul
@@ -100,3 +87,19 @@ const SkillCard = (props) => {
 };
 
 export default SkillCard;
+function CardHeader({ icon, title }) {
+	return (
+		<motion.div layout>
+			<motion.div
+				layout
+				className="mx-auto flex flex-row items-center justify-center">
+				<img src={icon} alt="backend" className="my-4 mx-auto h-32 w-fit" />
+			</motion.div>
+			<motion.h2
+				layout
+				className="my-1 mx-auto w-fit font-display text-2xl font-bold text-light">
+				{title}
+			</motion.h2>
+		</motion.div>
+	);
+}
