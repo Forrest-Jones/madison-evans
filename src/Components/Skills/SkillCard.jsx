@@ -34,7 +34,7 @@ const SkillCard = (props) => {
 					marginInline: "1rem",
 					display: "flex",
 					width: "20em",
-					height: "25em",
+					height: "36em",
 					flexDirection: "column",
 					alignItems: "center",
 					borderRadius: "0.5rem",
@@ -84,7 +84,7 @@ const SkillCard = (props) => {
 			{layout === 1 && (
 				<motion.ul
 					layout
-					className="h-60 overflow-scroll overscroll-none rounded-lg border border-light p-2"
+					className="my-3 mx-2 h-full overflow-scroll overscroll-none rounded-lg border border-light p-2"
 					variants={ulVariants}
 					initial="hidden"
 					animate="visible"
