@@ -12,7 +12,7 @@ function Project({ projectContent, image, video }) {
 					boxShadow: "16px 16px 0 0 rgba(0,0,0,.3)",
 					transition: { type: "spring", duration: 0.2 },
 				}}
-				className="h-80 w-[800px]">
+				className="h-80 w-[800px] overflow-hidden rounded-[6px] border">
 				<VideoPlayer videoSource={video} image={image} />
 			</motion.div>
 			<motion.div

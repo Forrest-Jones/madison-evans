@@ -12,7 +12,7 @@ const Skills = () => {
 			id="skills"
 			className="flex h-screen w-full flex-col items-center justify-around bg-primary">
 			<div className="mb-12 h-32 py-24 text-center">
-				<h1 className="font-display text-6xl font-bold text-info">Skills</h1>
+				<h1 className="font-display text-6xl font-bold text-info">My Skills</h1>
 			</div>
 			<div className="flex h-full w-full flex-col items-center justify-center md:flex-row">
 				<LayoutGroup>

@@ -8,7 +8,7 @@ const VideoPlayer = ({ videoSource, image }) => {
 			controls
 			width="100%"
 			height="100%"
-			style={{ backgroundColor: "transparent" }}
+			style={{ backgroundColor: "black" }}
 			light={image}
 		/>
 	);

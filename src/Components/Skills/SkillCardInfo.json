@@ -5,25 +5,21 @@
 			{
 				"subSkill": "HTML, CSS, Javascript",
 				"description": [
-					"Strong proficiency in CSS, HTML, and modern ES6 JavaScript",
-					"Deep understanding of SOLID principles and best practices",
-					"Experience with CSS methodologies: BEM, OOCSS, SMACSS",
-					"Mastery of vanilla JavaScript for efficient web applications",
-					"Skilled in HTML Canvas API for interactive graphics and animations",
-					"Employ Jest for testing to ensure quality and reliability",
-					"Well-versed in numerous modern frontend best practices"
+					"Proficient in CSS, HTML, and modern ES6 JavaScript",
+					"CSS paradigms: BEM, OOCSS, SMACSS",
+					"Knowledgable of HTML Canvas for interactive graphics and animations",
+					"Well versed in Jest library for test suite development and combinatorial testing methods"
 				]
 			},
 			{
 				"subSkill": "React",
 				"description": [
-					"Proficient in React.js development, including functional components and hooks",
-					"Utilizes design patterns such as Higher-Order Components and Render Props for clean and maintainable code",
-					"Adheres to DRY (Don't Repeat Yourself) principles to reduce redundancy and improve code readability",
-					"Experienced with React Testing Library for comprehensive unit and integration tests, ensuring robust applications",
-					"Familiar with React best practices, including code splitting, lazy loading, and performance optimization",
-					"Skilled in creating efficient, reusable components and custom hooks for enhanced functionality and modularity",
-					"Knowledgeable in handling state management using Context API or libraries like Redux, ensuring scalable application architecture"
+					"Proficient in modern React development",
+					"Iplements React design patterns and DRY principles for clean and maintainable code",
+					"Knowledgable with React Testing Library for comprehensive unit and integration tests",
+					"Utilizes developer best practices, including code splitting, lazy loading, and performance optimization",
+					"Creates reusable components and custom hooks for enhanced functionality and modularity",
+					"Proficient in state management, using Context API or libraries like Redux to ensure scalable architecture"
 				]
 			}
 		]
@@ -34,26 +30,21 @@
 			{
 				"subSkill": "Python",
 				"description": [
-					"Proficient in Python, adhering to best practices and writing clean, Pythonic code",
-					"Knowledgeable in popular libraries: NumPy, Pandas, Matplotlib for data manipulation and visualization",
-					"Skilled in utilizing data structures and algorithms to optimize software performance",
-					"Experience with machine learning libraries, including scikit-learn for predictive modeling and data analysis",
-					"Familiar with Python's standard library and built-in functions for efficient coding",
-					"Comfortable using virtual environments and dependency management tools, e.g., pip, conda",
-					"Proficient in debugging, testing, and profiling Python code for error-free, optimized applications"
+					"Proficient in Python, SOLID principles, and writing clean, Pythonic code",
+					"Skilled with popular libraries: NumPy, Pandas, Matplotlib for data manipulation and visualization",
+					"Utilizes data structures and algorithms to optimize software performance",
+					"Experience with machine learning libraries such as scikit-learn for predictive modeling and data analysis"
 				]
 			},
 			{
 				"subSkill": "Flask",
 				"description": [
-					"Proficient in Flask backend development, adhering to best practices and design patterns",
-					"Skilled in developing RESTful APIs with Flask for seamless data exchange and communication",
-					"Experience with user authentication using various methods, such as sessions and JWT tokens",
-					"Proven track record in building full-stack applications using Flask as the backend framework",
-					"Strong database design skills, using Entity Relationship Diagrams to create efficient schemas",
-					"Familiar with popular ORM libraries, such as SQLAlchemy, for seamless database integration with Flask",
-					"Knowledgeable in using Flask extensions, such as Flask-RESTful and Flask-Security, to enhance application functionality",
-					"Comfortable with deploying and scaling Flask applications using platforms like Heroku and AWS"
+					"Utilizes Flask library for backend development",
+					"Skilled in RESTful API design and development",
+					"Implements user authentication using various methods, such as sessions and JWT tokens",
+					"Strong database design skills",
+					"Familiar with popular ORM libraries, such as SQLAlchemy, for seamless database integration",
+					"Comfortable with deploying and scaling Flask applications using cloud services such as AWS"
 				]
 			}
 		]
@@ -64,17 +55,17 @@
 			{
 				"subSkill": "HCI",
 				"description": [
-					"Completed HCI coursework during Master's in Computer Science program, gaining a strong foundation in design principles and UX/UI",
-					"Proficient in applying HCI concepts to create user-centered designs, ensuring seamless interactions and improved user satisfaction",
-					"Skilled in conducting user research, such as interviews, surveys, and usability testing, to gather insights and inform design decisions",
-					"Experienced in creating wireframes, mockups, and prototypes to effectively communicate design concepts and facilitate iterative improvements"
+					"Completed coursework in Human Computer Interaction during grad school",
+					"Knowledgable in applying HCI concepts to create user-centered designs",
+					"Has experience conducting user research, such as interviews, surveys, and usability testing, to gather insights and inform design decisions",
+					"Comfortable with creating wireframes, mockups, and prototypes to effectively communicate design concepts and facilitate iterative improvements"
 				]
 			},
 			{
 				"subSkill": "Figma",
 				"description": [
 					"Experienced in creating design systems, reusable components, and responsive layouts to ensure consistency and adaptability across devices",
-					"Proficient in using Figma for UI/UX design, creating visually appealing interfaces and user experiences"
+					"Familiarity with Figma for UI/UX design, creating visually appealing interfaces and user experiences"
 				]
 			}
 		]
