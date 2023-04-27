@@ -2,7 +2,7 @@ import React from "react";
 
 function LayoutGrid({ children }) {
 	const navStyling =
-		"w-full h-28 md:h-full md:w-40 fixed flex flex-col justify-center h-full";
+		"z-30 w-full h-28 md:h-full md:w-40 md:fixed flex-col justify-center";
 
 	const contentStyling = "md:pl-40 w-full";
 
