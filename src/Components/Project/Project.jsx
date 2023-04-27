@@ -7,9 +7,14 @@ function Project({ projectContent, image, video }) {
 		<motion.div
 			layout
 			className="my-12 flex flex-row items-center justify-center">
-			<div className="h-80 w-[800px]">
+			<motion.div
+				whileHover={{
+					boxShadow: "16px 16px 0 0 rgba(0,0,0,.3)",
+					transition: { type: "spring", duration: 0.2 },
+				}}
+				className="h-80 w-[800px]">
 				<VideoPlayer videoSource={video} image={image} />
-			</div>
+			</motion.div>
 			<motion.div
 				layout
 				className="flex h-full w-full flex-col items-center justify-center px-8">

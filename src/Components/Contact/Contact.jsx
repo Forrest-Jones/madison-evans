@@ -48,18 +48,24 @@ const Contact = () => {
 			className="
 			flex flex-col items-center bg-primary p-6
 			md:justify-center">
-			For business inquiries, please contact me at{" "}
+			<div className="mb-12 h-32 py-24 text-center">
+				<h1 className="font-display text-6xl font-bold text-info">
+					Get In Touch
+				</h1>
+			</div>
+			<p className="text-info">For business inquiries, please contact me at</p>
 			<strong>
 				<a href="mailto:m.corbinevans@gmail.com" className="block text-accent">
 					m.corbinevans@gmail.com
 				</a>
 			</strong>
-			Or fill out the form below:
+			<p className="text-info">Or fill out the form below:</p>
+
 			<br />
 			<br />
 			<div
 				className="
-				h-fit w-full rounded-xl border border-accent bg-primary p-6
+				h-fit w-full rounded-xl border border-info bg-primaryLighter p-6
 				md:w-[400px]
 				lg:w-[600px]
 				xl:w-[800px]">
@@ -105,7 +111,7 @@ const Contact = () => {
 				</form>
 			</div>
 			<br />
-			<p className="px-6 text-center">
+			<p className="px-6 text-center text-info">
 				Connect with me on Linkedin, follow my development projects on Github,
 				and subscribe to my blog:
 			</p>
@@ -113,12 +119,14 @@ const Contact = () => {
 				<motion.a
 					initial={{ scale: 1, y: 0 }}
 					whileHover={{ scale: 1.05, y: -2 }}
+					className="text-accent"
 					target="_blank"
 					href="https://www.linkedin.com/in/madison-evans-98a350a3/"
 					rel="noreferrer">
 					<Linkedin size="1.5em" />
 				</motion.a>
 				<motion.a
+					className="text-accent"
 					initial={{ scale: 1, y: 0 }}
 					whileHover={{ scale: 1.05, y: -2 }}
 					target="_blank"
@@ -127,6 +135,7 @@ const Contact = () => {
 					<Github size="1.5em" className="mx-3" />
 				</motion.a>
 				<motion.a
+					className="text-accent"
 					initial={{ scale: 1, y: 0 }}
 					whileHover={{ scale: 1.05, y: -2 }}
 					target="_blank"

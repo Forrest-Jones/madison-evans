@@ -21,7 +21,7 @@ const SkillCard = (props) => {
 			? {
 					marginInline: "1rem",
 					display: "flex",
-					width: "20em",
+					width: "22em",
 					height: "16em",
 					flexDirection: "column",
 					alignItems: "center",
@@ -33,7 +33,7 @@ const SkillCard = (props) => {
 			: {
 					marginInline: "1rem",
 					display: "flex",
-					width: "20em",
+					width: "22em",
 					height: "36em",
 					flexDirection: "column",
 					alignItems: "center",
@@ -64,15 +64,17 @@ const SkillCard = (props) => {
 				transition: { duration: 0.1 },
 			}}
 			whileHover={{
-				boxShadow: "12px 12px 0 0 rgba(0,0,0,.3)",
+				boxShadow: "16px 16px 0 0 rgba(0,0,0,.3)",
 				transition: { type: "spring", duration: 0.2 },
 			}}
 			transition={{ type: "ease", duration: 0.25 }}
 			style={dynamicContainerStyle}
 			animate={layout === 0 ? "closed" : "opened"}>
 			<motion.div layout style={dynamicHeaderStyle}>
-				<motion.div layout>
-					<img src={icon} alt="backend" className="my-4 h-32 w-full" />
+				<motion.div
+					layout
+					className="mx-auto flex flex-row items-center justify-center">
+					<img src={icon} alt="backend" className="my-4 mx-auto h-32 w-fit" />
 				</motion.div>
 				<motion.h2
 					layout

@@ -18,7 +18,7 @@ const ProjectPage = () => {
 
 	return (
 		<div id="projects" className="h-fit bg-primary">
-			<div className="mb-40 h-32 py-6 text-center">
+			<div className="mb-12 h-32 py-24 text-center">
 				<h1 className="font-display text-6xl font-bold text-info">
 					My Projects
 				</h1>
