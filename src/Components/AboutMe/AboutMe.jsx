@@ -18,7 +18,7 @@ function AboutMe() {
 			<div
 				className="
 				z-50 flex h-full w-full flex-col justify-center
-				px-6 pt-10 text-info md:w-full">
+				px-6 text-info md:w-full">
 				<div className="flex w-full flex-row items-center justify-between md:justify-start ">
 					<div>
 						<h1 className="mb-2 text-left text-2xl font-bold md:text-3xl ">
@@ -26,7 +26,7 @@ function AboutMe() {
 						</h1>
 						<TypeWriterHeader text={"Madison"} />
 
-						<p className="w-[360px] text-sm text-info md:text-lg lg:w-[500px]">
+						<p className="w-[90%] text-xs text-info md:w-[360px] md:text-sm lg:w-[500px] lg:text-lg">
 							I'm a full-stack software engineer with a passion for creating
 							beautiful and functional digital experiences. I strive to create
 							web applications that not only look great but also perform
@@ -57,7 +57,7 @@ function AboutMe() {
 					<img
 						src={lightbulbGear}
 						alt="overlay"
-						className="mx-auto w-[150px] md:w-[200px] lg:w-[250px]"
+						className="mx-auto w-[25%] md:w-[170px] lg:w-[250px]"
 					/>
 				</div>
 			</div>
