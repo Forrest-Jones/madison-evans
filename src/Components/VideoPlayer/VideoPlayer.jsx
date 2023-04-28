@@ -1,9 +1,13 @@
 import React, { useRef } from "react";
 import ReactPlayer from "react-player";
 
-const VideoPlayer = ({ videoSource, image }) => {
+const VideoPlayer = ({ videoSource, image, onEndedStateChange }) => {
 	const playerRef = useRef(null);
 	const [ended, setEnded] = React.useState(true);
+
+	React.useEffect(() => {
+		onEndedStateChange(ended);
+	}, [ended, onEndedStateChange]);
 
 	const handleEnded = () => {
 		setEnded(true);
@@ -14,11 +18,13 @@ const VideoPlayer = ({ videoSource, image }) => {
 		setEnded(false);
 	};
 
-	const handlePause = () => {
-		// No need to update any state here
-	};
+	const showThumbnail = ended;
 
-	const showThumbnail = ended; // Show thumbnail when video is ended
+	const handleThumbnailClick = () => {
+		if (ended) {
+			setEnded(false);
+		}
+	};
 
 	return (
 		<ReactPlayer
@@ -28,10 +34,10 @@ const VideoPlayer = ({ videoSource, image }) => {
 			width="100%"
 			height="100%"
 			style={{ backgroundColor: "black" }}
-			light={showThumbnail ? image : false} // Use 'showThumbnail' to decide when to show the image
+			light={showThumbnail ? image : false}
 			onEnded={handleEnded}
 			onPlay={handlePlay}
-			onPause={handlePause}
+			onClickPreview={handleThumbnailClick} // Add this prop
 		/>
 	);
 };
