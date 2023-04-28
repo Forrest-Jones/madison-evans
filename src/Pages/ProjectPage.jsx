@@ -4,6 +4,7 @@ import image2 from "../assets/images/blue-cloud-img.png";
 import image3 from "../assets/images/drop-the-ball-img.png";
 import palettePal from "../assets/palette.mp4";
 import blueCloudMusic from "../assets/blue-cloud.mp4";
+import duotune from "../assets/duotune.mp4";
 import dropTheBall from "../assets/drop-the-ball.mp4";
 import Project from "../Components/Project/Project";
 
@@ -14,7 +15,7 @@ const ProjectPage = () => {
 		{ image: image1, video: palettePal },
 		{ image: image2, video: blueCloudMusic },
 		{ image: image3, video: dropTheBall },
-		{ image: image3, video: dropTheBall },
+		{ image: image3, video: duotune },
 	];
 
 	return (
