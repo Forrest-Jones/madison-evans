@@ -20,45 +20,35 @@ const Navbar = () => {
 			<div
 				className={`${
 					isMobileMenuOpen ? "block" : "hidden"
-				} md:flex-grow md:flex md:flex-col md:justify-start md:items-stretch md:min-h-screen`}>
+				} md:flex md:min-h-screen md:flex-grow md:flex-col md:items-stretch md:justify-start`}>
 				<motion.div className="flex-grow justify-center md:flex md:flex-col md:overflow-y-auto">
 					<motion.a
-						initial={{ x: 0 }}
-						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#about-me"
-						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
 						onClick={handleClickScroll}>
 						About Me
 					</motion.a>
 					<motion.a
-						initial={{ x: 0 }}
-						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#skills"
-						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
 						onClick={handleClickScroll}>
 						Skills
 					</motion.a>
 					<motion.a
-						initial={{ x: 0 }}
-						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#experience"
-						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
 						onClick={handleClickScroll}>
 						Experience
 					</motion.a>
 					<motion.a
-						initial={{ x: 0 }}
-						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#projects"
-						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
 						onClick={handleClickScroll}>
 						Projects
 					</motion.a>
 					<motion.a
-						initial={{ x: 0 }}
-						whileHover={{ x: 5, transition: { type: "spring" } }}
 						href="#contact"
-						className="text-info hover:text-accent block px-3 py-2 rounded-md text-base font-medium"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
 						onClick={handleClickScroll}>
 						Contact
 					</motion.a>
@@ -72,7 +62,7 @@ const Navbar = () => {
 			<button
 				onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 				type="button"
-				className="inline-flex items-center justify-center p-2 rounded-md text-secondary hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary focus:ring-white md:hidden">
+				className="inline-flex items-center justify-center rounded-md p-2 text-secondary hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary md:hidden">
 				<svg
 					className={`${isMobileMenuOpen ? "hidden" : "block"} h-6 w-6`}
 					xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +96,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav className="flex flex-shrink-0 p-4 w-full bg-primary">
+		<nav className="flex w-full flex-shrink-0 bg-primary p-4">
 			<HamburgerButton />
 			<NavLinkContainer />
 		</nav>
