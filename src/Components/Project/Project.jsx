@@ -34,23 +34,33 @@ function Project({ projectContent, image, video }) {
 			<motion.div
 				layout
 				className="flex max-h-[400px] w-3/4 flex-col items-center justify-center pl-8">
-				<motion.div className="my-2 flex h-fit w-full flex-col font-display text-3xl font-bold text-accent">
-					<motion.h2 className="">{projectContent.title}</motion.h2>
+				<div className="my-2 flex h-fit w-full flex-col font-display text-3xl font-bold text-accent">
+					<h2>{projectContent.title}</h2>
 
-					<div className="my-1 flex w-[70px] flex-row justify-between text-accentLighter">
+					<motion.div
+						layout
+						className="my-1 flex w-[70px] flex-row justify-between text-accentLighter">
 						{projectContent.githubLink && (
-							<a href={projectContent.githubLink}>
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href={projectContent.githubLink}>
 								<Github />
 							</a>
 						)}
 						{projectContent.siteLink && (
-							<a href={projectContent.siteLink}>
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href={projectContent.siteLink}>
 								<Website />
 							</a>
 						)}
-					</div>
-				</motion.div>
-				<motion.p className="lg:text-md h-full w-full items-center overflow-auto text-sm text-info xl:text-lg">
+					</motion.div>
+				</div>
+				<motion.p
+					layout
+					className="lg:text-md w-full items-center overflow-auto text-sm text-info xl:text-lg">
 					{projectContent.description}
 				</motion.p>
 			</motion.div>

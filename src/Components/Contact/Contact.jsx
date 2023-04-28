@@ -121,8 +121,8 @@ const Contact = () => {
 					whileHover={{ scale: 1.05, y: -2 }}
 					className="text-accent"
 					target="_blank"
-					href="https://www.linkedin.com/in/madison-evans-98a350a3/"
-					rel="noreferrer">
+					rel="noreferrer"
+					href="https://www.linkedin.com/in/madison-evans-98a350a3/">
 					<Linkedin size="1.5em" />
 				</motion.a>
 				<motion.a
