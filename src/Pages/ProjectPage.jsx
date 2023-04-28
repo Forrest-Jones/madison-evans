@@ -14,6 +14,7 @@ const ProjectPage = () => {
 		{ image: image1, video: palettePal },
 		{ image: image2, video: blueCloudMusic },
 		{ image: image3, video: dropTheBall },
+		{ image: image3, video: dropTheBall },
 	];
 
 	return (
