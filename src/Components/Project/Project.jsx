@@ -12,12 +12,13 @@ function Project({ projectContent, image, video }) {
 					boxShadow: "16px 16px 0 0 rgba(0,0,0,.3)",
 					transition: { type: "spring", duration: 0.2 },
 				}}
-				className="h-40 w-[400px] overflow-hidden rounded-[6px] border md:h-60 md:w-[600px] lg:h-80 lg:w-[800px]">
+				className="h-[300px] w-[300px] overflow-hidden rounded-[6px] border md:h-[400px] md:w-[400px] lg:h-[400px] lg:w-[400px]">
 				<VideoPlayer videoSource={video} image={image} />
+				{/* <video src={video} className="h-full object-cover object-center" /> */}
 			</motion.div>
 			<motion.div
 				layout
-				className="flex h-full w-full flex-col items-center justify-center pl-8">
+				className="flex max-h-[400px] w-1/2 flex-col items-center justify-center pl-8">
 				<motion.div className="my-2 flex h-fit w-full flex-col font-display text-3xl font-bold text-accent">
 					<motion.h2 className="">{projectContent.title}</motion.h2>
 
@@ -34,7 +35,7 @@ function Project({ projectContent, image, video }) {
 						)}
 					</div>
 				</motion.div>
-				<motion.p className="lg:text-md max-h-[200px] items-center overflow-auto overscroll-none text-sm text-info xl:text-lg">
+				<motion.p className="lg:text-md h-full w-full items-center overflow-auto text-sm text-info xl:text-lg">
 					{projectContent.description}
 				</motion.p>
 			</motion.div>

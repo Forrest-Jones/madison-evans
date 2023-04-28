@@ -1,7 +1,8 @@
 import React from "react";
-import image1 from "../assets/images/palette-pal-img.png";
-import image2 from "../assets/images/blue-cloud-img.png";
-import image3 from "../assets/images/drop-the-ball-img.png";
+import palettePalImg from "../assets/images/palette-pal-img.png";
+import blueCloudImg from "../assets/images/blue-cloud-img.png";
+import dropTheBallImg from "../assets/images/drop-the-ball-img.png";
+import duoTuneImg from "../assets/images/duotune.png";
 import palettePal from "../assets/palette.mp4";
 import blueCloudMusic from "../assets/blue-cloud.mp4";
 import duotune from "../assets/duotune.mp4";
@@ -12,10 +13,10 @@ import projects from "./projects.json";
 
 const ProjectPage = () => {
 	const projectAssets = [
-		{ image: image1, video: palettePal },
-		{ image: image2, video: blueCloudMusic },
-		{ image: image3, video: dropTheBall },
-		{ image: image3, video: duotune },
+		{ image: duoTuneImg, video: duotune },
+		{ image: palettePalImg, video: palettePal },
+		{ image: blueCloudImg, video: blueCloudMusic },
+		{ image: dropTheBallImg, video: dropTheBall },
 	];
 
 	return (

@@ -25,21 +25,7 @@ const Timeline = () => {
 				"Programming for Mechatronics and Robotic Systems",
 			],
 		},
-		{
-			icon: Work,
-			employer: "Porex",
-			location: "Atlanta, GA",
-			role: "Engineering Intern",
-			description:
-				"During my undergraduate Mechanical Engineering studies, I interned at Porex Filtration Group from May to August 2015. As an engineering intern, I tackled various quality assurance tasks, honing my problem-solving and analytical skills. I reduced diameter variability for a key product, conducted Gage R&R studies, and programmed measurement routines for the SmartScope. Additionally, I authored work instruction documents and improved plant organization through tool audits and process flow charts. This diverse experience provided a strong foundation in engineering principles and adaptability, which has been invaluable in my successful transition to a software engineering career.",
-			date: "May 2016 - May 2017",
-			svg: Porex,
-			skills: [
-				"Quality assurance tasks in an engineering context",
-				"Creating process flow charts and conducting tool audits for plant organization",
-				"Design Of Experiment for production environments",
-			],
-		},
+
 		{
 			icon: Work,
 			employer: "Eaton",
@@ -53,6 +39,21 @@ const Timeline = () => {
 				"Bill of Materials (BOM) cost reduction strategies",
 				"Design using SolidWorks software",
 				"Small team collaboration",
+			],
+		},
+		{
+			icon: Work,
+			employer: "Porex",
+			location: "Atlanta, GA",
+			role: "Engineering Intern",
+			description:
+				"During my undergraduate Mechanical Engineering studies, I interned at Porex Filtration Group from May to August 2015. As an engineering intern, I tackled various quality assurance tasks, honing my problem-solving and analytical skills. I reduced diameter variability for a key product, conducted Gage R&R studies, and programmed measurement routines for the SmartScope. Additionally, I authored work instruction documents and improved plant organization through tool audits and process flow charts. This diverse experience provided a strong foundation in engineering principles and adaptability, which has been invaluable in my successful transition to a software engineering career.",
+			date: "May 2016 - May 2017",
+			svg: Porex,
+			skills: [
+				"Quality assurance tasks in an engineering context",
+				"Creating process flow charts and conducting tool audits for plant organization",
+				"Design Of Experiment for production environments",
 			],
 		},
 		{
