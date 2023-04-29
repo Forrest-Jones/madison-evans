@@ -110,20 +110,24 @@ const Timeline = () => {
 
 	return (
 		<LayoutGroup>
-			<motion.div layout className="w-full space-y-6">
-				{timelineData.map((item, index) => (
-					<TimelineElement
-						key={index}
-						icon={item.icon}
-						role={item.role}
-						employer={item.employer}
-						description={item.description}
-						date={item.date}
-						location={item.location}
-						svg={item.svg}
-						skills={item.skills}
-					/>
-				))}
+			<motion.div layout className="w-full space-y-4">
+				{timelineData.map((item, index) => {
+					return (
+						<div className="flex flex-col items-center px-4 md:flex-row">
+							<TimelineElement
+								key={index}
+								icon={item.icon}
+								role={item.role}
+								employer={item.employer}
+								description={item.description}
+								location={item.location}
+								svg={item.svg}
+								skills={item.skills}
+								date={item.date}
+							/>
+						</div>
+					);
+				})}
 			</motion.div>
 		</LayoutGroup>
 	);

@@ -17,7 +17,7 @@ function Project({ projectContent, image, video }) {
 	return (
 		<motion.div
 			layout
-			className="my-12 mx-8 flex flex-row items-center justify-start">
+			className="my-12 mx-8 flex flex-col items-center justify-start md:flex-row">
 			<motion.div
 				layout
 				whileHover={{
@@ -35,18 +35,21 @@ function Project({ projectContent, image, video }) {
 				layout
 				className="flex max-h-[400px] w-3/4 flex-col items-center justify-center pl-8">
 				<div className="my-2 flex h-fit w-full flex-col font-display text-3xl font-bold text-accent">
-					<h2>{projectContent.title}</h2>
+					<motion.h2 layout className="w-full text-center md:text-left">
+						{projectContent.title}
+					</motion.h2>
 
 					<motion.div
 						layout
-						className="my-1 flex w-[70px] flex-row justify-between text-accentLighter">
+						className="my-1 flex w-full flex-row justify-center text-accentLighter md:w-[70px] md:justify-between">
 						{projectContent.githubLink && (
-							<a
+							<motion.a
+								layout
 								target="_blank"
 								rel="noreferrer"
 								href={projectContent.githubLink}>
 								<Github />
-							</a>
+							</motion.a>
 						)}
 						{projectContent.siteLink && (
 							<a
