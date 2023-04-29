@@ -61,16 +61,16 @@ const TimelineElement = ({
 						? `1px solid ${colors.info}`
 						: `1px solid ${colors.primaryLighter}`,
 				}}
-				className="relative flex w-full cursor-pointer flex-col items-start space-x-4 bg-primaryLighter  p-4 md:mx-[200px]">
+				className="relative flex w-full cursor-pointer flex-col items-start bg-primaryLighter p-4">
 				<motion.div layout className="flex w-fit">
 					<Icon className="h-8 w-8 text-accent" />
 				</motion.div>
-				<motion.div layout className="w-full pr-8">
+				<motion.div layout className="w-full">
 					<motion.div layout className="w-fit">
-						<motion.h2 className="text-info">{employer}</motion.h2>
-						<motion.h3 className="w-fit font-display text-lg font-semibold text-accent">
+						<h2 className="text-info">{employer}</h2>
+						<h3 className="w-fit font-display text-lg font-semibold text-accent">
 							{role}
-						</motion.h3>
+						</h3>
 						<motion.p className="italic text-info">{location}</motion.p>
 					</motion.div>
 					<AnimatePresence>
@@ -98,7 +98,7 @@ const TimelineElement = ({
 										</p>
 									</div>
 									<p className="my-1 text-accent">Skills</p>
-									<ul>
+									<ul className="px-4">
 										{skills.map((skill) => {
 											return <li className="list-disc">{skill}</li>;
 										})}

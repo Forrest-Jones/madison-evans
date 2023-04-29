@@ -32,7 +32,7 @@ function AboutMe() {
 							web applications that not only look great but also perform
 							flawlessly
 						</p>
-						<div className="mt-10 flex w-full flex-row">
+						<div className="mt-10 flex w-full flex-row text-info">
 							<motion.a
 								initial={{ scale: 1, y: 0 }}
 								whileHover={{ scale: 1.1, y: -2 }}

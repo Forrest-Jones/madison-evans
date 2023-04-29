@@ -113,7 +113,7 @@ const Timeline = () => {
 			<motion.div layout className="w-full space-y-4">
 				{timelineData.map((item, index) => {
 					return (
-						<div className="flex flex-col items-center px-4 md:flex-row">
+						<div className="flex flex-col items-center px-4 md:flex-row md:px-16">
 							<TimelineElement
 								key={index}
 								icon={item.icon}

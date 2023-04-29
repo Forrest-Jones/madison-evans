@@ -62,7 +62,7 @@ const Navbar = () => {
 			<button
 				onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 				type="button"
-				className="inline-flex items-center justify-center rounded-md p-2 text-secondary hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary md:hidden">
+				className="inline-flex items-center justify-center rounded-md p-1 text-info hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary md:hidden">
 				<svg
 					className={`${isMobileMenuOpen ? "hidden" : "block"} h-6 w-6`}
 					xmlns="http://www.w3.org/2000/svg"
