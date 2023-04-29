@@ -23,32 +23,57 @@ const Navbar = () => {
 				} md:flex md:min-h-screen md:flex-grow md:flex-col md:items-stretch md:justify-start`}>
 				<motion.div className="flex-grow justify-center md:flex md:flex-col md:overflow-y-auto">
 					<motion.a
+						initial={{ scale: 1 }}
+						whileHover={{
+							scale: 1.1,
+							transition: { type: "spring", duration: 1 },
+						}}
 						href="#about-me"
-						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info"
 						onClick={handleClickScroll}>
 						About Me
 					</motion.a>
 					<motion.a
+						initial={{ scale: 1 }}
+						whileHover={{
+							scale: 1.1,
+							transition: { type: "spring", duration: 1 },
+						}}
 						href="#skills"
-						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info "
 						onClick={handleClickScroll}>
 						Skills
 					</motion.a>
 					<motion.a
+						initial={{ scale: 1 }}
+						whileHover={{
+							scale: 1.1,
+							transition: { type: "spring", duration: 1 },
+						}}
 						href="#experience"
-						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info "
 						onClick={handleClickScroll}>
 						Experience
 					</motion.a>
 					<motion.a
+						initial={{ scale: 1 }}
+						whileHover={{
+							scale: 1.1,
+							transition: { type: "spring", duration: 1 },
+						}}
 						href="#projects"
-						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info "
 						onClick={handleClickScroll}>
 						Projects
 					</motion.a>
 					<motion.a
+						initial={{ scale: 1 }}
+						whileHover={{
+							scale: 1.1,
+							transition: { type: "spring", duration: 1 },
+						}}
 						href="#contact"
-						className="block rounded-md px-3 py-2 text-base font-medium text-info hover:text-accent"
+						className="block rounded-md px-3 py-2 text-base font-medium text-info "
 						onClick={handleClickScroll}>
 						Contact
 					</motion.a>

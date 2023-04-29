@@ -57,18 +57,15 @@ const TimelineElement = ({
 				transition={{ type: "spring", duration: 0.45 }}
 				style={{
 					borderRadius: "8px",
-					border: showDescription
-						? `1px solid ${colors.info}`
-						: `1px solid ${colors.primaryLighter}`,
 				}}
-				className="relative flex w-full cursor-pointer flex-col items-start bg-primaryLighter p-4">
+				className="glass relative flex w-full cursor-pointer flex-col items-start p-4">
 				<motion.div layout className="flex w-fit">
 					<Icon className="h-8 w-8 text-accent" />
 				</motion.div>
 				<motion.div layout className="w-full">
 					<motion.div layout className="w-fit">
 						<h2 className="text-info">{employer}</h2>
-						<h3 className="w-fit font-display text-lg font-semibold text-accent">
+						<h3 className="w-fit font-display text-xl font-semibold text-accent">
 							{role}
 						</h3>
 						<motion.p className="italic text-info">{location}</motion.p>

@@ -22,7 +22,7 @@ const SkillCard = (props) => {
 					width: "22em",
 					height: "16em",
 					borderRadius: "10px",
-					border: `1px solid ${colors.primaryLighter}`,
+					// border: `1px solid ${colors.primaryLighter}`,
 					padding: "0.5rem",
 					cursor: "pointer",
 			  }
@@ -42,7 +42,7 @@ const SkillCard = (props) => {
 				toggleLayout();
 			}}
 			initial={{
-				backgroundColor: colors.primaryLighter,
+				// backgroundColor: colors.primaryLighter,
 				transition: { duration: 0.1 },
 			}}
 			whileHover={{
@@ -52,7 +52,7 @@ const SkillCard = (props) => {
 			transition={{ type: "ease", duration: 0.25 }}
 			style={dynamicContainerStyle}
 			animate={layout === 0 ? "closed" : "opened"}
-			className="my-2 flex flex-col items-center border md:mx-2 lg:mx-6">
+			className="glass my-2 flex flex-col items-center border md:mx-2 lg:mx-6">
 			<CardHeader icon={icon} title={title} />
 
 			{layout === 1 && (
@@ -68,10 +68,10 @@ const SkillCard = (props) => {
 							<>
 								{" "}
 								<li>
-									<h3 className="font-display text-sm font-bold text-accent">
+									<h3 className="text-md my-1 font-display font-bold text-primaryLighter">
 										{content.subSkill}
 									</h3>
-									<ul className="text-xs text-info">
+									<ul className="text-xs text-primary">
 										{content.description.map((description) => {
 											return <li className="mx-4 list-disc">{description}</li>;
 										})}
@@ -92,8 +92,12 @@ function CardHeader({ icon, title }) {
 		<motion.div layout>
 			<motion.div
 				layout
-				className="mx-auto flex flex-row items-center justify-center">
-				<img src={icon} alt="backend" className="my-4 mx-auto h-32 w-full" />
+				className="mx-auto flex flex-row items-center justify-center ">
+				<img
+					src={icon}
+					alt="skill-icon"
+					className="my-4 mx-auto h-32 w-full "
+				/>
 			</motion.div>
 			<motion.h2
 				layout

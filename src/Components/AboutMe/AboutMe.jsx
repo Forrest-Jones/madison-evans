@@ -21,7 +21,7 @@ function AboutMe() {
 				text-info md:mb-0 md:w-full">
 				<div className="flex w-full flex-row items-center justify-between md:justify-start ">
 					<div className="md:ml-32">
-						<h1 className="mb-2 text-left text-2xl font-bold md:text-3xl ">
+						<h1 className="mb-2 text-left text-2xl font-bold text-primary md:text-3xl ">
 							Hi, I'm
 						</h1>
 						<TypeWriterHeader text={"Madison"} />

@@ -11,10 +11,18 @@
 .background-gradient {
 	background: rgb(18, 33, 60);
 	background: linear-gradient(
-		0deg,
+		7deg,
 		rgb(11, 20, 37) 20%,
-		rgba(18, 33, 60, 1) 50%,
+		rgba(18, 33, 60, 1) 40%,
 		rgb(229, 117, 130) 70%,
 		#fcbb60 120%
 	);
+}
+
+.glass {
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
 }

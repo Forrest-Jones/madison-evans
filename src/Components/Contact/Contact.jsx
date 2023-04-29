@@ -62,7 +62,7 @@ const Contact = () => {
 			<br />
 			<div
 				className="
-				h-fit w-full rounded-xl border border-info bg-primaryLighter p-6
+				glass h-fit w-full rounded-xl border border-info p-6
 				md:w-[400px]
 				lg:w-[600px]
 				xl:w-[800px]">
@@ -102,7 +102,7 @@ const Contact = () => {
 						<input
 							type="submit"
 							value="Send"
-							className="mt-3 w-full cursor-pointer rounded border border border-accent bg-accent p-1 text-light transition hover:border-accent hover:bg-accent hover:text-white hover:shadow-[10px_10px_0_0_rgba(0,0,0,.3)]"
+							className="mt-3 w-full cursor-pointer rounded border border-info p-1 text-light transition hover:border-accent hover:bg-accent hover:text-primary hover:shadow-[10px_10px_0_0_rgba(0,0,0,.3)]"
 						/>
 					)}
 				</form>
