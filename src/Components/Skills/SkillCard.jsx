@@ -19,7 +19,6 @@ const SkillCard = (props) => {
 	const dynamicContainerStyle =
 		layout === 0
 			? {
-					width: "22em",
 					height: "16em",
 					borderRadius: "10px",
 					// border: `1px solid ${colors.primaryLighter}`,
@@ -27,7 +26,6 @@ const SkillCard = (props) => {
 					cursor: "pointer",
 			  }
 			: {
-					width: "22em",
 					height: "36em",
 					borderRadius: "10px",
 					border: `1px solid ${colors.light}`,
@@ -52,7 +50,7 @@ const SkillCard = (props) => {
 			transition={{ type: "ease", duration: 0.25 }}
 			style={dynamicContainerStyle}
 			animate={layout === 0 ? "closed" : "opened"}
-			className="glass my-2 flex flex-col items-center border md:mx-2 lg:mx-6">
+			className="glass my-2 flex w-full max-w-[16em] flex-col items-center border md:mx-2 md:max-w-[22em] lg:mx-6">
 			<CardHeader icon={icon} title={title} />
 
 			{layout === 1 && (
@@ -93,11 +91,7 @@ function CardHeader({ icon, title }) {
 			<motion.div
 				layout
 				className="mx-auto flex flex-row items-center justify-center ">
-				<img
-					src={icon}
-					alt="skill-icon"
-					className="my-4 mx-auto h-32 w-full "
-				/>
+				<img src={icon} alt="skill-icon" className="my-4 mx-auto h-32 w-full" />
 			</motion.div>
 			<motion.h2
 				layout

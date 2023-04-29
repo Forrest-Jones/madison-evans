@@ -7,7 +7,7 @@ function LayoutGrid({ children }) {
 	const contentStyling = "md:pl-40 w-full";
 
 	const containerStyling =
-		"background-gradient overflow-hidden overscroll-none md:h-full overflow-y-scroll overflow-x-hidden overscroll-x-hidden flex flex-col md:flex-row";
+		"w-screen background-gradient overflow-hidden overscroll-none md:h-full overflow-y-scroll overflow-x-hidden overscroll-x-hidden flex flex-col md:flex-row";
 
 	return (
 		<div className={containerStyling}>

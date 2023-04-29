@@ -24,7 +24,7 @@ const PageHeader = ({ title }) => {
 	return (
 		<div className="h-32 py-48 text-center" ref={ref}>
 			<motion.h1
-				className="font-display text-[5em] font-bold text-info"
+				className="font-display text-[3em] font-bold text-info md:text-[4em]"
 				initial={{ opacity: 0, x: 50 }}
 				animate={animation}>
 				{title}
