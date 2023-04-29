@@ -47,7 +47,7 @@ const Contact = () => {
 			id="contact"
 			style={{ minHeight: "100vh" }}
 			className="
-			flex flex-col items-center  p-6
+			flex flex-col items-center px-6 pb-80
 			md:justify-center">
 			<PageHeader title="Get In Touch" />
 			<p className="text-info">For business inquiries, please contact me at</p>
