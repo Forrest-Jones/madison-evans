@@ -11,7 +11,7 @@ function Project({ projectContent, image, video }) {
 	};
 
 	const containerClassName = videoEnded
-		? "h-[200px] w-[200px] md:h-[300px] md:w-[300px] lg:h-[300px] lg:w-[400px]"
+		? "h-[300px] w-[300px] md:h-[300px] md:w-[300px] lg:h-[300px] lg:w-[400px]"
 		: "h-full w-full md:h-full md:w-full lg:h-[300px] lg:w-[900px]";
 
 	return (

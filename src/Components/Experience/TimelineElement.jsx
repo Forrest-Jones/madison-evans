@@ -93,7 +93,7 @@ const TimelineElement = ({
 									</div>
 									<p className="my-1 text-accent">Summary</p>
 									<div className="flex w-full flex-col">
-										<p className="mb-4 max-h-[160px] w-full overflow-scroll overscroll-none rounded-lg">
+										<p className="mb-4 max-h-[160px] w-full overflow-scroll rounded-lg md:overscroll-none">
 											{description}
 										</p>
 									</div>

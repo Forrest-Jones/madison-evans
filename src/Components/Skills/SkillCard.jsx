@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import colors from "../../helpers/colors";
-import backend from "../../assets/svg/backend.svg";
 const ulVariants = {
 	hidden: { opacity: 0, transition: { delay: 0.1 } },
 	visible: { opacity: 1, transition: { delay: 0.1 } },
@@ -58,7 +57,7 @@ const SkillCard = (props) => {
 			{layout === 1 && (
 				<motion.ul
 					layout
-					className="my-3 mx-2 h-full overflow-scroll overscroll-none rounded-lg border border-light p-2"
+					className="my-3 mx-2 h-full overflow-scroll rounded-lg border border-light p-2 md:overscroll-none"
 					variants={ulVariants}
 					initial="hidden"
 					animate="visible"
@@ -93,7 +92,7 @@ function CardHeader({ icon, title }) {
 			<motion.div
 				layout
 				className="mx-auto flex flex-row items-center justify-center">
-				<img src={icon} alt="backend" className="my-4 mx-auto h-32 w-fit" />
+				<img src={icon} alt="backend" className="my-4 mx-auto h-32 w-full" />
 			</motion.div>
 			<motion.h2
 				layout

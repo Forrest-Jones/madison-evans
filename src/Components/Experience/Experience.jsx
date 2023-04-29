@@ -1,16 +1,12 @@
 import React from "react";
-
+import PageHeader from "../PageHeader";
 import Timeline from "./Timeline";
 
 const ExperienceTimeline = () => {
 	return (
 		<>
 			<div id="experience" className="h-fit w-full bg-primary ">
-				<div className="mb-12 h-32 py-24 text-center">
-					<h1 className="font-display text-6xl font-bold text-info">
-						Experience
-					</h1>
-				</div>
+				<PageHeader title="Experience" />
 				<div className="flex h-full w-full flex-row items-center py-8">
 					<Timeline />
 				</div>

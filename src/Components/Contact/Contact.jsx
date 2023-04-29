@@ -4,6 +4,7 @@ import { AiFillGithub as Github } from "react-icons/ai";
 import { BsMedium as Medium } from "react-icons/bs";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
+import PageHeader from "../PageHeader";
 const Contact = () => {
 	const form = useRef();
 	const nameInput = useRef();
@@ -48,11 +49,7 @@ const Contact = () => {
 			className="
 			flex flex-col items-center bg-primary p-6
 			md:justify-center">
-			<div className="mb-12 h-32 py-24 text-center">
-				<h1 className="font-display text-6xl font-bold text-info">
-					Get In Touch
-				</h1>
-			</div>
+			<PageHeader title="Get In Touch" />
 			<p className="text-info">For business inquiries, please contact me at</p>
 			<strong>
 				<a href="mailto:m.corbinevans@gmail.com" className="block text-accent">

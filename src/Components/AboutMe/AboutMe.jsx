@@ -17,8 +17,8 @@ function AboutMe() {
 		return (
 			<div
 				className="
-				z-50 flex h-full w-full flex-col justify-center
-				px-6 text-info md:w-full">
+				z-50 mb-32 flex h-full w-full flex-col justify-center px-6
+				text-info md:mb-0 md:w-full">
 				<div className="flex w-full flex-row items-center justify-between md:justify-start ">
 					<div className="md:ml-32">
 						<h1 className="mb-2 text-left text-2xl font-bold md:text-3xl ">
