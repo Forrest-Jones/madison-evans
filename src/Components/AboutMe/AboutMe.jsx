@@ -8,7 +8,7 @@ function AboutMe() {
 		<div
 			style={{ height: "100vh" }}
 			id="about-me"
-			className="flex flex-col items-center justify-start bg-primary md:flex-row md:py-24 md:px-4">
+			className="flex flex-col items-center justify-start md:flex-row md:py-24 md:px-4">
 			{Introduction()}
 		</div>
 	);
@@ -26,13 +26,13 @@ function AboutMe() {
 						</h1>
 						<TypeWriterHeader text={"Madison"} />
 
-						<p className="w-[90%] text-xs text-info md:w-[360px] md:text-sm lg:w-[500px] lg:text-lg">
+						<p className="w-[90%] text-xs text-primary md:w-[360px] md:text-sm lg:w-[500px] lg:text-lg">
 							I'm a full-stack software engineer with a passion for creating
 							beautiful and functional digital experiences. I strive to create
 							web applications that not only look great but also perform
 							flawlessly
 						</p>
-						<div className="mt-10 flex w-full flex-row text-info">
+						<div className="mt-10 flex w-full flex-row text-primaryLighter">
 							<motion.a
 								initial={{ scale: 1, y: 0 }}
 								whileHover={{ scale: 1.1, y: -2 }}

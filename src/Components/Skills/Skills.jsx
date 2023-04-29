@@ -12,7 +12,7 @@ const Skills = () => {
 	return (
 		<div
 			id="skills"
-			className="flex w-full flex-col items-center justify-around bg-primary sm:min-h-screen md:h-screen">
+			className="flex w-full flex-col items-center justify-around sm:min-h-screen md:h-screen">
 			<PageHeader title={"My Skills"} />
 			<div className="flex h-full w-full flex-col items-center justify-center md:flex-row">
 				<LayoutGroup>

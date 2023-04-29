@@ -96,7 +96,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav className="flex w-full flex-shrink-0 bg-primary p-4">
+		<nav className="flex w-full flex-shrink-0 p-4">
 			<HamburgerButton />
 			<NavLinkContainer />
 		</nav>

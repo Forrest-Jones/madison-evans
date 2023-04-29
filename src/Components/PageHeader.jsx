@@ -12,9 +12,9 @@ const PageHeader = ({ title }) => {
 		if (inView) {
 			animation.start({
 				opacity: 1,
-				y: 0,
+				x: 0,
 				transition: {
-					duration: 2,
+					duration: 1,
 					ease: "easeInOut",
 				},
 			});
@@ -25,7 +25,7 @@ const PageHeader = ({ title }) => {
 		<div className="h-32 py-48 text-center" ref={ref}>
 			<motion.h1
 				className="font-display text-[5em] font-bold text-info"
-				initial={{ opacity: 0, y: 0 }}
+				initial={{ opacity: 0, x: 50 }}
 				animate={animation}>
 				{title}
 			</motion.h1>

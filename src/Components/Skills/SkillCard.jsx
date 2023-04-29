@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import colors from "../../helpers/colors";
+
 const ulVariants = {
 	hidden: { opacity: 0, transition: { delay: 0.1 } },
 	visible: { opacity: 1, transition: { delay: 0.1 } },

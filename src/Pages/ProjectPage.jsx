@@ -20,7 +20,7 @@ const ProjectPage = () => {
 	];
 
 	return (
-		<div id="projects" className="h-fit bg-primary">
+		<div id="projects" className="h-fit">
 			<PageHeader title="My Projects" />
 
 			<div className="mx-10">

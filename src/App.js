@@ -7,13 +7,9 @@ import Contact from "./Components/Contact/Contact";
 import ProjectPage from "./Pages/ProjectPage";
 import Skills from "./Components/Skills/Skills";
 
-import Modal from "./Components/Modal/Modal";
-
-import { useState } from "react";
-
 function App() {
 	return (
-		<div className="h-full">
+		<div className="h-full ">
 			<LayoutGrid>
 				<Navbar />
 				<div className="flex w-full flex-col">
