@@ -62,7 +62,7 @@ const Timeline = () => {
 			location: "Phoenix, AZ",
 			role: "Mechanical Engineer",
 			description:
-				"From June 2018 to February 2023, I served as a Mechanical Engineer in Intel's Module Repair group, working as an onsite engineering consultant. I collaborated with internal Intel engineers, developing specialized solutions for engineering challenges. My accomplishments included leading a stanchion production project that reduced costs by 30% and improved ergonomics for technicians, as well as designing 50+ 3D printed parts for rapid prototype concepts. This diverse experience has honed my problem-solving and critical thinking skills, proving invaluable in my successful transition to a software engineering role.",
+				"From June 2018 to February 2023, I served as a Mechanical Engineer in Intel's Module Repair group, working as an onsite engineer. I collaborated with internal Intel engineers, developing specialized solutions for engineering challenges. My accomplishments included leading a stanchion production project that reduced costs by 30% and improved ergonomics for technicians, as well as designing 50+ 3D printed parts for rapid prototype concepts. This diverse experience has honed my problem-solving and critical thinking skills, proving invaluable in my successful transition to a software engineering role.",
 			date: "Jun 2018 - Feb 2023",
 			svg: Intel,
 			skills: [
